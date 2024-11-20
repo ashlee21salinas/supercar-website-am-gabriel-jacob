@@ -12,8 +12,12 @@ nav{
     height: 10vh;
     align-items: center;
     justify-content: flex-start;
+    transition: background 2s, width 1.5s, height 1.5s;
 }
 
+.left-bar{
+    display: none;
+}
 
 .pfp{
     scale: 0.6;
@@ -39,4 +43,39 @@ nav > h2:first-of-type{
 
 nav > h2:last-of-type{
     margin-right: 20%;
+}
+
+nav:has(> .hamburger.clicked){
+    background: #4C4747;
+    width: 15%;
+    height: 100%;
+    margin-left: 3%;
+}
+
+.hamburger.clicked{
+    display: none;
+}
+
+.hamburger.clicked + h2, .hamburger.clicked ~ h2:last-of-type,  .hamburger.clicked ~ h1, .hamburger.clicked ~ svg{
+    display: none;
+}
+
+
+.left-bar:has(+ .hamburger.clicked)  {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    background-color: #625D5D;
+    margin-left: -20%;
+    width: 20%;
+    align-items: center;
+}
+
+.left-bar > svg{
+    height: 35px;
+    width: 35px;
+}
+
+.left-bar > svg:last-of-type{
+    margin-top: 20%;
 }
