@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Nixie+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body{
+    font-family: "Nixie One", system-ui;
+    
+}
+
+.footer{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    /* justify-content: center; */
+}
+
+hr{
+    width: 85vw;
+    border-width: 0.4vh;
+    border-color: #393737;
+    border-style: solid;
+}
+
+.footer-left > h3{
+    font-size: 40px;
+    width: 1%;
+}
+
+.footer-right > .subsection-right-left  >  h4, .footer-right > .subsection-right-right  >  h4{
+    font-size: 25px;
+}
+
+.footer-left{
+    margin-right: 30vw;
+    margin-left: 5vw;
+}
+.footer-right{
+    display:flex;
+    flex-flow:row;
+    width: 20%;
+}
+
+.subsection-right-left{
+    width: 50%;
+}
+
+.footer-left > svg{
+    margin-right: 5%;
+    height:40px;
+    width:40px;
+}
+
+.footer-left > svg:last-of-type{
+    margin-left: 480%;
+    scale: 1.4;
+}
