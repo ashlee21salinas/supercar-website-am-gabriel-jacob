@@ -12,7 +12,7 @@ nav{
     height: 10vh;
     align-items: center;
     justify-content: flex-start;
-    transition: background 2s, width 1.5s, height 1.5s;
+    transition: background 2s, width 1.2s, height 1.2s;
 }
 
 .left-bar{
@@ -78,4 +78,52 @@ nav:has(> .hamburger.clicked){
 
 .left-bar > svg:last-of-type{
     margin-top: 20%;
+}
+
+nav > .menu{
+    display: none;
+}
+
+.hamburger.clicked ~ .menu{
+    display: flex;
+    flex-flow: column;
+    color: white;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 220%;
+}
+
+
+.hamburger.clicked ~ .menu > h2{
+    font-size: 40px;
+}
+
+.hamburger.clicked ~ .menu > h3{
+    font-size: 22px;
+    align-self: flex-start;
+    margin-left: 10%;
+}
+
+nav > .models{
+    display: none;
+}
+
+.hamburger.clicked ~ .menu{
+    display: flex;
+    flex-flow: column;
+    color: white;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 220%;
+}
+
+
+.hamburger.clicked ~ .menu > h2{
+    font-size: 40px;
+}
+
+.hamburger.clicked ~ .menu > h3{
+    font-size: 22px;
+    align-self: flex-start;
+    margin-left: 10%;
 }
