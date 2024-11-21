@@ -11,12 +11,18 @@ nav{
     display: flex;
     flex-flow: row;
     height: 100%;
+    position: absolute;
+    width: 100%;
+    
+    top:0;
+    left:0;
+
 }
 
 .nav{
     display: inline-flex;
     width: 100%;
-    background: #ECECEC;
+    background-image: linear-gradient(#b5b5b5, #ECECEC);
     height: 10vh;
     align-items: center;
     justify-content: flex-start;
