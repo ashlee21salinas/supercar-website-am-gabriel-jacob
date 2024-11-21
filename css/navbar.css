@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nixie+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+
+
 body{
     font-family: "Nixie One", system-ui;
     margin: 0px;
@@ -19,6 +21,11 @@ nav{
     align-items: center;
     justify-content: flex-start;
     transition: background 2s, width 1.2s, height 1.2s;
+    
+}
+
+section.nav{
+    z-index: 200;
 }
 
 .left-bar{
@@ -88,7 +95,7 @@ nav{
 
 .nav > .menu{
     display: none;
-    z-index: 99;
+    z-index: 100;
 }
 
 .hamburger.clicked ~ .menu{
@@ -111,21 +118,33 @@ nav{
     margin-left: 10%;
 }
 
+
+
+
+
+
+
 nav > .models-submenu{
+    position: absolute;
     display: none;
+    z-index: 1;
 }
 
 nav > .models-submenu.almost-clicked{
     display: flex;
-    width: 0%;
-    transition: width 1s;
+    width: 1%;
     opacity: 0;
-    z-index: 98;
+    
+    left: 3%;
+    height: 100%;
+    z-index: 3;
 }
 
 
 
 nav > .models-submenu.clicked{
+    transition: left 1s;
+    left:18%;
     display: flex;
     flex-flow: column;
     color: white;
@@ -134,7 +153,14 @@ nav > .models-submenu.clicked{
     align-items: center;
     opacity: 1;
     background: #393737;
-    z-index: 98;
+    transition: left 1s;
+    z-index: 100;
+}
+
+nav > .models-submenu.back{
+    transition: left 1s;
+    left: 3%;
+    z-index: 3;
 }
 
 .models-submenu.clicked > h2{
@@ -149,19 +175,86 @@ nav > .models-submenu.clicked{
 
 /*  */
 
-nav > .models-submenu-blackwidow{
+nav > .merch-submenu{
+    position: absolute;
     display: none;
+    z-index: 1;
+}
+
+nav > .merch-submenu.almost-clicked{
+    display: flex;
+    width: 1%;
+    opacity: 0;
+    
+    left: 3%;
+    height: 100%;
+    z-index: 3;
+}
+
+
+
+nav > .merch-submenu.clicked{
+    transition: left 1s;
+    left:18%;
+    display: flex;
+    flex-flow: column;
+    color: white;
+    height: 100%;
+    width: 15%;
+    align-items: center;
+    opacity: 1;
+    background: #393737;
+    transition: left 1s;
+    z-index: 100;
+}
+
+nav > .merch-submenu.back{
+    transition: left 1s;
+    left: 3%;
+    z-index: 3;
+}
+
+.merch-submenu.clicked > h2{
+    margin-top: 25%;
+    font-size: 40px;
+}
+.merch-submenu.clicked > h3{
+    font-size: 22px;
+    align-self: flex-start;
+    margin-left: 10%;
+}
+
+
+
+/*  */
+
+
+
+
+
+
+
+
+
+
+nav > .models-submenu-blackwidow{
+    position: absolute;
+    display: none;
+    z-index: 1;
 }
 
 nav > .models-submenu-blackwidow.almost-clicked{
     display: flex;
     width: 1%;
     opacity: 0;
-    
+    left:18%;
+    height: 100%;
+    z-index: 1;
 }
 
 nav > .models-submenu-blackwidow.clicked{
-    animation: submenu-blackwidow 1s forwards;
+    transition: left 1s;
+    left: 33%;
     display: flex;
     flex-flow: column;
     color: white;
@@ -170,13 +263,23 @@ nav > .models-submenu-blackwidow.clicked{
     align-items: center;
     opacity: 1;
     background: #252323;
-    transition: width 1s;
+    transition: left 1s;
+    z-index: 98;
 }
 
-@keyframes submenu-blackwidow {
-    0%   {width: 1%;}
-    100% {width: 15%;}
+
+nav > .models-submenu-blackwidow.back{
+    transition: left 1s;
+    left:18%;
+    z-index: 1;
 }
+
+
+
+
+
+
+
 
 
 .models-submenu-blackwidow.clicked > h2{
@@ -192,6 +295,7 @@ nav > .models-submenu-blackwidow.clicked{
 /*  */
 
 nav > .models-submenu-nemesis{
+    position: absolute;
     display: none;
 }
 
@@ -199,11 +303,14 @@ nav > .models-submenu-nemesis.almost-clicked{
     display: flex;
     width: 1%;
     opacity: 0;
-    
+    left:18%;
+    height: 100%;
+    z-index: 1;
 }
 
 nav > .models-submenu-nemesis.clicked{
-    animation: submenu-nemesis 1s forwards;
+    transition: left 1s;
+    left: 33%;
     display: flex;
     flex-flow: column;
     color: white;
@@ -212,13 +319,17 @@ nav > .models-submenu-nemesis.clicked{
     align-items: center;
     opacity: 1;
     background: #252323;
-    transition: width 1s;
+    transition: left 1s;
+    z-index: 98;
 }
 
-@keyframes submenu-nemesis {
-    0%   {width: 1%;}
-    100% {width: 15%;}
+nav > .models-submenu-nemesis.back{
+    transition: left 1s;
+    left:18%;
+    z-index: 1;
 }
+
+
 
 
 .models-submenu-nemesis.clicked > h2{
