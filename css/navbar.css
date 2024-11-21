@@ -6,6 +6,12 @@ body{
 }
 
 nav{
+    display: flex;
+    flex-flow: row;
+    height: 100%;
+}
+
+.nav{
     display: inline-flex;
     width: 100%;
     background: #ECECEC;
@@ -31,21 +37,21 @@ nav{
     scale: 0.6;
 }
 
-nav > h1{
+.nav > h1{
     font-size: 50px;
     margin-right: 40%;
 }
 
-nav > h2:first-of-type{
+.nav > h2:first-of-type{
     margin-right: 1%;
     width: 10%;
 }
 
-nav > h2:last-of-type{
+.nav > h2:last-of-type{
     margin-right: 20%;
 }
 
-nav:has(> .hamburger.clicked){
+.nav:has(> .hamburger.clicked){
     background: #4C4747;
     width: 15%;
     height: 100%;
@@ -80,8 +86,9 @@ nav:has(> .hamburger.clicked){
     margin-top: 20%;
 }
 
-nav > .menu{
+.nav > .menu{
     display: none;
+    z-index: 99;
 }
 
 .hamburger.clicked ~ .menu{
@@ -104,26 +111,81 @@ nav > .menu{
     margin-left: 10%;
 }
 
-nav > .models{
+nav > .models-submenu{
     display: none;
 }
 
-.hamburger.clicked ~ .menu{
+nav > .models-submenu.almost-clicked{
+    display: flex;
+    width: 0%;
+    transition: width 1s;
+    opacity: 0;
+    z-index: 98;
+}
+
+
+
+nav > .models-submenu.clicked{
     display: flex;
     flex-flow: column;
     color: white;
-    width: 100%;
+    height: 100%;
+    width: 15%;
     align-items: center;
-    margin-bottom: 220%;
+    opacity: 1;
+    background: #393737;
+    z-index: 98;
 }
 
-
-.hamburger.clicked ~ .menu > h2{
+.models-submenu.clicked > h2{
+    margin-top: 25%;
     font-size: 40px;
 }
-
-.hamburger.clicked ~ .menu > h3{
+.models-submenu.clicked > h3{
     font-size: 22px;
     align-self: flex-start;
     margin-left: 10%;
 }
+
+/*  */
+
+nav > .models-submenu-blackwidow{
+    display: none;
+}
+
+nav > .models-submenu-blackwidow.almost-clicked{
+    display: flex;
+    width: 1%;
+    opacity: 0;
+    
+}
+
+nav > .models-submenu-blackwidow.clicked{
+    animation: submenu-blackwidow 1s forwards;
+    display: flex;
+    flex-flow: column;
+    color: white;
+    height: 100%;
+    width: 15%;
+    align-items: center;
+    opacity: 1;
+    background: #252323;
+    transition: width 1s;
+}
+
+@keyframes submenu-blackwidow {
+    0%   {width: 1%;}
+    100% {width: 15%;}
+}
+
+
+.models-submenu-blackwidow.clicked > h2{
+    margin-top: 35%;
+    font-size: 40px;
+}
+.models-submenu-blackwidow.clicked > h3{
+    font-size: 22px;
+    align-self: flex-start;
+    margin-left: 10%;
+}
+
