@@ -3,40 +3,31 @@
 body{
     font-family: "Nixie One", system-ui;
     margin: 0px;
-}
-
-nav{
-    display: inline-flex;
-    width: 100%;
     background: #ECECEC;
-    height: 10vh;
-    align-items: center;
-    justify-content: flex-start;
 }
 
-
-.pfp{
-    scale: 0.6;
-
+.hero{
+    display: flex;
+    flex-flow: column;
+    z-index: -200;
+    margin-top: 5%;
+    background-image: url(../img/hero-img-placeholder.png);
+    height: 89.7%;
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.hero-text{
+    position: absolute;
+    z-index: -200;
+    margin-top: 1%;
+    left: 24%;
 }
 
-
-.hamburger{
-    margin-left: 0.5%;
-    margin-right: 4%;
-    scale: 0.6;
+.hero-text > h3{
+    font-size: 45px;
 }
 
-nav > h1{
-    font-size: 50px;
-    margin-right: 40%;
-}
-
-nav > h2:first-of-type{
-    margin-right: 1%;
-    width: 10%;
-}
-
-nav > h2:last-of-type{
-    margin-right: 20%;
+.hero-text > h2{
+    font-size: 60px;
 }
