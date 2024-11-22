@@ -7,6 +7,9 @@ body{
     margin: 0px;
 }
 
+svg{
+}
+
 nav{
     display: flex;
     flex-flow: row;
@@ -22,7 +25,7 @@ nav{
 .nav{
     display: inline-flex;
     width: 100%;
-    background-image: linear-gradient(#b5b5b5, #ECECEC);
+    background-image: linear-gradient(#444444, #020103);
     height: 10vh;
     align-items: center;
     justify-content: flex-start;
@@ -43,12 +46,19 @@ section.nav{
 
 }
 
+#exit_nav{
+    cursor: pointer;
+}
 
 .hamburger{
     margin-left: 0.5%;
     margin-right: 4%;
     scale: 0.6;
+    cursor: pointer;
 }
+
+
+
 
 .nav > h1{
     font-size: 50px;
@@ -197,6 +207,17 @@ nav > .merch-submenu.almost-clicked{
     z-index: 3;
 }
 
+.nav > h1{
+    color: white;
+}
+
+.nav > h2{
+    color: white;
+}
+
+.nav > h3{
+    color: white;
+}
 
 
 nav > .merch-submenu.clicked{

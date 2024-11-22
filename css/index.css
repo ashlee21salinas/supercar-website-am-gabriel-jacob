@@ -3,7 +3,7 @@
 body{
     font-family: "Nixie One", system-ui;
     margin: 0px;
-    background: #ECECEC;
+    background: #020103;
 }
 
 .hero{
@@ -22,6 +22,7 @@ body{
     z-index: -200;
     margin-top: 1%;
     left: 24%;
+    color: white;
 }
 
 .hero-text > h3{

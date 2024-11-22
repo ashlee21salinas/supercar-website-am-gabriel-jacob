@@ -2,8 +2,10 @@
 
 body{
     font-family: "Nixie One", system-ui;
-    
+    background-color: black;
+    color: white;
 }
+
 
 .footer{
     display: flex;
@@ -15,7 +17,7 @@ body{
 hr{
     width: 85vw;
     border-width: 0.4vh;
-    border-color: #393737;
+    border-color: white;
     border-style: solid;
 }
 
