@@ -16,9 +16,40 @@ document.getElementById("back_merch-submenu").addEventListener("click", back_mer
 
 //opens navbar
 function hamburger_click() {
-  document.getElementById("hamburger").classList.add('clicked')
+  document.getElementById("nav").style.marginLeft ="0%"
+  document.getElementById("nav").style.width="3%"
+  document.getElementById("left-bar").style.top="0"
+  document.getElementById("menu").style.top="0"
   document.getElementById("models-submenu").classList.add('almost-clicked')
   document.getElementById("merch-submenu").classList.add('almost-clicked')
+  document.getElementById("nav-blackwidow").style.fontSize= '0';
+  document.getElementById("nav-trion").style.fontSize= '0';
+  document.getElementById("nav-nemesis").style.fontSize= '0';
+  document.getElementById("hamburger").style.scale= '0';
+  document.getElementById("pfp").style.scale= '0';
+
+  document.getElementById("logo").style.transition='width 1s, height 1s'
+  document.getElementById("exit_nav").style.transition='width 1s, height 1s'
+  
+  setTimeout(() =>  document.getElementById("nav").style.opacity="0.1", 500)
+  setTimeout(() =>  document.getElementById("nav").style.opacity="1", 1000)
+  setTimeout(() =>  document.getElementById("nav").style.backgroundImage="url(../img/left-bar.png)", 1100)
+ 
+  setTimeout(() =>  document.getElementById("left-bar").style.justifyContent="center", 1400)
+  setTimeout(() =>  document.getElementById("svg_group").style.marginBottom="90vh", 1800)
+  
+
+ 
+  setTimeout(() =>  document.getElementById("hamburger").classList.add('clicked'), 1400)
+  setTimeout(() =>  document.getElementById("logo").style.width='35px', 1700)
+  setTimeout(() =>  document.getElementById("logo").style.height='35px', 1700)
+  setTimeout(() =>  document.getElementById("exit_nav").style.width='35px', 1700)
+  setTimeout(() =>  document.getElementById("exit_nav").style.height='35px', 1700)
+  setTimeout(() =>  document.getElementById("menu").style.left = '3%', 3181)
+  setTimeout(() =>  document.getElementById("menu").classList.remove("exit"), 1400)
+
+  
+  
   
 }
 
@@ -33,6 +64,7 @@ function hamburger_click() {
 
       document.getElementById("merch-submenu").classList.add('back')
       setTimeout(back_merch_removed, 1000)
+      document.getElementById("models-submenu").classList.add('almost-clicked')
       document.getElementById("models-submenu").classList.add('clicked')
       document.getElementById("models-submenu-blackwidow").classList.add('almost-clicked')
       document.getElementById("models-submenu-nemesis").classList.add('almost-clicked')
@@ -149,18 +181,25 @@ function hamburger_click() {
       document.getElementById("models-submenu-blackwidow").classList.remove('models-blackwidow-back')
       document.getElementById("models-submenu-blackwidow").classList.remove('back')
       document.getElementById("models-submenu-blackwidow").classList.remove('clicked')
-      document.getElementById("merch-submenu-blackwidow").classList.remove('almost-clicked')
+      document.getElementById("models-submenu-blackwidow").classList.remove('almost-clicked')
+      document.getElementById("models-submenu-blackwidow").classList.remove('exit')
 
+
+      
       document.getElementById("models-submenu-nemesis").classList.remove('models-nemesis-back')
       document.getElementById("models-submenu-nemesis").classList.remove('back')
       document.getElementById("models-submenu-nemesis").classList.remove('clicked')
-      document.getElementById("merch-submenu-nemesis").classList.remove('almost-clicked')
+      document.getElementById("models-submenu-nemesis").classList.remove('almost-clicked')
+      document.getElementById("models-submenu-nemesis").classList.remove('exit')
+
+
       
       document.getElementById("models-submenu").classList.remove('back')
       document.getElementById("models-submenu").classList.remove('clicked')
-      document.getElementById("merch-submenu").classList.remove('almost-clicked')
+      document.getElementById("models-submenu").classList.remove('almost-clicked')
+      document.getElementById("models-submenu").classList.remove('exit')
 
-      document.getElementById("menu").classList.remove("exit")
+
 
 
       document.getElementById("merch-submenu").classList.remove('back')
@@ -176,14 +215,23 @@ function merch_nav_click() {
   if (document.getElementById("models-submenu").classList.contains("clicked")){
     
     if(document.getElementById("models-submenu-blackwidow").classList.contains("clicked")){
+      document.getElementById("models-submenu").classList.add("back")
       document.getElementById("models-submenu-blackwidow").classList.add("models-blackwidow-back")
       document.getElementById("merch-submenu").classList.add('clicked')
-      setTimeout(all_models_close, 1000)
+
+
+      setTimeout(remove_click, 1000)
+      setTimeout(remove_models_blank_back, 1000)
+      setTimeout(remove_back, 1000)
     }
     else if (document.getElementById("models-submenu-nemesis").classList.contains("clicked")){
+      document.getElementById("models-submenu").classList.add("back")
       document.getElementById("models-submenu-nemesis").classList.add("models-nemesis-back")
       document.getElementById("merch-submenu").classList.add('clicked')
-      setTimeout(all_models_close, 1000)
+
+      setTimeout(remove_click, 1000)
+      setTimeout(remove_models_blank_back, 1000)
+      setTimeout(remove_back, 1000)
     }
     else{
       document.getElementById("models-submenu").classList.add('back')
@@ -211,58 +259,157 @@ function back_merch_submenu(){
 
 
 
-  //closes navbar
-function exit_nav_click() {
 
-  if(document.getElementById("models-submenu").classList.contains('clicked')){
 
-    if(document.getElementById("models-submenu-blackwidow").classList.contains("clicked")){
-      document.getElementById("models-submenu-blackwidow").classList.add("models-blackwidow-back")
-      document.getElementById("models-submenu").classList.add("back")
-      document.getElementById("menu").classList.add("exit")
-      setTimeout(all_models_close, 1000)
-      setTimeout(() => document.getElementById("hamburger").classList.remove('clicked'), 1050)
-    }
-    else if (document.getElementById("models-submenu-nemesis").classList.contains("clicked")){
-      document.getElementById("models-submenu-nemesis").classList.add("exit")
-      document.getElementById("models-submenu").classList.add("back")
-      document.getElementById("menu").classList.add("exit")
-      setTimeout(all_models_close, 1000)
-      setTimeout(() => document.getElementById("hamburger").classList.remove('clicked'), 1050)
-      
-    }
-    else{
-      document.getElementById("models-submenu").classList.add("back")
-      document.getElementById("menu").classList.add("exit")
-      setTimeout(all_models_close, 1000)
-      setTimeout(() => document.getElementById("hamburger").classList.remove('clicked'), 6050)
-    }
 
-  }
-  else if(document.getElementById("merch-submenu").classList.contains('clicked'))
-  {
-    
-    document.getElementById("merch-submenu").classList.add("exit")
-    
-    document.getElementById("menu").classList.add("exit")
-    setTimeout(all_models_close, 1000)
-    setTimeout(() => document.getElementById("hamburger").classList.remove('clicked'), 1050)
-    
-  }
-  
-  // document.getElementById("hamburger").classList.remove('clicked')
 
-  // document.getElementById("models-submenu").classList.remove('clicked')
-  // document.getElementById("models-submenu").classList.remove('almost-clicked')
 
-  // document.getElementById("models-submenu-blackwidow").classList.remove('clicked')
-  // document.getElementById("models-submenu-blackwidow").classList.remove('almost-clicked')
+function remove_click(){
+  document.getElementById("models-submenu-blackwidow").classList.remove("clicked")
+  document.getElementById("models-submenu-nemesis").classList.remove("clicked")
+  document.getElementById("models-submenu").classList.remove("clicked")
+}
 
-  // document.getElementById("models-submenu-nemesis").classList.remove('clicked')
-  // document.getElementById("models-submenu-nemesis").classList.remove('almost-clicked')
+function remove_models_blank_back(){
+  document.getElementById("models-submenu-blackwidow").classList.remove("models-blackwidow-back")
+  document.getElementById("models-submenu-nemesis").classList.remove("models-nemesis-back")
+}
 
-  // document.getElementById("merch-submenu").classList.remove('clicked')
-  // document.getElementById("merch-submenu").classList.remove('almost-clicked')
+function remove_back(){
+  document.getElementById("models-submenu").classList.remove("back")
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.getElementById("nav").style.marginLeft ="0%"
+  
+  
+  
+  
+  
+  
+  
+ 
+  
+
+
+
+
+
+
+
+
+
+
+
+  //closes navbar
+  function exit_nav_click() {
+
+    if(document.getElementById("models-submenu").classList.contains('clicked')){
+  
+      if(document.getElementById("models-submenu-blackwidow").classList.contains("clicked")){
+        document.getElementById("models-submenu-blackwidow").classList.add("exit")
+        document.getElementById("models-submenu").classList.add("exit")
+        document.getElementById("menu").style.left = '-15%'
+        setTimeout(all_models_close, 1000)
+        setTimeout(() => document.getElementById("hamburger").classList.remove('clicked'), 1350)
+        navbar_close_animation()
+      }
+      else if (document.getElementById("models-submenu-nemesis").classList.contains("clicked")){
+        document.getElementById("models-submenu-nemesis").classList.add("exit")
+        document.getElementById("models-submenu").classList.add("exit")
+        document.getElementById("menu").style.left = '-15%'
+        setTimeout(all_models_close, 1000)
+        setTimeout(() => document.getElementById("hamburger").classList.remove('clicked'), 1350)
+        navbar_close_animation()
+        
+      }
+      else{
+        document.getElementById("models-submenu").classList.add("exit")
+        document.getElementById("menu").style.left = '-15%'
+        setTimeout(all_models_close, 1000)
+        setTimeout(() => document.getElementById("hamburger").classList.remove('clicked'), 1050)
+        navbar_close_animation()
+      }
+  
+    }
+    else if(document.getElementById("merch-submenu").classList.contains('clicked'))
+    {
+      
+      document.getElementById("merch-submenu").classList.add("exit")
+      
+      document.getElementById("menu").style.left = '-15%'
+      setTimeout(all_models_close, 1000)
+      setTimeout(() => document.getElementById("hamburger").classList.remove('clicked'), 1050)
+      navbar_close_animation()
+      
+    }
+    else{
+      document.getElementById("menu").style.left = '-15%'
+      setTimeout(() => document.getElementById("hamburger").classList.remove('clicked'), 1050)
+      navbar_close_animation()
+
+      
+
+      
+
+
+      
+      
+    }
+    
+  }
+
+
+  function navbar_close_animation(){
+      document.getElementById("models-submenu").classList.remove('almost-clicked')
+      document.getElementById("merch-submenu").classList.remove('almost-clicked')
+
+      
+      
+      
+      
+      
+      
+
+      setTimeout(() =>  document.getElementById("nav-blackwidow").style.fontSize= '24px', 2000)
+      setTimeout(() =>  document.getElementById("nav-trion").style.fontSize= '50px', 2000)
+      setTimeout(() =>  document.getElementById("nav-nemesis").style.fontSize= '24px', 2000)
+      setTimeout(() =>  document.getElementById("hamburger").style.scale= '0.6', 2000)
+      setTimeout(() =>  document.getElementById("pfp").style.scale= '0.6', 2000)
+
+
+      document.getElementById("logo").style.transition='width 1s, height 1s'
+      document.getElementById("exit_nav").style.transition='width 1s, height 1s'
+
+
+      setTimeout(() =>  document.getElementById("logo").style.width='0px', 500)
+      setTimeout(() =>  document.getElementById("logo").style.height='0px', 500)
+      setTimeout(() =>  document.getElementById("exit_nav").style.width='0px', 500)
+      setTimeout(() =>  document.getElementById("exit_nav").style.height='0px', 500)
+
+      // setTimeout(() =>  document.getElementById("nav").style.height="10vh", 900)
+      setTimeout(() =>  document.getElementById("nav").style.backgroundImage="linear-gradient(#444444, #020103)", 1750)
+
+      setTimeout(() =>  document.getElementById("nav").style.width="100%", 2000)
+      setTimeout(() =>  document.getElementById("left-bar").style.top="-15vh", 900)
+
+      setTimeout(() =>  document.getElementById("left-bar").style.justifyContent="none", 2000)
+      setTimeout(() =>  document.getElementById("svg_group").style.marginBottom="0vh", 2000)
+      
+  }

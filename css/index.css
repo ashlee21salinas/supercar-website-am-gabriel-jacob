@@ -32,3 +32,29 @@ body{
 .hero-text > h2{
     font-size: 60px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.left-bar > svg{
+    height: 35px;
+    width: 35px;
+}
+
+.left-bar > svg:last-of-type{
+    margin-top: 20%;
+}
