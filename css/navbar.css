@@ -63,8 +63,10 @@ section.nav{
 }
 
 .pfp{
-    scale: 0.6;
-    transition: scale 1s;
+    width: 90px;
+    height: 90px;
+    transition: width 1s, height 1s;
+    margin-left: 4%;
 }
 
 #exit_nav{
@@ -75,9 +77,10 @@ section.nav{
 .hamburger{
     margin-left: 0.5%;
     margin-right: 4%;
-    scale: 0.6;
+    width: 70px;
+    height: 70px;
     cursor: pointer;
-    transition: scale 1s;
+    transition: width 1s, height 1s;
 }
 
 
@@ -451,4 +454,91 @@ nav > .models-submenu.exit{
 
 #exit_nav{
 
+}
+
+@media screen and (min-width:1024px) and (max-width:1440px){
+    .pfp{
+        margin-right: 1%;
+    }
+
+    .models-submenu-blackwidow.clicked > h2{
+        margin-left: 20%;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px){
+    .nav > h1{
+        font-size: 30px;
+    }
+
+    .nav > h2{
+        font-size: 15px;
+    }
+    
+    .pfp{
+        margin-right: 1%;
+    }
+
+    .left-bar:has(+ .hamburger.clicked){
+        width: 4%;
+    }
+
+    .hamburger.clicked ~ .menu{
+        width: 20%;
+        margin-left: 1%;
+    }
+
+    nav > .models-submenu.clicked{
+        width: 20%;
+        margin-left: 6%;
+    }
+
+    nav > .models-submenu.back{
+        transition: left 1s;
+        left: -3%;
+        z-index: 3;
+    }
+
+    nav > .models-submenu.exit{
+        transition: left 1s;
+        left: -20%;
+        
+    }
+
+    nav > .models-submenu-blackwidow.clicked{
+        width: 20%;
+        margin-left: 11%;
+    }
+
+    nav > .models-submenu-blackwidow.clicked > h2{
+        margin-left: 20%;
+    }
+
+    nav > .models-submenu-nemesis.clicked{
+        width: 20%;
+        margin-left: 11%;
+    }
+
+    nav > .models-submenu-nemesis.back{
+        transition: left 1s;
+        left:12%;
+        
+    }
+
+    nav > .merch-submenu.clicked{
+        width: 20%;
+        margin-left: 6%;
+    }
+
+    nav > .merch-submenu.back{
+        transition: left 1s;
+        left: -3%;
+        z-index: 3;
+    }
+
+    nav > .merch-submenu.exit{
+        transition: left 1s;
+        left: -20%;
+        
+    }
 }

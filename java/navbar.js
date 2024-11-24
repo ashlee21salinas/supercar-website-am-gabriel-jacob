@@ -11,6 +11,8 @@ document.getElementById("back_blackwidow").addEventListener("click", back_blackw
 document.getElementById("back_nemesis").addEventListener("click", back_nemesis)
 document.getElementById("back_merch-submenu").addEventListener("click", back_merch_submenu)
 
+const nav_trion_h1 = document.getElementById("nav-trion"); 
+const originalFontSize = window.getComputedStyle(nav_trion_h1).fontSize; 
 
 
 
@@ -63,18 +65,22 @@ function hamburger_click() {
     if(document.getElementById("merch-submenu").classList.contains("clicked")){
 
       document.getElementById("merch-submenu").classList.add('back')
+      document.getElementById("merch-submenu").style.zIndex = "100"
       setTimeout(back_merch_removed, 1000)
+      document.getElementById("models-submenu").style.zIndex = "101"
       document.getElementById("models-submenu").classList.add('almost-clicked')
       document.getElementById("models-submenu").classList.add('clicked')
       document.getElementById("models-submenu-blackwidow").classList.add('almost-clicked')
       document.getElementById("models-submenu-nemesis").classList.add('almost-clicked')
       document.getElementById("merch-submenu").classList.add('almost-clicked')
 
+
     }
     else{
 
     
       document.getElementById("models-submenu").classList.add('clicked')
+      document.getElementById("models-submenu").style.zIndex = "101"
       document.getElementById("models-submenu-blackwidow").classList.add('almost-clicked')
       document.getElementById("models-submenu-nemesis").classList.add('almost-clicked')
       document.getElementById("merch-submenu").classList.add('almost-clicked')
@@ -141,6 +147,7 @@ function hamburger_click() {
 
     function back_blackwidow() {
       document.getElementById("models-submenu-blackwidow").classList.add('back')
+      
       setTimeout(back_blackwidow_removed, 1000)
     }
 
@@ -157,6 +164,7 @@ function hamburger_click() {
     function back_model_removed(){
       document.getElementById("models-submenu").classList.remove('back')
       document.getElementById("models-submenu").classList.remove('clicked')
+      document.getElementById("models-submenu").style.zIndex = "100"
     }
 
     function back_nemesis_removed(){
@@ -174,6 +182,7 @@ function hamburger_click() {
     function back_merch_removed(){
       document.getElementById("merch-submenu").classList.remove('back')
       document.getElementById("merch-submenu").classList.remove('clicked')
+      document.getElementById("merch-submenu").style.zIndex = "100"
     }
 
 
@@ -218,7 +227,7 @@ function merch_nav_click() {
       document.getElementById("models-submenu").classList.add("back")
       document.getElementById("models-submenu-blackwidow").classList.add("models-blackwidow-back")
       document.getElementById("merch-submenu").classList.add('clicked')
-
+      document.getElementById("models-submenu").style.zIndex = "100"
 
       setTimeout(remove_click, 1000)
       setTimeout(remove_models_blank_back, 1000)
@@ -228,13 +237,14 @@ function merch_nav_click() {
       document.getElementById("models-submenu").classList.add("back")
       document.getElementById("models-submenu-nemesis").classList.add("models-nemesis-back")
       document.getElementById("merch-submenu").classList.add('clicked')
-
+      document.getElementById("models-submenu").style.zIndex = "100"
       setTimeout(remove_click, 1000)
       setTimeout(remove_models_blank_back, 1000)
       setTimeout(remove_back, 1000)
     }
     else{
       document.getElementById("models-submenu").classList.add('back')
+      document.getElementById("models-submenu").style.zIndex = "100"
       setTimeout(back_model_removed, 1000)
       document.getElementById("merch-submenu").classList.add('clicked')
     }
@@ -388,10 +398,10 @@ document.getElementById("nav").style.marginLeft ="0%"
       
 
       setTimeout(() =>  document.getElementById("nav-blackwidow").style.fontSize= '24px', 2000)
-      setTimeout(() =>  document.getElementById("nav-trion").style.fontSize= '50px', 2000)
+      setTimeout(() =>  document.getElementById("nav-trion").style.fontSize= originalFontSize, 2000)
       setTimeout(() =>  document.getElementById("nav-nemesis").style.fontSize= '24px', 2000)
-      setTimeout(() =>  document.getElementById("hamburger").style.scale= '0.6', 2000)
-      setTimeout(() =>  document.getElementById("pfp").style.scale= '0.6', 2000)
+      setTimeout(() =>  document.getElementById("hamburger").style.scale= '1', 2000)
+      setTimeout(() =>  document.getElementById("pfp").style.scale= '1', 2000)
 
 
       document.getElementById("logo").style.transition='width 1s, height 1s'
