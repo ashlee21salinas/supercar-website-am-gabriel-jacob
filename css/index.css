@@ -4,23 +4,34 @@ body{
     font-family: "Nixie One", system-ui;
     margin: 0px;
     background: #020103;
+    z-index: -10000;
 }
 
 .hero{
+    position: relative;
     display: flex;
     flex-flow: column;
-    z-index: -200;
-    margin-top: 5%;
-    background-image: url(../img/hero-img-placeholder.png);
-    height: 89.7%;
+    margin-top: 5%;  
+    height: 85vh;
     background-size: 75%;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    background-image: url(../homepage-img/hero-img-placeholder.png);
+    justify-content: flex-end;
+    width: 100%;
+    z-index: 1;
+    animation: ;
 }
+
+    @keyframes backgroundimg {
+        0% {margin-left: 0;}
+        100% {margin-left: 100%;}
+    }
+
 .hero-text{
     position: absolute;
-    z-index: -200;
-    margin-top: 1%;
+
+    margin-bottom: 25%;
     left: 24%;
     color: white;
 }
@@ -34,27 +45,43 @@ body{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.left-bar > svg{
-    height: 35px;
-    width: 35px;
+.hero-carosel-options{
+    align-self: center;
 }
 
-.left-bar > svg:last-of-type{
-    margin-top: 20%;
+.hero-discover{
+    display: flex;
+    justify-content: center;
+    height: 50%;
 }
+
+.discover{
+    margin-top: 2%;
+    font-family: "Nixie One";
+   background-color: rgba(170, 169, 169, 0.60);
+   border: none;
+   border-radius: 58px;
+   color: white;
+   font-size: 25px;
+   width: 50%;
+   height: 4.5vh;
+   cursor: pointer;
+}
+
+.index_carosel-option1, .index_carosel-option2, .index_carosel-option3, .index_carosel-option4{
+    height: 4.5vh;
+    width: 3.4vw;
+    border-radius: 100px;
+    border: none;
+    background-color: rgba(170, 169, 169, 0.60);
+    transition: width 0.5s;
+    cursor: pointer;
+}
+
+.index_carosel-option1.selected, .index_carosel-option2.selected, .index_carosel-option3.selected, .index_carosel-option4.selected{
+    width: 5vw;
+    cursor: initial;
+}
+
+
+

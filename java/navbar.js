@@ -11,6 +11,10 @@ document.getElementById("back_blackwidow").addEventListener("click", back_blackw
 document.getElementById("back_nemesis").addEventListener("click", back_nemesis)
 document.getElementById("back_merch-submenu").addEventListener("click", back_merch_submenu)
 
+
+
+
+
 const nav_trion_h1 = document.getElementById("nav-trion"); 
 const originalFontSize = window.getComputedStyle(nav_trion_h1).fontSize; 
 
@@ -18,6 +22,9 @@ const originalFontSize = window.getComputedStyle(nav_trion_h1).fontSize;
 
 //opens navbar
 function hamburger_click() {
+
+  document.getElementById("offical-nav").style.zIndex = "2"
+
   document.getElementById("nav").style.marginLeft ="0%"
   document.getElementById("nav").style.width="3%"
   document.getElementById("left-bar").style.top="0"
@@ -329,7 +336,7 @@ document.getElementById("nav").style.marginLeft ="0%"
 
   //closes navbar
   function exit_nav_click() {
-
+      
     if(document.getElementById("models-submenu").classList.contains('clicked')){
   
       if(document.getElementById("models-submenu-blackwidow").classList.contains("clicked")){
@@ -421,5 +428,8 @@ document.getElementById("nav").style.marginLeft ="0%"
 
       setTimeout(() =>  document.getElementById("left-bar").style.justifyContent="none", 2000)
       setTimeout(() =>  document.getElementById("svg_group").style.marginBottom="0vh", 2000)
+      setTimeout(() =>  document.getElementById("offical-nav").style.zIndex = "0", 2000)
+
       
   }
+
