@@ -7,6 +7,7 @@ body{
     margin: 0px;
 }
 
+
 nav{
     display: flex;
     flex-flow: row;
@@ -22,37 +23,77 @@ nav{
 .nav{
     display: inline-flex;
     width: 100%;
-    background-image: linear-gradient(#b5b5b5, #ECECEC);
+    background-image: linear-gradient(#444444, #020103);
     height: 10vh;
     align-items: center;
     justify-content: flex-start;
-    transition: background 2s, width 1.2s, height 1.2s;
+    transition: background-image 2s, width 1.5s, height 1.2s, opacity 0.5s;
     
 }
 
 section.nav{
-    z-index: 200;
+    
 }
 
 .left-bar{
-    display: none;
+    position: absolute;
+    z-index: 800;
+    display: show;
+    height: 0;
+    /* left:0;
+    top:0; */
+}
+
+.left-bar > .left-bar-svg_group >svg{
+    height: 0px;
+    width: 0px;
+    
+}
+
+.left-bar-svg_group{
+    display: flex;
+    flex-flow: column nowrap;
+    transition: margin-bottom 2s;
+    margin-bottom: 0vh;
+    margin-left: -5%;
+}
+
+.left-bar > .left-bar-svg_group > svg:last-of-type{
+    margin-top: 20%;
 }
 
 .pfp{
-    scale: 0.6;
-
+    width: 90px;
+    height: 90px;
+    transition: width 1s, height 1s;
+    margin-left: 4%;
 }
 
+#exit_nav{
+    cursor: pointer;
+    
+}
 
 .hamburger{
     margin-left: 0.5%;
     margin-right: 4%;
-    scale: 0.6;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    transition: width 1s, height 1s;
 }
 
+
+
+
 .nav > h1{
+    transition: font-size 1s;
     font-size: 50px;
     margin-right: 40%;
+}
+
+.nav > h2{
+    transition: font-size 1s;
 }
 
 .nav > h2:first-of-type{
@@ -65,7 +106,7 @@ section.nav{
 }
 
 .nav:has(> .hamburger.clicked){
-    background: #4C4747;
+    background-color: white;
     width: 15%;
     height: 100%;
     margin-left: 3%;
@@ -81,36 +122,38 @@ section.nav{
 
 
 .left-bar:has(+ .hamburger.clicked)  {
+    transition: height 2s;
     display: flex;
     flex-flow: column;
     height: 100%;
     background-color: #625D5D;
-    margin-left: -20%;
-    width: 20%;
+    
+    width: 3%;
     align-items: center;
+    z-index: 1000000;
+    left:0;
 }
 
-.left-bar > svg{
-    height: 35px;
-    width: 35px;
-}
 
-.left-bar > svg:last-of-type{
-    margin-top: 20%;
-}
 
 .nav > .menu{
+    position: absolute;
     display: none;
-    z-index: 100;
+    z-index: 300;
+    left: -15%;
 }
 
 .hamburger.clicked ~ .menu{
     display: flex;
     flex-flow: column;
     color: white;
-    width: 100%;
+    width: 15%;
     align-items: center;
-    margin-bottom: 220%;
+    background: #4C4747;
+    height: 100%;
+    left: -15%;
+    transition: left 1.5s;
+    z-index: 300;
 }
 
 
@@ -133,7 +176,7 @@ section.nav{
 nav > .models-submenu{
     position: absolute;
     display: none;
-    z-index: 1;
+    z-index: 100;
 }
 
 nav > .models-submenu.almost-clicked{
@@ -143,7 +186,7 @@ nav > .models-submenu.almost-clicked{
     
     left: 3%;
     height: 100%;
-    z-index: 3;
+
 }
 
 
@@ -160,7 +203,7 @@ nav > .models-submenu.clicked{
     opacity: 1;
     background: #393737;
     transition: left 1s;
-    z-index: 100;
+    
 }
 
 nav > .models-submenu.back{
@@ -184,19 +227,29 @@ nav > .models-submenu.back{
 nav > .merch-submenu{
     position: absolute;
     display: none;
-    z-index: 1;
+    z-index: 100;
 }
 
 nav > .merch-submenu.almost-clicked{
     display: flex;
     width: 1%;
     opacity: 0;
-    
     left: 3%;
     height: 100%;
-    z-index: 3;
+   
 }
 
+.nav > h1{
+    color: white;
+}
+
+.nav > h2{
+    color: white;
+}
+
+.nav > h3{
+    color: white;
+}
 
 
 nav > .merch-submenu.clicked{
@@ -211,7 +264,7 @@ nav > .merch-submenu.clicked{
     opacity: 1;
     background: #393737;
     transition: left 1s;
-    z-index: 100;
+    /*  */
 }
 
 nav > .merch-submenu.back{
@@ -246,7 +299,7 @@ nav > .merch-submenu.back{
 nav > .models-submenu-blackwidow{
     position: absolute;
     display: none;
-    z-index: 1;
+    
 }
 
 nav > .models-submenu-blackwidow.almost-clicked{
@@ -255,7 +308,7 @@ nav > .models-submenu-blackwidow.almost-clicked{
     opacity: 0;
     left:18%;
     height: 100%;
-    z-index: 1;
+    
 }
 
 nav > .models-submenu-blackwidow.clicked{
@@ -277,7 +330,7 @@ nav > .models-submenu-blackwidow.clicked{
 nav > .models-submenu-blackwidow.back{
     transition: left 1s;
     left:18%;
-    z-index: 1;
+    
 }
 
 
@@ -303,6 +356,7 @@ nav > .models-submenu-blackwidow.back{
 nav > .models-submenu-nemesis{
     position: absolute;
     display: none;
+    z-index: 90;
 }
 
 nav > .models-submenu-nemesis.almost-clicked{
@@ -311,7 +365,7 @@ nav > .models-submenu-nemesis.almost-clicked{
     opacity: 0;
     left:18%;
     height: 100%;
-    z-index: 1;
+    
 }
 
 nav > .models-submenu-nemesis.clicked{
@@ -332,7 +386,7 @@ nav > .models-submenu-nemesis.clicked{
 nav > .models-submenu-nemesis.back{
     transition: left 1s;
     left:18%;
-    z-index: 1;
+    
 }
 
 
@@ -346,4 +400,145 @@ nav > .models-submenu-nemesis.back{
     font-size: 22px;
     align-self: flex-start;
     margin-left: 10%;
+}
+
+
+
+
+nav > .models-submenu-blackwidow.models-blackwidow-back{
+    transition: left 1s;
+    left: 3%;
+    
+}
+
+
+nav > .models-submenu-nemesis.models-nemesis-back{
+    transition: left 1s;
+    left: 3%;
+    
+}
+
+nav > .merch-submenu.exit{
+    transition: left 1s;
+    left: -15%;
+    
+}
+
+.nav > .menu.exit{
+    z-index: 700;
+    transition: left 1.5s;
+    left: -15%;
+}
+
+nav > .models-submenu-blackwidow.exit{
+    transition: left 1.3s;
+    left: -15%;
+}
+
+
+nav > .models-submenu-nemesis.exit{
+    transition: left 1.3s;
+    left: -15%;
+    
+}
+
+nav > .models-submenu.exit{
+    transition: left 1.2s;
+    left: -15%;
+    
+}
+
+#logo{
+
+}
+
+#exit_nav{
+
+}
+
+@media screen and (min-width:1024px) and (max-width:1440px){
+    .pfp{
+        margin-right: 1%;
+    }
+
+    .models-submenu-blackwidow.clicked > h2{
+        margin-left: 20%;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px){
+    .nav > h1{
+        font-size: 30px;
+    }
+
+    .nav > h2{
+        font-size: 15px;
+    }
+    
+    .pfp{
+        margin-right: 1%;
+    }
+
+    .left-bar:has(+ .hamburger.clicked){
+        width: 4%;
+    }
+
+    .hamburger.clicked ~ .menu{
+        width: 20%;
+        margin-left: 1%;
+    }
+
+    nav > .models-submenu.clicked{
+        width: 20%;
+        margin-left: 6%;
+    }
+
+    nav > .models-submenu.back{
+        transition: left 1s;
+        left: -3%;
+        z-index: 3;
+    }
+
+    nav > .models-submenu.exit{
+        transition: left 1s;
+        left: -20%;
+        
+    }
+
+    nav > .models-submenu-blackwidow.clicked{
+        width: 20%;
+        margin-left: 11%;
+    }
+
+    nav > .models-submenu-blackwidow.clicked > h2{
+        margin-left: 20%;
+    }
+
+    nav > .models-submenu-nemesis.clicked{
+        width: 20%;
+        margin-left: 11%;
+    }
+
+    nav > .models-submenu-nemesis.back{
+        transition: left 1s;
+        left:12%;
+        
+    }
+
+    nav > .merch-submenu.clicked{
+        width: 20%;
+        margin-left: 6%;
+    }
+
+    nav > .merch-submenu.back{
+        transition: left 1s;
+        left: -3%;
+        z-index: 3;
+    }
+
+    nav > .merch-submenu.exit{
+        transition: left 1s;
+        left: -20%;
+        
+    }
 }
