@@ -5,6 +5,7 @@ body{
     margin: 0px;
     background: #020103;
     z-index: -10000;
+    overflow-x: hidden;
 }
 
 .hero{
@@ -20,17 +21,36 @@ body{
     justify-content: flex-end;
     width: 100%;
     z-index: 1;
-    animation: ;
+    
 }
 
-    @keyframes backgroundimg {
-        0% {margin-left: 0;}
-        100% {margin-left: 100%;}
-    }
+.hero-blocker{
+    position: absolute;
+    flex-flow: column;
+    margin-top: 5%;  
+    height: 85vh;
+    width: 76%;
+    animation: blah 2s forwards;
+    z-index: 1;
+    top:0;
+    left: -76%;
+    /* left: 12%; */
+    background-color: black;
+}
+
+
+@keyframes blocker-in {
+        0% {left: -76%;}
+        100% {left: 12%;}
+}
+
+@keyframes blocker-out {
+    0% {left: 12%;}
+    100% {left: 100%;}
+}
 
 .hero-text{
     position: absolute;
-
     margin-bottom: 25%;
     left: 24%;
     color: white;

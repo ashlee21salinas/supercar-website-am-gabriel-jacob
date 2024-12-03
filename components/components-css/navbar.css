@@ -106,7 +106,7 @@ section.nav{
 }
 
 .nav:has(> .hamburger.clicked){
-    background-color: white;
+    /* background-color: white; */
     width: 15%;
     height: 100%;
     margin-left: 3%;
