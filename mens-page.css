@@ -2,13 +2,15 @@
  
 body {
     font-family: "Nixie One", system-ui;
+    background-image: linear-gradient(#000000, #FDFFFB);
 }
 
 
- h1 {
-    font-size: 5vh;
+  h1{
+    font-size: 8vh;
     text-align: center;
     margin-top: 5%;
+    color: white;
  }
 
  .images {
@@ -16,6 +18,12 @@ body {
     width: 30vw;
     margin-top: 5%;
  }
+
+ .exit {
+   margin-left: 90%;
+   
+ }
+
 
 
  .row {
@@ -27,14 +35,16 @@ body {
 
  .box1 {
     background-color: gray;
-    height: 70vh;
+    height: 65vh;
     padding: 2%;
+    background-image: linear-gradient(#000000, #FDFFFB);
  }
 
  .box2 {
     background-color: gray;
-    height: 70vh;
+    height: 65vh;
     padding: 2%;
+    background-image: linear-gradient(#000000, #FDFFFB);
  }
 
  .top {
@@ -65,27 +75,106 @@ body {
     height: 5vh;
     color: white;
     font-size: 2vh;
-    background-color: black;
+   background-color: black;
     font-family: "Nixie One", system-ui;
  }
 
  .s {
     background-color: white;
-    width: 2vw;
+    width: 4vw;
+    height: 4vh;
+    font-size: 2vh;
     text-align: center;
+    font-family: "Nixie One", system-ui;
  }
+
+ .s:hover {
+   background-color: #6A6B6A;
+ }
+ .s:focus {
+   background-color: #6A6B6A;
+ }
+
+ .m:hover {
+   background-color: #6A6B6A;
+ }
+ .m:focus {
+   background-color: #6A6B6A;
+ }
+
+ .l:hover {
+   background-color: #6A6B6A;
+ }
+ .l:focus {
+   background-color: #6A6B6A;
+ }
+
 
  .m {
     background-color: white;
-    width: 2vw;
+    width: 4vw;
+    height: 4vh;
+    font-size: 2vh;
     text-align: center;
+    font-family: "Nixie One", system-ui;
  }
 
  .l {
     background-color: white;
-    width: 2vw;
+    width: 4vw;
+    height: 4vh;
+    font-size: 2vh;
     text-align: center;
+    font-family: "Nixie One", system-ui;
  }
+
+ .size {
+   display: flex;
+   justify-content: center;
+   margin-top: 4%;
+ }
+
+ .color {
+   display: flex;
+   justify-content: center;
+ }
+
+ .white {
+   height: 6vh;
+   width: 3vw;
+   border-radius: 100%;
+   background-color: white;
+   color: white;
+ }
+ .black {
+   margin-left: 30%;
+   height: 6vh;
+   width: 3vw;
+   border-radius: 100%;
+   background-color: black;
+   color: black;
+ }
+
+ .add {
+   width: 6vw;
+   height: 5vh;
+   background-color: black;
+   color: white;
+   font-size: 1.5vh;
+   margin-top: 3%;
+   font-family: "Nixie One", system-ui;
+ }
+
+ 
+
+
+   
+
+ 
+
+
+
+
 
  
 
