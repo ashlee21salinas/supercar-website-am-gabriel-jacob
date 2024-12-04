@@ -4,6 +4,9 @@ document.getElementById("index_carosel-option3").addEventListener("click", caros
 document.getElementById("index_carosel-option4").addEventListener("click", carosel_option4);
 document.getElementById("side-scroll-feature").addEventListener("click", side_feature_open);
 
+document.getElementById("side-scroll-car").addEventListener("click", side_feature_open);
+
+
 
 const option1 = document.getElementById("index_carosel-option1")
 const option2 = document.getElementById("index_carosel-option2")
@@ -12,7 +15,10 @@ const option4 = document.getElementById("index_carosel-option4")
 const hero = document.getElementById("hero")
 const blocker = document.getElementById("hero-blocker")
 
-side_feature_clicked = false
+const sideblocker = document.getElementById("side-blocker")
+
+
+side_feature_clicked = true
 
 function carosel_option1(){
     option1.classList.add("selected")
@@ -68,11 +74,29 @@ function carosel_option4(){
 function side_feature_open(){
     if( side_feature_clicked == false)
     {
-        document.getElementById("side-scroll-feature").style.backgroundImage = "url(homepage-img/side-view-maybe2.jpg)"
+        document.getElementById("side-scroll-car").style.bottom = "-55.7%"
+        document.getElementById("side-scroll-car").style.right = "5%"
         side_feature_clicked = true
+        sideblocker.style.animationName = "sideblocker-out"
+
+        // setTimeout(() =>  document.getElementById("scroll-alltext").style.zIndex = "-1", 1000)
+        // document.getElementById("scroll-alltext").style.opacity = "0"
+        
     }
     else{
-        document.getElementById("side-scroll-feature").style.backgroundImage = "url(homepage-img/side-view-maybe.jpg)"
+        document.getElementById("side-scroll-car").style.bottom = "-55.7%"
+        document.getElementById("side-scroll-car").style.right = "47%"
+        // document.getElementById("side-scroll-feature").style.width = "37.5%"
+
+        sideblocker.style.animationName = "sideblocker-in"
+
+        
+        // setTimeout(() =>  document.getElementById("scroll-alltext").style.zIndex = "2", 1000)
+        // setTimeout(() =>  document.getElementById("scroll-alltext").style.opacity = "1", 1000)
+
+
         side_feature_clicked = false
     }
 }
+
+
