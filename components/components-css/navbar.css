@@ -27,21 +27,22 @@ nav{
     height: 10vh;
     align-items: center;
     justify-content: flex-start;
-    transition: background-image 2s, width 1.5s, height 1.2s, opacity 0.5s;
+    transition: background-image 2s, width 1.3s, opacity 0.6s;
     
 }
 
-section.nav{
-    
-}
+
 
 .left-bar{
+    display: flex;
     position: absolute;
     z-index: 800;
-    display: show;
+    width: 3%;
     height: 0;
-    /* left:0;
-    top:0; */
+    transition: height 0.9s;
+    background-color: #625D5D;
+    top:0%
+    /* top:0; */
 }
 
 .left-bar > .left-bar-svg_group >svg{
@@ -53,7 +54,7 @@ section.nav{
 .left-bar-svg_group{
     display: flex;
     flex-flow: column nowrap;
-    transition: margin-bottom 2s;
+    transition: margin-bottom 1.6s;
     margin-bottom: 0vh;
     margin-left: -5%;
 }
@@ -67,6 +68,7 @@ section.nav{
     height: 90px;
     transition: width 1s, height 1s;
     margin-left: 4%;
+    order: 2;
 }
 
 #exit_nav{
@@ -86,7 +88,7 @@ section.nav{
 
 
 
-.nav > h1{
+.nav > h4{
     transition: font-size 1s;
     font-size: 50px;
     margin-right: 40%;
@@ -116,13 +118,13 @@ section.nav{
     display: none;
 }
 
-.hamburger.clicked + h2, .hamburger.clicked ~ h2:last-of-type,  .hamburger.clicked ~ h1, .hamburger.clicked ~ svg{
+.hamburger.clicked + h2, .hamburger.clicked ~ h2:last-of-type,  .hamburger.clicked ~ h4, .hamburger.clicked ~ svg{
     display: none;
 }
 
 
 .left-bar:has(+ .hamburger.clicked)  {
-    transition: height 2s;
+    transition: height 0.9s;
     display: flex;
     flex-flow: column;
     height: 100%;
@@ -131,7 +133,7 @@ section.nav{
     width: 3%;
     align-items: center;
     z-index: 1000000;
-    left:0;
+    /* left:0; */
 }
 
 
@@ -152,7 +154,7 @@ section.nav{
     background: #4C4747;
     height: 100%;
     left: -15%;
-    transition: left 1.5s;
+    transition: left 1s;
     z-index: 300;
 }
 
@@ -239,12 +241,14 @@ nav > .merch-submenu.almost-clicked{
    
 }
 
-.nav > h1{
+.nav > h4{
     color: white;
+    order: 1;
 }
 
 .nav > h2{
     color: white;
+    
 }
 
 .nav > h3{
@@ -480,6 +484,7 @@ nav > .models-submenu.exit{
     }
 
     .left-bar:has(+ .hamburger.clicked){
+        
         width: 4%;
     }
 

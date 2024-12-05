@@ -124,24 +124,24 @@ body{
 }
 
 .side-scroll-feature:hover{
-    scale: 1.05;
+    transform: scale(1.05);
     cursor: pointer;
 }
 
 .side-scroll-feature:hover ~ .side-scroll-car{
-    scale: 0.65;
+    transform: scale(.65);
     cursor: pointer;
 
 }
 
 .side-scroll-car:hover{
-    scale: 0.65;
+    transform: scale(.65);
     cursor: pointer;
 
 }
 
  .side-scroll-feature:has(+ .side-scroll-car:hover){
-    scale: 1.05;
+    transform: scale(1.05);
     cursor: pointer;
 
 }
@@ -151,7 +151,7 @@ body{
 .side-scroll-car{
     position: absolute;
     bottom: -55.7%;
-    scale: 0.6;
+    transform: scale(.6);
     right: 5%;
     transition: scale 0.5s, right 1s;
     z-index: 1;
@@ -287,14 +287,14 @@ body{
     width: 13%;
     margin-left: 80%;
     margin-top: 13%;
-    height:7%;
+    height:5vh;
+    border: none;
+    color: white;
+    font-size: 23px;
+    font-family: "Nixie One";
 }
 
-.vision-mission-readmore > p{
-    width: fit-content;
-    font-size: 23px;
-    margin-left: 5%;
-}
+
 
 .vision-mission-readmore > svg{
     margin-left: 10%;
@@ -366,14 +366,15 @@ body{
     width: 12%;
     margin-left: 80%;
     margin-top: 12%;
-    height:7%;
+    height:5vh;
+    border: none;
+    color: white;
+    font-size: 23px;
+    font-family: "Nixie One";
+    
 }
 
-.configure-discover > p{
-    width: fit-content;
-    font-size: 23px;
-    margin-left: 5%;
-}
+
 
 .configure-discover > svg{
     margin-left: 12%;
@@ -519,5 +520,6 @@ hr{
 
 .footer-left > svg:last-of-type{
     margin-left: 480%;
-    scale: 1.4;
+    transform: scale(1.4);
+
 }
