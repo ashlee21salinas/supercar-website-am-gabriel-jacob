@@ -7,16 +7,16 @@ body {
 
 
 
-  h1{
+h1{
     font-size: 8vh;
     text-align: center;
-    margin-top: 5%;
+    margin-top: 20%;
     color: white;
  }
 
  .images {
-    height: 40vh;
-    width: 30vw;
+    height: 50vh;
+    width: 28vw;
     margin-top: 5%;
  }
 
@@ -26,7 +26,7 @@ body {
  }
 
 
-
+/* row1 */
  .row {
     display: flex;
     flex-direction: row;
@@ -36,14 +36,14 @@ body {
 
  .box1 {
     background-color: gray;
-    height: 65vh;
+    height: 75vh;
     padding: 2%;
     background-image: linear-gradient(#000000, #FDFFFB);
  }
 
  .box2 {
     background-color: gray;
-    height: 65vh;
+    height: 75vh;
     padding: 2%;
     background-image: linear-gradient(#000000, #FDFFFB);
  }
@@ -79,7 +79,7 @@ body {
    background-color: black;
     font-family: "Nixie One", system-ui;
  }
-
+/* sizes */
  .s {
     background-color: white;
     width: 4vw;
@@ -134,7 +134,9 @@ body {
    justify-content: center;
    margin-top: 4%;
  }
+/* end size */
 
+/* color opps */
  .color {
    display: flex;
    justify-content: center;
@@ -155,7 +157,7 @@ body {
    background-color: black;
    color: black;
  }
-
+/* end color opps */
  .add {
    width: 6vw;
    height: 5vh;
@@ -168,7 +170,7 @@ body {
 
 
 
- 
+ /* row2 */
  .row2 {
   display: flex;
   flex-direction: row;
@@ -178,14 +180,14 @@ body {
 
 .box3 {
   background-color: gray;
-  height: 65vh;
+  height: 75vh;
   padding: 2%;
   background-image: linear-gradient(#000000, #FDFFFB);
 }
 
 .box4 {
   background-color: gray;
-  height: 65vh;
+  height: 75vh;
   padding: 2%;
   background-image: linear-gradient(#000000, #FDFFFB);
 }
@@ -221,7 +223,7 @@ body {
  background-color: black;
   font-family: "Nixie One", system-ui;
 }
-
+/* sizing */
 .s2 {
   background-color: white;
   width: 4vw;
@@ -276,7 +278,7 @@ body {
  justify-content: center;
  margin-top: 4%;
 }
-
+/* end sizing */
 .color2 {
  display: flex;
  justify-content: center;
