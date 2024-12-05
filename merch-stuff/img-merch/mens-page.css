@@ -2,16 +2,16 @@
  
 body {
     font-family: "Nixie One", system-ui;
-    background-image: linear-gradient(#000000, #FDFFFB);
+    background-image: linear-gradient( #FDFFFB,#000000);
 }
 
 
 
-h1{
+h4{
     font-size: 8vh;
     text-align: center;
-    margin-top: 20%;
-    color: white;
+    margin-top: 10%;
+    color: black;
  }
 
  .images {
@@ -176,6 +176,7 @@ h1{
   flex-direction: row;
   justify-content: space-evenly;
   margin-top: 5%;
+  margin-bottom: 5;
 }
 
 .box3 {
@@ -310,9 +311,13 @@ h1{
  font-family: "Nixie One", system-ui;
 }
 
+.changecolor {
+  background-image: linear-gradient(#000000, #FDFFFB);
+}
 
-
-
+.text {
+  color: white;
+}
  
 
 
