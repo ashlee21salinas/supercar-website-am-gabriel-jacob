@@ -27,7 +27,7 @@ nav{
     height: 10vh;
     align-items: center;
     justify-content: flex-start;
-    transition: background-image 2s, width 1.5s, height 1.2s, opacity 0.5s;
+    transition: background-image 2s, width 1s, height 0.9s, opacity 0.5s;
     
 }
 

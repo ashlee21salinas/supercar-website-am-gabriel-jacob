@@ -229,7 +229,7 @@ body{
     display: inline-flex;
     flex-flow: column nowrap;
     width: 100%;
-    height: 70vh;
+    height: 110vh;
     color: white;
     justify-content: flex-start;
     align-items: flex-end;
@@ -309,7 +309,7 @@ body{
     color: white;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-top: 30%;
+    margin-top: 10%;
 }
 
 .configure > h2{
@@ -360,6 +360,7 @@ body{
 
 .configure-discover{
     display: flex;
+    
     background-color: #03949691;
     align-items: center;
     border-radius: 10px;
