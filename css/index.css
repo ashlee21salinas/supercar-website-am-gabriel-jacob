@@ -17,7 +17,7 @@ body{
     background-size: 75%;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-image: url(../homepage-img/hero-img-placeholder.png);
+    background-image: url(../img/homepage-img/hero-img-placeholder.png);
     justify-content: flex-end;
     width: 100%;
     z-index: 1;
@@ -110,7 +110,7 @@ body{
     display: flex;
     width: 75%;
     height: 30vh;
-    background-image: url(../homepage-img/side-view-maybe.jpg);
+    background-image: url(../img/homepage-img/side-view-maybe.jpg);
     margin-left: 12.5%;
     color: white;
     margin-top: 5%;
@@ -397,7 +397,7 @@ body{
 
 .homepage-mens, .homepage-accesories, .homepage-womens{
     display: flex;
-    background-image: url(../homepage-img/placeholder.webp);
+    background-image: url(../img/homepage-img/placeholder.webp);
     width: calc(100%/3.3);
     justify-content: center;
 }

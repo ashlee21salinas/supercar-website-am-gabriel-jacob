@@ -43,7 +43,7 @@ function hamburger_click() {
   
   setTimeout(() =>  document.getElementById("nav").style.opacity="0.1", 500)
   setTimeout(() =>  document.getElementById("nav").style.opacity="1", 1100)
-  setTimeout(() =>  document.getElementById("nav").style.backgroundImage="url(../img/left-bar.png)", 1100)
+  setTimeout(() =>  document.getElementById("nav").style.backgroundImage="url(../img/components-img/left-bar.png)", 1100)
  
   setTimeout(() =>  document.getElementById("left-bar").style.justifyContent="center", 1400)
   setTimeout(() =>  document.getElementById("svg_group").style.marginBottom="90vh", 1800)
