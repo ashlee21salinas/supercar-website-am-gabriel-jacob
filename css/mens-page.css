@@ -7,11 +7,36 @@ body {
 
 
 
-h4{
+h5{
     font-size: 8vh;
-    text-align: center;
     margin-top: 10%;
     color: black;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+ .top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+
+ .top p {
+  font-size: 8vh;
+  color: black;
+  margin-top: 8%;
+ }
+ 
+
+
+ .viewcart {
+  background-color: black;
+  text-align: center;
+  margin-right: 120vh;
+  color: white;
+  height: 8vh;
+  width: 15vw;
+  font-size: 3vh;
  }
 
  .images {
@@ -22,7 +47,6 @@ h4{
 
  .exit {
    margin-left: 90%;
-   
  }
 
 
@@ -48,11 +72,7 @@ h4{
     background-image: linear-gradient(#000000, #FDFFFB);
  }
 
- .top {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
- }
+
 
  .underimg {
     display: flex;
@@ -71,14 +91,7 @@ h4{
  }
 
 
- .cart {
-    width: 10vw;
-    height: 5vh;
-    color: white;
-    font-size: 2vh;
-   background-color: black;
-    font-family: "Nixie One", system-ui;
- }
+
 /* sizes */
  .s {
     background-color: white;
@@ -176,7 +189,7 @@ h4{
   flex-direction: row;
   justify-content: space-evenly;
   margin-top: 5%;
-  margin-bottom: 5;
+  margin-bottom: 10%;
 }
 
 .box3 {
@@ -193,11 +206,7 @@ h4{
   background-image: linear-gradient(#000000, #FDFFFB);
 }
 
-.top2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
+
 
 .underimg2 {
   display: flex;
@@ -216,14 +225,7 @@ h4{
 }
 
 
-.cart2 {
-  width: 10vw;
-  height: 5vh;
-  color: white;
-  font-size: 2vh;
- background-color: black;
-  font-family: "Nixie One", system-ui;
-}
+
 /* sizing */
 .s2 {
   background-color: white;
