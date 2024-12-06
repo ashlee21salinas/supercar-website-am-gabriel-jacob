@@ -400,13 +400,106 @@ body{
     background-image: url(../img/homepage-img/placeholder.webp);
     width: calc(100%/3.3);
     justify-content: center;
+    transition: width 0.7s, opacity 0.7s;
 }
 
 .homepage-mens > h3, .homepage-accesories > h3, .homepage-womens > h3{
     font-size: 45px;
     margin-bottom: 1%;
     align-self: flex-end;
+    transition: width 0.7s, opacity 0.4s;
 }
+
+/* start  of mens hover */
+
+.homepage-mens:hover{
+    width: 100%;
+}
+
+.homepage-mens:hover + .homepage-accesories{
+    width: 0%;
+    font-size: 0px;
+    
+}
+
+.homepage-mens:hover + .homepage-accesories > h3{
+    opacity: 0;
+    
+}
+
+
+
+.homepage-mens:hover + .homepage-accesories + .homepage-womens{
+    width: 0%;
+    font-size: 0px;
+}
+
+.homepage-mens:hover + .homepage-accesories + .homepage-womens > h3{
+    opacity: 0;
+}
+
+
+/* end of mens hover */
+
+
+/* start of accesories hover */
+.homepage-accesories:hover{
+    width: 100%;
+}
+
+.homepage-accesories:hover + .homepage-womens{
+    width: 0%;
+    font-size: 0px;
+    
+}
+
+.homepage-accesories:hover + .homepage-womens > h3{
+    opacity: 0;
+    
+}
+
+
+
+.homepage-mens:has(+ .homepage-accesories:hover){
+    width: 0%;
+    font-size: 0px;
+}
+
+.homepage-mens:has(+ .homepage-accesories:hover) > h3{
+    opacity: 0;
+}
+
+/* end of accesories hover */
+
+
+/* start of womens hover */
+.homepage-womens:hover{
+    width: 100%;
+}
+
+.homepage-accesories:has(+ .homepage-womens:hover){
+    width: 0%;
+    font-size: 0px;
+    
+}
+
+.homepage-accesories:has(+ .homepage-womens:hover) > h3{
+    opacity: 0;
+    
+}
+
+/* .subhead-content.safety:has(~ .subhead-content.convenience:hover) */
+
+.homepage-mens:has(~ .homepage-womens:hover){
+    width: 0%;
+    font-size: 0px;
+}
+
+.homepage-mens:has(~ .homepage-womens:hover) > h3{
+    opacity: 0;
+}
+
+/* end of womens hover */
 
 .rare{
     display: inline-flex;
