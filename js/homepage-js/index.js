@@ -25,7 +25,7 @@ function carosel_option1(){
     option2.classList.remove("selected")
     option3.classList.remove("selected")
     option4.classList.remove("selected")
-    setTimeout(() =>  hero.style.backgroundImage = "url(homepage-img/hero-img-placeholder.png)", 2000)
+    setTimeout(() =>  hero.style.backgroundImage = "url(../img/homepage-img/hero-img-placeholder.png)", 2000)
     blocker.style.animationName = "blocker-in"
     setTimeout(() =>  blocker.style.animationName = "blocker-out", 2000)
 
@@ -51,7 +51,7 @@ function carosel_option2(){
     setTimeout(() =>  document.getElementById("hero-text").style.marginBottom = "28.5%", 1500)
 
     setTimeout(() =>  document.getElementById("car-model").textContent = "BlackWidow", 1500)
-    setTimeout(() =>  hero.style.backgroundImage = "url(homepage-img/hero-img2-placeholder.jpg)", 2000)
+    setTimeout(() =>  hero.style.backgroundImage = "url(../img/homepage-img/hero-img2-placeholder.jpg)", 2000)
     
 
     

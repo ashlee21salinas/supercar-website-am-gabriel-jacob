@@ -22,12 +22,13 @@ const originalFontSize = window.getComputedStyle(nav_trion_h1).fontSize;
 
 //opens navbar
 function hamburger_click() {
-
+  document.getElementById("left-bar").style.height = ''
+  document.getElementById("menu").style.display=""
   document.getElementById("offical-nav").style.zIndex = "2"
 
   document.getElementById("nav").style.marginLeft ="0%"
   document.getElementById("nav").style.width="3%"
-  document.getElementById("left-bar").style.top="0"
+
   document.getElementById("menu").style.top="0"
   document.getElementById("models-submenu").classList.add('almost-clicked')
   document.getElementById("merch-submenu").classList.add('almost-clicked')
@@ -41,10 +42,13 @@ function hamburger_click() {
   document.getElementById("exit_nav").style.transition='width 1s, height 1s'
   
   setTimeout(() =>  document.getElementById("nav").style.opacity="0.1", 500)
-  setTimeout(() =>  document.getElementById("nav").style.opacity="1", 1000)
-  setTimeout(() =>  document.getElementById("nav").style.backgroundImage="url(../img/left-bar.png)", 1100)
+  setTimeout(() =>  document.getElementById("nav").style.opacity="1", 1100)
+  setTimeout(() =>  document.getElementById("nav").style.backgroundImage="url(../img/components-img/left-bar.png)", 1100)
  
   setTimeout(() =>  document.getElementById("left-bar").style.justifyContent="center", 1400)
+
+
+
   setTimeout(() =>  document.getElementById("svg_group").style.marginBottom="90vh", 1800)
   
 
@@ -54,6 +58,9 @@ function hamburger_click() {
   setTimeout(() =>  document.getElementById("logo").style.height='35px', 1700)
   setTimeout(() =>  document.getElementById("exit_nav").style.width='35px', 1700)
   setTimeout(() =>  document.getElementById("exit_nav").style.height='35px', 1700)
+
+
+
   setTimeout(() =>  document.getElementById("menu").style.left = '3%', 3181)
   setTimeout(() =>  document.getElementById("menu").classList.remove("exit"), 1400)
 
@@ -424,9 +431,10 @@ document.getElementById("nav").style.marginLeft ="0%"
       setTimeout(() =>  document.getElementById("nav").style.backgroundImage="linear-gradient(#444444, #020103)", 1750)
 
       setTimeout(() =>  document.getElementById("nav").style.width="100%", 2000)
-      setTimeout(() =>  document.getElementById("left-bar").style.top="-15vh", 900)
+      setTimeout(() =>  document.getElementById("left-bar").style.height="0", 900)
+      // setTimeout(() =>  document.getElementById("left-bar").style.transition="height 3s", 800)
+      setTimeout(() =>  document.getElementById("menu").style.display="none", 900)
 
-      setTimeout(() =>  document.getElementById("left-bar").style.justifyContent="none", 2000)
       setTimeout(() =>  document.getElementById("svg_group").style.marginBottom="0vh", 2000)
       setTimeout(() =>  document.getElementById("offical-nav").style.zIndex = "0", 2000)
 

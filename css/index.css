@@ -17,7 +17,7 @@ body{
     background-size: 75%;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-image: url(../homepage-img/hero-img-placeholder.png);
+    background-image: url(../img/homepage-img/hero-img-placeholder.png);
     justify-content: flex-end;
     width: 100%;
     z-index: 1;
@@ -110,7 +110,7 @@ body{
     display: flex;
     width: 75%;
     height: 30vh;
-    background-image: url(../homepage-img/side-view-maybe.jpg);
+    background-image: url(../img/homepage-img/side-view-maybe.jpg);
     margin-left: 12.5%;
     color: white;
     margin-top: 5%;
@@ -124,24 +124,24 @@ body{
 }
 
 .side-scroll-feature:hover{
-    scale: 1.05;
+    transform: scale(1.05);
     cursor: pointer;
 }
 
 .side-scroll-feature:hover ~ .side-scroll-car{
-    scale: 0.65;
+    transform: scale(.65);
     cursor: pointer;
 
 }
 
 .side-scroll-car:hover{
-    scale: 0.65;
+    transform: scale(.65);
     cursor: pointer;
 
 }
 
  .side-scroll-feature:has(+ .side-scroll-car:hover){
-    scale: 1.05;
+    transform: scale(1.05);
     cursor: pointer;
 
 }
@@ -151,7 +151,7 @@ body{
 .side-scroll-car{
     position: absolute;
     bottom: -55.7%;
-    scale: 0.6;
+    transform: scale(.6);
     right: 5%;
     transition: scale 0.5s, right 1s;
     z-index: 1;
@@ -287,14 +287,14 @@ body{
     width: 13%;
     margin-left: 80%;
     margin-top: 13%;
-    height:7%;
+    height:5vh;
+    border: none;
+    color: white;
+    font-size: 23px;
+    font-family: "Nixie One";
 }
 
-.vision-mission-readmore > p{
-    width: fit-content;
-    font-size: 23px;
-    margin-left: 5%;
-}
+
 
 .vision-mission-readmore > svg{
     margin-left: 10%;
@@ -366,14 +366,15 @@ body{
     width: 12%;
     margin-left: 80%;
     margin-top: 12%;
-    height:7%;
+    height:5vh;
+    border: none;
+    color: white;
+    font-size: 23px;
+    font-family: "Nixie One";
+    
 }
 
-.configure-discover > p{
-    width: fit-content;
-    font-size: 23px;
-    margin-left: 5%;
-}
+
 
 .configure-discover > svg{
     margin-left: 12%;
@@ -396,16 +397,109 @@ body{
 
 .homepage-mens, .homepage-accesories, .homepage-womens{
     display: flex;
-    background-image: url(../homepage-img/placeholder.webp);
+    background-image: url(../img/homepage-img/placeholder.webp);
     width: calc(100%/3.3);
     justify-content: center;
+    transition: width 0.7s, opacity 0.7s;
 }
 
 .homepage-mens > h3, .homepage-accesories > h3, .homepage-womens > h3{
     font-size: 45px;
     margin-bottom: 1%;
     align-self: flex-end;
+    transition: width 0.7s, opacity 0.4s;
 }
+
+/* start  of mens hover */
+
+.homepage-mens:hover{
+    width: 100%;
+}
+
+.homepage-mens:hover + .homepage-accesories{
+    width: 0%;
+    font-size: 0px;
+    
+}
+
+.homepage-mens:hover + .homepage-accesories > h3{
+    opacity: 0;
+    
+}
+
+
+
+.homepage-mens:hover + .homepage-accesories + .homepage-womens{
+    width: 0%;
+    font-size: 0px;
+}
+
+.homepage-mens:hover + .homepage-accesories + .homepage-womens > h3{
+    opacity: 0;
+}
+
+
+/* end of mens hover */
+
+
+/* start of accesories hover */
+.homepage-accesories:hover{
+    width: 100%;
+}
+
+.homepage-accesories:hover + .homepage-womens{
+    width: 0%;
+    font-size: 0px;
+    
+}
+
+.homepage-accesories:hover + .homepage-womens > h3{
+    opacity: 0;
+    
+}
+
+
+
+.homepage-mens:has(+ .homepage-accesories:hover){
+    width: 0%;
+    font-size: 0px;
+}
+
+.homepage-mens:has(+ .homepage-accesories:hover) > h3{
+    opacity: 0;
+}
+
+/* end of accesories hover */
+
+
+/* start of womens hover */
+.homepage-womens:hover{
+    width: 100%;
+}
+
+.homepage-accesories:has(+ .homepage-womens:hover){
+    width: 0%;
+    font-size: 0px;
+    
+}
+
+.homepage-accesories:has(+ .homepage-womens:hover) > h3{
+    opacity: 0;
+    
+}
+
+/* .subhead-content.safety:has(~ .subhead-content.convenience:hover) */
+
+.homepage-mens:has(~ .homepage-womens:hover){
+    width: 0%;
+    font-size: 0px;
+}
+
+.homepage-mens:has(~ .homepage-womens:hover) > h3{
+    opacity: 0;
+}
+
+/* end of womens hover */
 
 .rare{
     display: inline-flex;
@@ -519,5 +613,6 @@ hr{
 
 .footer-left > svg:last-of-type{
     margin-left: 480%;
-    scale: 1.4;
+    transform: scale(1.4);
+
 }
