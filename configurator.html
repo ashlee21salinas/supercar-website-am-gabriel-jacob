@@ -6,6 +6,16 @@
     <link rel="stylesheet" href="css/configurator.css">
     <link rel="stylesheet" href="css/navbar.css">
     <title>Configurator</title>
+
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@v0.163.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@v0.163.0/examples/jsm/"
+        }
+      }
+    </script>
 </head>
 <body>
     
@@ -126,11 +136,14 @@
                 <!-- color wheel
                 <h2>Color Selected</h2> -->
             </section>
-            <canvas id="colorCanvas" class="color-canvas" width="90%" height="35%"></canvas>
+            <canvas id="colorCanvas" class="color-canvas" width="90%" height="35%">
+                
+            </canvas>
             <p id="rgb">RGB: none selected</p>
             <section class="premium-exterior-colorwheel-blocker" id="premium-exterior-colorwheel-blocker">
                 <hr>
             </section>
+            
 
         </section>
 
@@ -142,4 +155,6 @@
 </body>
 <script src="js/components-js/navbar.js"></script>
 <script src="js/configurator.js"></script>
+<script type="module" src="js/3d-model.js"></script>
+
 </html>

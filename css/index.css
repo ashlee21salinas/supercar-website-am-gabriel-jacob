@@ -117,10 +117,9 @@ body{
     background-repeat: no-repeat;
     background-size: contain;
     border-radius: 5px;
-    transition: scale 0.5s;
+    transition: transform 0.5s;
     z-index: 1;
-    
-    
+    transform: scale(1);
 }
 
 .side-scroll-feature:hover{
@@ -153,7 +152,7 @@ body{
     bottom: -55.7%;
     transform: scale(.6);
     right: 5%;
-    transition: scale 0.5s, right 1s;
+    transition: transform 0.5s, right 1s;
     z-index: 1;
 }
 

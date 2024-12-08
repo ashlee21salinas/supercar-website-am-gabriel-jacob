@@ -1,0 +1,11 @@
+Model Information:
+* title:	2016 | Trion Nemesis
+* source:	https://sketchfab.com/3d-models/2016-trion-nemesis-7bc5f312f7a5433a8f7e0be4b8d7ca41
+* author:	kevin (ケビン) (https://sketchfab.com/sohyalebret)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "2016 | Trion Nemesis" (https://sketchfab.com/3d-models/2016-trion-nemesis-7bc5f312f7a5433a8f7e0be4b8d7ca41) by kevin (ケビン) (https://sketchfab.com/sohyalebret) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

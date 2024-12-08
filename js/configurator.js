@@ -3,6 +3,7 @@ document.getElementById("premium-options-arrow").addEventListener("click", premi
 document.getElementById("colorwheel-arrow").addEventListener("click", color_wheel_arrow);
 
 
+
 function premium_arrow(){
 
         if(document.getElementById("exterior-colorwheel").classList.contains('opened'))
@@ -25,7 +26,7 @@ function premium_arrow(){
 
             document.getElementById("premium-exterior-colorwheel-blocker").style.top = "55%"
 
-            document.getElementById("colorCanvas").style.bottom = "20%"
+            document.getElementById("colorCanvas").style.top = "60%"
             
         }
         else{
@@ -38,7 +39,7 @@ function premium_arrow(){
 
             document.getElementById("premium-exterior-colorwheel-blocker").style.top = "35%"
 
-            document.getElementById("colorCanvas").style.bottom = "40%"
+            document.getElementById("colorCanvas").style.top = "40%"
 
             document.getElementById("premium-exterior-blocker").classList.add('opened')
         }
@@ -56,7 +57,7 @@ function color_wheel_arrow(){
 
         document.getElementById("premium-exterior-colorwheel-blocker").style.top = "35%"
 
-        document.getElementById("colorCanvas").style.bottom = "40%"
+        document.getElementById("colorCanvas").style.top = "40%"
 
          document.getElementById("premium-exterior-blocker").classList.add('opened')
     }
