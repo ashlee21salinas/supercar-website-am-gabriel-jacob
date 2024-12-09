@@ -3,14 +3,7 @@
 
 
                               /* Performance Section */
-  .performance-section {
-  
-   
-  }
 
-  .performance-section img{
-   
-  }
   
   .performance-section h2 {
     font-size: 2rem;
@@ -31,17 +24,16 @@
   }
   
   .stats {
-    background-image: url( );
+    transform: translate( 0%, -60%);
     display: flex;
     gap: 20px;
     justify-content: center;
    color: aliceblue;
+   font-size: 2rem;
+    size: 75%;
   }
   
-  .stats div {
-    font-size: 1.2rem;
-    text-align: center;
-  }
+  
   
                              /* Innovation Section */
   
@@ -61,4 +53,43 @@
   }
   
                                       /* Footer */
- 
+.feature-box {
+  background: linear-gradient(to bottom, #333, black);
+border: 1px solid #444;
+width: 20%;
+height: 50%;
+margin: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+color: aliceblue;
+flex-direction: column;
+}
+.feature-box h2{
+  font-size: medium;
+}
+
+.image-box {
+width: 30%;
+height: 30%;
+margin: 10px;
+}
+.image-box img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 10px;
+}
+
+.six{
+display: flex;
+justify-content: center;
+}
+
+.sven{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
