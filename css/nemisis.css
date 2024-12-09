@@ -24,12 +24,12 @@
   }
   
   .stats {
-    transform: translate( 0%, -60%);
+    transform: translate( 0%, -90%);
     display: flex;
     gap: 20px;
     justify-content: center;
    color: aliceblue;
-   font-size: 2rem;
+   font-size: 2.5rem;
     size: 75%;
   }
   
@@ -57,8 +57,9 @@
   background: linear-gradient(to bottom, #333, black);
 border: 1px solid #444;
 width: 20%;
-height: 50%;
+height: 400px;
 margin: 10px;
+
 display: flex;
 justify-content: center;
 align-items: center;
@@ -66,15 +67,23 @@ text-align: center;
 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 color: aliceblue;
 flex-direction: column;
+
+margin-left: 1%;
+margin-right: 1%;
 }
 .feature-box h2{
   font-size: medium;
 }
 
+.feature-box p{
+  font-size: x-large;
+  padding: 10%;
+}
+
 .image-box {
-width: 30%;
+width: 20%;
 height: 30%;
-margin: 10px;
+margin-top: .8%;
 }
 .image-box img {
 width: 100%;
@@ -92,4 +101,8 @@ justify-content: center;
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
+}
+
+.sven img{
+  transform: translate( 0%, -40%);
 }
