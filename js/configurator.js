@@ -3,6 +3,12 @@ document.getElementById("premium-options-arrow").addEventListener("click", premi
 document.getElementById("colorwheel-arrow").addEventListener("click", color_wheel_arrow);
 
 
+const green = document.getElementById("fancygreen-exterior")
+const blue = document.getElementById("fancyblue-exterior")
+const red = document.getElementById("fancyred-exterior")
+const black = document.getElementById("fancyblack-exterior")
+
+
 
 function premium_arrow(){
 

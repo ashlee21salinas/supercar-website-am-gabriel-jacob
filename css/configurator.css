@@ -77,7 +77,8 @@ canvas{
 .fancygreen-exterior{
     width: 2.4vw;
     height: 4.7vh;
-    border: 2px solid #FFF;
+    transition: border 0.5s;
+    border: 2px solid #263d34;
     background-color: #263d34;
     
 }
@@ -85,23 +86,35 @@ canvas{
 .fancyblack-exterior{
     width: 2.4vw;
     height: 4.7vh;
-    border: 2px solid #FFF;
+    transition: border 0.5s;
+    border: 2px solid #24282b;
     background-color: #24282b;
 }
 
 .fancyred-exterior{
     width: 2.4vw;
     height: 4.7vh;
-    border: 2px solid #FFF;
+    transition: border 0.5s;
+    border: none;
+    border: 2px solid #530011;
     background-color: #530011;
 }
 
 .fancyblue-exterior{
     width: 2.4vw;
     height: 4.7vh;
-    border: 2px solid #FFF;
+    transition: border 0.5s;
+    border: 2px solid #043f98;
     background-color: #043f98;
 }
+
+.fancygreen-exterior.clicked, .fancyblue-exterior.clicked, .fancyred-exterior.clicked, .fancyblack-exterior.clicked{
+    border: 2px solid #FFF;
+    transition: border 0.5s;
+    
+}
+
+
 
 .premium-exterior-blocker{
     position: absolute;
