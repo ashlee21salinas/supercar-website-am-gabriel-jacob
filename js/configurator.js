@@ -2,11 +2,26 @@ document.getElementById("premium-options-arrow").addEventListener("click", premi
 
 document.getElementById("colorwheel-arrow").addEventListener("click", color_wheel_arrow);
 
+document.getElementById("3d").addEventListener("click", threed);
+document.getElementById("2d").addEventListener("click", twod);
+
+document.getElementById("img-1").addEventListener("click", one);
+document.getElementById("img-2").addEventListener("click", two);
+document.getElementById("img-3").addEventListener("click", three);
+document.getElementById("img-4").addEventListener("click", four);
+document.getElementById("img-5").addEventListener("click", five);
+
+var ones = document.getElementById("img-1")
+var twos = document.getElementById("img-2")
+var threes = document.getElementById("img-3")
+var fours = document.getElementById("img-4")
+var fives = document.getElementById("img-5")
 
 const green = document.getElementById("fancygreen-exterior")
 const blue = document.getElementById("fancyblue-exterior")
 const red = document.getElementById("fancyred-exterior")
 const black = document.getElementById("fancyblack-exterior")
+
 
 
 
@@ -127,5 +142,84 @@ function initColorPicker() {
       document.getElementById("rgb").textContent=color;
     }
   }
+
+
+
+function threed(){
+    document.getElementById("3d").classList.remove("clicked")
+    document.getElementById("2d").classList.remove("clicked")
+    document.getElementById("2d").classList.add("clicked")
+}
+  
+function twod(){
+    document.getElementById("3d").classList.remove("clicked")
+    document.getElementById("2d").classList.remove("clicked")
+    document.getElementById("3d").classList.add("clicked")
+}
+
+function one(){
+    ones.classList.remove("selected")
+    twos.classList.remove("selected")
+    threes.classList.remove("selected")
+    fours.classList.remove("selected")
+    fives.classList.remove("selected")
+
+    ones.classList.add("selected")
+
+    document.getElementById("car-pic-exterior").style.backgroundImage = "url(../img/configurator-img/nemesis-img/front-black.png)"
+    
+    
+}
+
+function two(){
+    ones.classList.remove("selected")
+    twos.classList.remove("selected")
+    threes.classList.remove("selected")
+    fours.classList.remove("selected")
+    fives.classList.remove("selected")
+
+    twos.classList.add("selected")
+
+    document.getElementById("car-pic-exterior").style.backgroundImage = "url(../img/configurator-img/nemesis-img/threef-black.png)"
+
+}
+
+function three(){
+    ones.classList.remove("selected")
+    twos.classList.remove("selected")
+    threes.classList.remove("selected")
+    fours.classList.remove("selected")
+    fives.classList.remove("selected")
+
+    threes.classList.add("selected")
+
+    document.getElementById("car-pic-exterior").style.backgroundImage = "url(../img/configurator-img/nemesis-img/side-black.png)"
+}
+
+function four(){
+    ones.classList.remove("selected")
+    twos.classList.remove("selected")
+    threes.classList.remove("selected")
+    fours.classList.remove("selected")
+    fives.classList.remove("selected")
+
+    fours.classList.add("selected")
+    document.getElementById("car-pic-exterior").style.backgroundImage = "url(../img/configurator-img/nemesis-img/side-back-black.png)"
+}
+
+function five(){
+    ones.classList.remove("selected")
+    twos.classList.remove("selected")
+    threes.classList.remove("selected")
+    fours.classList.remove("selected")
+    fives.classList.remove("selected")
+
+    fives.classList.add("selected")
+
+    document.getElementById("car-pic-exterior").style.backgroundImage = "url(../img/configurator-img/nemesis-img/back-black.png)"
+
+}
+
+
 
   initColorPicker()
