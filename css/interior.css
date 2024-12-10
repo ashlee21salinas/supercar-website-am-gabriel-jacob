@@ -283,11 +283,12 @@ canvas{
 
 
 .car-pic-exterior{
-    background-image: url(../img/configurator-img/nemesis-img/front-black.png);
+    background-image: url(../img/configurator-img/interior-img/Nemesis_Interior_render3-1024x458.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: 55% 50%;
-    width: 69%;
-    margin-left: 11%;
+    width: 80%;
+    margin-left: 0%;
 }
 
 .gallery{
