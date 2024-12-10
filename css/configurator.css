@@ -10,7 +10,7 @@ body{
 canvas{
     position: absolute;
     top: 10%;
-    z-index: 1;
+    z-index: -1;
 }
 
 .main-configure{
@@ -49,7 +49,7 @@ canvas{
 .premium-dropdown{
     display: inline-flex;
     
-    width: 70%;
+    width: 85%;
 }
 
 .options-exterior > .premium-dropdown > p{
@@ -131,7 +131,7 @@ canvas{
 
 .premium-exterior-blocker.opened{
     z-index: 1;
-    top:16%;
+    top:12%;
     
     
 }
@@ -184,7 +184,7 @@ canvas{
 .premium-exterior-colorwheel-blocker{
     position: absolute;
     
-    top:55%;
+    top:51%;
     /* display: flex; */
     width: 20%;
     height: 40%;
@@ -209,7 +209,7 @@ canvas{
 }
 
 .options-exterior > p{
-    margin-top: 43%;
+    margin-top: 55%;
     font-size: 24px;
 }
 
@@ -226,35 +226,59 @@ canvas{
     height: 50px;
     background-color: white;
     transition: opacity 0.6s;
+    /* margin-right: 1%;
+    margin-top: 1%; */
+}
+
+.car-pic-exterior > svg:first-of-type{
+
+    margin-right: 1.4%;
+    margin-top: 1.5%;
 }
 
 .car-pic-exterior > svg:last-of-type{
     position: absolute;
     z-index: 0;
+    margin-right: 1%;
+    margin-top: 1%;
+}
+
+.twod{
+    opacity: 1;
+    z-index: 1;
+}
+
+.threed{
+    opacity: 1;
+    z-index: 1;
 }
 
 .twod.clicked{
-    z-index: 1;
-    opacity: 1;
+    z-index: 0;
+    opacity: 0;
     /* display: show; */
 }
 
-.twod.clicked + .threed{
+.threed.clicked{
     opacity: 0;
-    /* display: none; */
+    z-index: 0;
+    /* display: show; */
 }
 
 
+/* .twod.clicked + .threed{
+    opacity: 1;
+    /* display: none; */
 
+
+
+/* 
 .twod:has(+ .threed.clicked){
-    opacity: 0;
-    /* display: none; */
-}
-
-.threed.cliked{
     opacity: 1;
-    /* display: show; */
-}
+    /* display: none; */
+
+
+
 
 .car-pic-exterior{
     background-image: url(../img/configurator-img/nemesis-img/front-black.png);
@@ -269,6 +293,7 @@ canvas{
     width: 11%;
     left: 0;
     height: 100%;
+    background-color: black;
 
 }
 

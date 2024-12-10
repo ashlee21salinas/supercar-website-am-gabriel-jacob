@@ -15,8 +15,11 @@ blue.addEventListener("click", blue_click)
 red.addEventListener("click", red_click)
 black.addEventListener("click", black_click)
 
+var color_car = "rgb(0,0,0)"
 
-
+var r = red
+var g = green
+var b = blue
 
 
 const renderer = new THREE.WebGLRenderer({ antialias: true });
@@ -125,6 +128,7 @@ scene.add(ambientLight);
 loader.load('scene.gltf', (gltf) => {
   console.log('loading model');
   const mesh = gltf.scene;
+  const model = gltf.scene;
   mesh.castShadow = true;
   mesh.receiveShadow = true;
   
@@ -135,6 +139,22 @@ loader.load('scene.gltf', (gltf) => {
     
     }
   });
+
+//   model.traverse((child) => {
+//     // Check if the child is a mesh and doesn't have a name
+//     if (child.isMesh) {
+//         if (!child.name) {
+//             // You can identify it based on material, geometry, or other properties
+//             if (child.material && child.material.color) {
+//                 // For example, let's say we are looking for a mesh with a specific color
+//                 if (child.material.color.equals(new THREE.Color(38, 61, 52))) { // Red
+//                     console.log("Found the mesh with the specified color:", child);
+//                     // Do something with the mesh
+//                 }
+//             }
+//         }
+//     }
+// });
 
   mesh.position.set(0, 0, 0);
   scene.add(mesh);
@@ -241,16 +261,7 @@ function refresh_model(){
   
     mesh.position.set(0, 0, 0);
 
-    model.traverse((child) => {
-      // Check if the child is a mesh (this will exclude other objects like lights or cameras)
-      if (child.isMesh) {
-          // You can target specific meshes based on their name, material, or other properties
-          if (child.name === "chassis_hi.3") {
-              // Change the material color for this mesh
-              child.material = new THREE.MeshStandardMaterial({ color: 0xf2ff00 });  // Example: red
-          }
-      }
-  });
+    
 
 
 
@@ -318,3 +329,126 @@ function refresh_model(){
 
 
 animate();
+
+
+
+
+
+
+
+
+
+
+
+
+function initColorPicker() {
+  var canvas = document.getElementById('colorCanvas');
+  var canvasContext = canvas.getContext('2d');
+
+  let gradient = canvas.getContext('2d').createLinearGradient(0, 0, canvas.width, 0)
+  gradient.addColorStop(0, '#ff0000')
+  gradient.addColorStop(1 / 6, '#ffff00')
+  gradient.addColorStop((1 / 6) * 2, '#00ff00')
+  gradient.addColorStop((1 / 6) * 3, '#00ffff')
+  gradient.addColorStop((1 / 6) * 4, '#0000ff')
+  gradient.addColorStop((1 / 6) * 5, '#ff00ff')
+  gradient.addColorStop(1, '#ff0000')
+  canvas.getContext('2d').fillStyle = gradient
+  canvas.getContext('2d').fillRect(0, 0, canvas.width, canvas.height)
+
+  gradient = canvas.getContext('2d').createLinearGradient(0, 0, 0, canvas.height)
+  gradient.addColorStop(0, 'rgba(255, 255, 255, 1)')
+  gradient.addColorStop(0.5, 'rgba(255, 255, 255, 0)')
+  gradient.addColorStop(1, 'rgba(255, 255, 255, 0)')
+  canvas.getContext('2d').fillStyle = gradient
+  canvas.getContext('2d').fillRect(0, 0, canvas.width, canvas.height)
+
+  gradient = canvas.getContext('2d').createLinearGradient(0, 0, 0, canvas.height)
+  gradient.addColorStop(0, 'rgba(0, 0, 0, 0)')
+  gradient.addColorStop(0.5, 'rgba(0, 0, 0, 0)')
+  gradient.addColorStop(1, 'rgba(0, 0, 0, 1)')
+  canvas.getContext('2d').fillStyle = gradient
+  canvas.getContext('2d').fillRect(0, 0, canvas.width, canvas.height)
+
+
+  canvas.onclick = function(e) {
+      console.log()
+    var imgData = canvasContext.getImageData((e.offsetX / canvas.clientWidth) * canvas.width, (e.offsetY / canvas.clientHeight) * canvas.height, 1, 1)
+    var rgb = imgData.data;
+    var color = "rgb(" + rgb[0] + ", " + rgb[1] + ", " + rgb[2] +  ")";
+    console.log("%c" + color, "color:" + color)
+
+    r = rgb[0]
+    g = rgb[1]
+    b = rgb[2]
+
+
+    color_car = (rgbToHex(r, g, b))
+
+    console.log(color_car)
+
+    document.getElementById("rgb").style.color=color;
+    document.getElementById("rgb").textContent=color;
+
+
+    
+    rgbToHex(r, g, b)
+    rgb_color()
+  }
+}
+
+function componentToHex(c) {
+  var hex = c.toString(16);
+  return hex.length == 1 ? "0" + hex : hex;
+}
+
+function rgbToHex(r, g, b) {
+  return "" + componentToHex(r) + componentToHex(g) + componentToHex(b);
+}
+
+
+
+function rgb_color(){
+  loader = new GLTFLoader().setPath('../nemesis-3d-model/all/');
+  loader.load('scene.gltf', (gltf) => {
+    console.log('loading model');
+    const mesh = gltf.scene;
+    const model = gltf.scene;
+    
+  
+    mesh.position.set(0, 0, 0);
+
+    model.traverse((node) => {
+      if (node.isMesh && node.name === 'MyCubeMesh'){
+          let selectedColor = new THREE.Color().setHex("0x" + color_car);
+          console.log(color_car)
+          console.log(selectedColor)
+          // node.material.color.copy('yellow'); 
+          node.material.color = new THREE.Color(selectedColor); 
+
+      }
+      else{
+        console.log('no')
+      }
+  });
+
+
+
+
+    scene.add(mesh);
+  
+    document.getElementById('progress-container').style.display = 'none';
+  }, (xhr) => {
+    console.log(`loading ${xhr.loaded / xhr.total * 100}%`);
+  }, (error) => {
+    console.error(error);
+  });
+  
+}
+
+
+
+
+
+
+initColorPicker()
