@@ -335,7 +335,7 @@ h5{
   
 }
 
-/* The actual popup */
+
 .popup .popuptext {
  
   visibility: hidden;
@@ -357,7 +357,6 @@ h5{
 }
 
 
-/* Toggle this class - hide and show the popup */
 .popup .show {
   visibility: visible;
   -webkit-animation: fadeIn 1s;
@@ -365,6 +364,51 @@ h5{
   animation-duration: 1ms;
   animation: FadeOut 1s;
 }
+
+.popup2 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  padding: 3%;
+  background-color: black;
+  color: white;
+  font-size: 1.5vh;
+  margin-top: 3%;
+  font-family: "Nixie One", system-ui;
+  
+}
+
+/* The actual popup */
+.popup2 .popuptext2 {
+ 
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5rem;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+  margin-bottom: 10px;
+  margin-right: 100px;
+  font-size: 5vh;
+  width: 25vw;
+}
+
+
+/* Toggle this class - hide and show the popup */
+.popup2 .show2 {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+  animation-duration: 1ms;
+  animation: FadeOut 1s;
+}
+ 
  
  
 
