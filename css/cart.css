@@ -1,7 +1,19 @@
+
+body {
+    font-family: "Nixie One", system-ui;
+    background-image: linear-gradient(#000000, #737372,#000000 );
+}
+
+p{
+    color: white;
+}
+
+
 h1 {
     text-align: center;
     font-size: 10vh;
     margin-top: 5%;
+    color: white;
 }
 
 .imgline {
@@ -20,7 +32,7 @@ h1 {
 .column {
     display: flex;
     flex-direction: column;
-    margin-top: 30%;
+    margin-top: 15%;
     margin-left: 35%;
 }
 
@@ -43,7 +55,7 @@ h1 {
 .column2 {
     display: flex;
     flex-direction: column;
-    margin-top: 30%;
+    margin-top: 15%;
     margin-left: 35%;
 }
 
@@ -58,19 +70,49 @@ h1 {
 .column3 {
     display: flex;
     flex-direction: column;
-    margin-top: 30%;
+    margin-top: 15%;
     margin-left: 35%;
 }
 
+
 hr.new5 {
-    border: 10px solid green;
+    border: 10px solid #737372;
     border-radius: 5px;
     width: 95vw;
     margin-top: 5%;
 }
 
-.line {
-    display: flex;
-    
+.box {
+    background-color: black;
+    height: 5.5vh;
+    width: 3vw;
+    text-align: center;
+    font-size: 4vh;
 }
+
+.list1 {
+    color: white;
+    list-style: none;
+    font-size: 3vh;
+margin-left: 10%;
+}
+
+.list2 {
+    color: white;
+    list-style: none;
+    font-size: 3vh;
+    margin-left: 50%;
+}
+
+.row6 {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+
+
 
