@@ -28,7 +28,7 @@ renderer.outputColorSpace = THREE.SRGBColorSpace;
 
 //adjust height and width
 
-renderer.setSize(window.innerWidth * 0.765, window.innerHeight * 0.9);
+renderer.setSize(window.innerWidth * 0.8, window.innerHeight * 0.9);
 renderer.setClearColor(0xd6d4d4);
 
 // const texture = new THREE.TextureLoader().load( "../img/configurator-img/sky.jpg" );
