@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Nixie+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body{
+    background-color: black;
+    color: white;
+    /* overflow-y: hidden; */
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+canvas{
+    position: fixed;
+    top: 10%;
+    z-index: -1;
+    
+}
+
+.main-configure{
+    position: relative;
+    display: flex;
+    margin-top: 5%;
+
+    width: 100%;
+    height: 89.7vh;
+    z-index: 1;
+}
+
+.car-pic-exterior{
+    display: flex;
+    height: 101%;
+    width: 75%;
+    background-color: black;
+    z-index: -19;
+}
+
+.options-exterior{
+    display: flex;
+    flex-flow:column;
+    background-color: #1D1D1D; 
+    width: 20%;
+    height: 101%;
+    align-items: center;
+}
+
+.options-exterior > h2{
+    font-size:64px;
+    margin-top: 3%;
+    font-weight: normal;
+}
+
+.premium-dropdown{
+    display: inline-flex;
+    
+    width: 85%;
+}
+
+.options-exterior > .premium-dropdown > p{
+    font-size: 32px;
+    margin-top: 0;
+    font-weight: normal;
+}
+
+.options-exterior > .premium-dropdown > svg{
+    margin-bottom: 7%;
+    justify-self: center;
+    align-self: center;
+    width: 2vw;
+    height: 2vh;
+    margin-left: 5%;
+    transform: rotate(0deg);
+}
+
+.color-options-exterior{
+    display: flex;
+    flex-flow: row;
+    width: 65%;
+    justify-content: space-around;
+    margin-top: 4%;
+}
+
+.fancygreen-exterior{
+    width: 2.4vw;
+    height: 4.7vh;
+    transition: border 0.5s;
+    border: 2px solid #263d34;
+    background-color: #263d34;
+    
+}
+
+.fancyblack-exterior{
+    width: 2.4vw;
+    height: 4.7vh;
+    transition: border 0.5s;
+    border: 2px solid #24282b;
+    background-color: #24282b;
+}
+
+.fancyred-exterior{
+    width: 2.4vw;
+    height: 4.7vh;
+    transition: border 0.5s;
+    border: none;
+    border: 2px solid #530011;
+    background-color: #530011;
+}
+
+.fancyblue-exterior{
+    width: 2.4vw;
+    height: 4.7vh;
+    transition: border 0.5s;
+    border: 2px solid #043f98;
+    background-color: #043f98;
+}
+
+.fancygreen-exterior.clicked, .fancyblue-exterior.clicked, .fancyred-exterior.clicked, .fancyblack-exterior.clicked{
+    border: 2px solid #FFF;
+    transition: border 0.5s;
+    
+}
+
+
+
+.premium-exterior-blocker{
+    position: absolute;
+    top:35%;
+    /* display: flex; */
+    width: 20%;
+    height: 22%;
+    transition: top 0.6s;
+    background-color: #1D1D1D;
+    z-index: 0;
+}
+
+.premium-exterior-blocker.opened{
+    z-index: 1;
+    top:12%;
+    
+    
+}
+/* top:10.5% */
+
+.premium-dropdown.closed > p{
+    z-index: 2;
+}
+
+.premium-dropdown.closed > svg{
+    z-index: 2;
+}
+
+.premium-exterior-blocker > hr{
+    margin-top: 20%;
+    width: 80%;
+}
+
+
+
+.exterior-colorwheel{
+    z-index: 3;
+    display: inline-flex;
+    width: 70%;
+    margin-top: 35%;
+    align-items: center;
+    justify-content: center;
+    transition: margin-top 0.6s;
+}
+
+.exterior-colorwheel > p{
+    font-size: 32px;
+    margin-top: 0;
+    font-weight: normal;
+    z-index: 3;
+    color: white;
+}
+
+.exterior-colorwheel > svg{
+    margin-bottom: 7%;
+    justify-self: center;
+    align-self: center;
+    width: 2vw;
+    height: 2vh;
+    margin-left: 5%;
+    transform: rotate(-180deg);
+    z-index: 1;
+}
+
+.premium-exterior-colorwheel-blocker{
+    position: absolute;
+    
+    top:51%;
+    /* display: flex; */
+    width: 20%;
+    height: 40%;
+    transition: top 0.6s;
+    background-color: #1D1D1D;
+    z-index: 1;
+}
+
+.premium-exterior-colorwheel-blocker > hr{
+    
+    width: 80%;
+}
+
+.color-canvas {
+    position: absolute;
+    transition: top 0.6s;
+    height: 20%;
+    width: 20%;
+    top: 55%;
+    /* bottom: 40%; */
+    z-index: 1;
+}
+
+.options-exterior > p{
+    margin-top: 55%;
+    font-size: 24px;
+}
+
+.car-pic-exterior{
+    flex-flow: column;
+    /* justify-content: flex-end; */
+    
+}
+
+
+
+.twod, .threed{
+    position: fixed;
+    border-radius: 20px;
+    right: 20.5%;
+    top: 11%;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    transition: opacity 0.6s;
+    
+    z-index: 10;
+
+
+}
+
+
+
+.twod{
+
+    opacity: 1;
+    z-index: 20;
+}
+
+.threed{
+    opacity: 1;
+    z-index: 20;
+}
+
+.twod.clicked{
+    z-index: 0;
+    opacity: 0;
+    /* display: show; */
+}
+
+.threed.clicked{
+    opacity: 0;
+    z-index: 0;
+    /* display: show; */
+}
+
+
+/* .twod.clicked + .threed{
+    opacity: 1;
+    /* display: none; */
+
+
+
+/* 
+.twod:has(+ .threed.clicked){
+    opacity: 1;
+    /* display: none; */
+
+
+
+
+.car-pic-exterior{
+    background-image: url(../img/configurator-img/nemesis-img/front-black.png);
+    background-size: cover;
+    background-position: 55% 50%;
+    width: 69%;
+    margin-left: 11%;
+    z-index: -199;
+}
+
+.gallery{
+    position: absolute;
+    width: 11%;
+    left: 0;
+    height: 101%;
+    background-color: black;
+
+}
+
+.gallery > img{
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 100%;
+    transition: margin-left 0.6s, transform 0.6s, border 0.6s;
+    height: calc(100%/5.5);
+}
+
+
+
+.gallery > img{
+    margin-top: 3%;
+}
+
+.gallery > img:first-of-type{
+    margin-top: 6%;
+}
+
+.gallery > .selected{
+    border: 3px solid #c12746;
+    margin-left: 5%;
+    transform: scale(1.01);
+}
+
+.next-options{
+    position: fixed;
+    display: flex;
+    flex-flow: row;
+    z-index: 1;
+    width: 20%;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+}
+
+.next-options > svg:first-of-type{
+    margin-left: 5%;
+}
+
+.next-options > svg:last-of-type{
+    margin-right: 5%;
+    fill: white;
+}

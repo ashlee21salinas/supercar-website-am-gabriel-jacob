@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Nixie+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body{
+    background-color: black;
+    color: white;
+    /* overflow-y: hidden; */
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.page{
+    position: relative;
+    display: inline-flex;
+    flex-flow: column;
+    margin-top: 5%;
+    width: 100%;
+    height: 89.7vh;
+    z-index: 1;
+    align-items: center;
+    
+}
+
+.beginning-text > h2{
+    font-size: 48px;
+    margin-top: 3%;
+}
+
+.sign-in > h3{
+    width: 100%;
+    margin-left: 9%;
+    font-size: 35px;
+    margin-bottom: 0;
+}
+
+
+.sign-in > h3:last-of-type{
+    width: fit-content;
+    margin-bottom: 2%;
+    margin-left: 39%;
+    font-size: 35px;
+    margin-top: 0;
+}
+
+.sign-in{
+    display: flex;
+    flex-flow: column;
+    width: 30%;
+    height: 51%;
+}
+
+.sign-in > input{
+    border: none;
+    width: 100%;
+    height: 20%;
+    background-color: #e5e5e586;
+    
+}
+
+::placeholder{
+    color: white;
+    font-family: "Nixie One", system-ui;
+    font-size: 30px;
+    position: absolute;
+    left: 1%;
+    top:20%
+}
+
+
+.sign-in > input:last-of-type{
+    margin-top: 2%;
+    
+}
+
+.row-forget{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    color: #00F2FF;
+}
+
+.sign-in > button{
+    align-self: center;
+    width: 35%;
+    height: 20%;
+    background-color: #47A7A7;
+    border: none;
+    color: white;
+    font-family: "Nixie One", system-ui;
+    font-size: 40px;
+}
+
+
+
+
+
+.sign-up{
+    display: flex;
+    flex-flow: column;
+    width: 30%;
+    height: 60%;
+}
+
+.sign-up > h3{
+    width: 110%;
+    margin-left: 0%;
+    font-size: 35px;
+    margin-bottom: 0;
+    margin-top: 2%;
+}
+
+
+.sign-up > h3:last-of-type{
+    width: fit-content;
+    margin-bottom: 2%;
+    margin-left: 39%;
+    font-size: 35px;
+    margin-top: 0;
+}
+
+.sign-up > input{
+    margin-top: 1%;
+    width: 100%;
+    height: 20%;
+    background-color: #e5e5e586;
+    border: none;
+}
+
+
+
+
+
+
+
+.sign-up > button{
+    align-self: center;
+    width: 35%;
+    height: 20%;
+    background-color: #47A7A7;
+    border: none;
+    color: white;
+    font-family: "Nixie One", system-ui;
+    font-size: 40px;
+    margin-top: 5%;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    height: 100%;
+}

@@ -1,0 +1,133 @@
+
+body {
+    font-family: "Nixie One", system-ui;
+    background-image: linear-gradient(#000000, #737372,#000000 );
+}
+
+p{
+    color: white;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 10vh;
+    margin-top: 5%;
+    color: white;
+}
+
+.imgline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15%;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+    margin-left: 35%;
+}
+
+.price {
+    font-size: 4vh;
+}
+
+.quant {
+    font-size: 3vh;
+}
+
+
+/* row2 */
+.row2 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+}
+
+.column2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+    margin-left: 35%;
+}
+
+
+/* row3 */
+.row3 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+}
+
+.column3 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+    margin-left: 35%;
+}
+
+
+hr.new5 {
+    border: 10px solid #737372;
+    border-radius: 5px;
+    width: 95vw;
+    margin-top: 5%;
+}
+
+.box {
+    background-color: black;
+    height: 5.5vh;
+    width: 3vw;
+    text-align: center;
+    font-size: 4vh;
+}
+
+.list1 {
+    color: white;
+    list-style: none;
+    font-size: 3vh;
+margin-left: 10%;
+}
+
+.list2 {
+    color: white;
+    list-style: none;
+    font-size: 3vh;
+    margin-left: 50%;
+}
+
+.row6 {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.b1 {
+    background-color: white;
+    text-align: center;
+    font-size: 4vh;
+    height: 6vh;
+    width: 21vw;
+    margin-top: 5%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
