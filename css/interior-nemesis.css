@@ -27,7 +27,7 @@ canvas{
 
 .car-pic-exterior{
     display: flex;
-    height: 100%;
+    height: 101%;
     width: 75%;
     background-color: black;
     z-index: -19;
@@ -38,7 +38,7 @@ canvas{
     flex-flow:column;
     background-color: #1D1D1D; 
     width: 20%;
-    height: 100%;
+    height: 101%;
     align-items: center;
 }
 

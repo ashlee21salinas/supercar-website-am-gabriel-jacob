@@ -106,7 +106,7 @@
             <section class="exterior">
                 <p>Exterior</p> 
                 <ul>
-                    <li>Paint color:</li>
+                    <li id="exterior-paint">Paint color:</li>
                 </ul>
             </section>
 
@@ -117,10 +117,10 @@
                 </ul>
             </section>
             <hr>
-            <button>Join The Wait List</button>
+            <button onclick="window.location='signup-login.html';">Join The Wait List</button>
             <section class="buttons-row">
-                <button>Change Exterior</button>
-                <button>Change Interior</button>
+                <button  id="change-exterior">Change Exterior</button>
+                <button  id="change-interior">Change Interior</button>
             </section>
         </section>
 
@@ -135,7 +135,8 @@
 
 </body>
 <script src="js/components-js/navbar.js"></script>
-<script type="module" src="js/3d-model-confirm.js"></script>
+
+<script type="module" src="js/confirm.js"></script>
 
 
 </html>

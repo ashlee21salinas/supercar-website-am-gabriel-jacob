@@ -117,9 +117,9 @@ function threed(){
         canvas.style.zIndex = "1";
         canvas.style.left = "0"
     });
-
+    document.getElementById("car-pic-exterior").style.backgroundImage = "url(../img/configurator-img/white.png)"
     document.getElementById("colorCanvas").style.left = ""
-    
+    document.getElementById("2d").style.zIndex = "2"
     
 }
   
@@ -134,8 +134,9 @@ function twod(){
     car.forEach((canvas) => {
         canvas.style.zIndex = "0";
     });
-    
+    document.getElementById("car-pic-exterior").style.backgroundImage = "url(../img/configurator-img/nemesis-img/front-black.png)"
     document.getElementById("colorCanvas").style.zIndex = "1"
+    document.getElementById("2d").style.zIndex = "0"
 }
 
 function one(){
@@ -210,3 +211,6 @@ function five(){
 
 
 
+document.getElementById("next").onclick = function () {
+    location.href = "../interior-nemesis.html";
+}

@@ -28,7 +28,7 @@ renderer.outputColorSpace = THREE.SRGBColorSpace;
 
 //adjust height and width
 
-renderer.setSize(window.innerWidth * 0.8, window.innerHeight * 0.9);
+renderer.setSize(window.innerWidth * 0.765, window.innerHeight * 0.9);
 renderer.setClearColor(0xd6d4d4);
 
 // const texture = new THREE.TextureLoader().load( "../img/configurator-img/sky.jpg" );
@@ -387,6 +387,8 @@ function initColorPicker() {
 
     console.log(color_car)
 
+    var paint = color;
+    localStorage.setItem("paint",paint);
     document.getElementById("rgb").style.color=color;
     document.getElementById("rgb").textContent=color;
 
@@ -423,8 +425,11 @@ function rgb_color(){
           let selectedColor = new THREE.Color().setHex("0x" + color_car);
           console.log(color_car)
           console.log(selectedColor)
+          var car_color = color_car;
+          localStorage.setItem("carcolor",car_color);
           // node.material.color.copy('yellow'); 
           node.material.color = new THREE.Color(selectedColor); 
+        
 
       }
       else{

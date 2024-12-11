@@ -189,3 +189,13 @@ function green_click(){
   }
 
   initColorPicker()
+
+  document.getElementById("back").onclick = function () {
+    location.href = "../exterior-nemesis.html";
+}
+
+document.getElementById("next").onclick = function () {
+    var cartype = "nemesis";
+    localStorage.setItem("cartype",cartype);
+    location.href = "../confirm.html";
+}

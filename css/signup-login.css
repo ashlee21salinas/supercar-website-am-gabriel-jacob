@@ -22,35 +22,34 @@ body{
 
 .beginning-text > h2{
     font-size: 48px;
+    margin-top: 3%;
 }
 
-.beginning-text > h3{
-    width: fit-content;
-    margin-left: 19%;
+.sign-in > h3{
+    width: 100%;
+    margin-left: 9%;
     font-size: 35px;
     margin-bottom: 0;
 }
 
-.beginning-text > h3:last-of-type{
-    
-    margin-bottom: 2%;
-}
 
-
-.beginning-text > h3:last-of-type{
+.sign-in > h3:last-of-type{
     width: fit-content;
-    margin-left: 42%;
+    margin-bottom: 2%;
+    margin-left: 39%;
     font-size: 35px;
+    margin-top: 0;
 }
 
 .sign-in{
     display: flex;
     flex-flow: column;
     width: 30%;
-    height: 30%;
+    height: 51%;
 }
 
 .sign-in > input{
+    border: none;
     width: 100%;
     height: 20%;
     background-color: #e5e5e586;
@@ -98,23 +97,38 @@ body{
     display: flex;
     flex-flow: column;
     width: 30%;
-    height: 30%;
+    height: 60%;
+}
+
+.sign-up > h3{
+    width: 110%;
+    margin-left: 0%;
+    font-size: 35px;
+    margin-bottom: 0;
+    margin-top: 2%;
+}
+
+
+.sign-up > h3:last-of-type{
+    width: fit-content;
+    margin-bottom: 2%;
+    margin-left: 39%;
+    font-size: 35px;
+    margin-top: 0;
 }
 
 .sign-up > input{
+    margin-top: 1%;
     width: 100%;
     height: 20%;
     background-color: #e5e5e586;
-    
+    border: none;
 }
 
 
 
 
-.sign-up > input:last-of-type{
-    margin-top: 2%;
-    
-}
+
 
 
 .sign-up > button{
@@ -126,4 +140,13 @@ body{
     color: white;
     font-family: "Nixie One", system-ui;
     font-size: 40px;
+    margin-top: 5%;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    height: 100%;
 }
