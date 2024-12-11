@@ -2,20 +2,9 @@ document.getElementById("premium-options-arrow").addEventListener("click", premi
 
 document.getElementById("colorwheel-arrow").addEventListener("click", color_wheel_arrow);
 
-document.getElementById("3d").addEventListener("click", threed);
-document.getElementById("2d").addEventListener("click", twod);
 
-document.getElementById("img-1").addEventListener("click", one);
-document.getElementById("img-2").addEventListener("click", two);
-document.getElementById("img-3").addEventListener("click", three);
-document.getElementById("img-4").addEventListener("click", four);
-document.getElementById("img-5").addEventListener("click", five);
 
-var ones = document.getElementById("img-1")
-var twos = document.getElementById("img-2")
-var threes = document.getElementById("img-3")
-var fours = document.getElementById("img-4")
-var fives = document.getElementById("img-5")
+
 
 const green = document.getElementById("fancygreen-exterior")
 const blue = document.getElementById("fancyblue-exterior")
