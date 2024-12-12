@@ -75,8 +75,8 @@ hr{
 }
 
 .selections > button{
-    margin-left: 32%;
-    width: 35%;
+    
+    width: fit-content;
     height: 7%;
     background-color: #47A7A7;
     color: white;
@@ -84,6 +84,7 @@ hr{
     margin-top: 5%;
     font-family: "Nixie One", system-ui;
     font-size: 26px;
+    align-self: center;
 }
 
 .buttons-row{
@@ -98,7 +99,7 @@ hr{
 .buttons-row > button{
     /* margin-left: 35%; */
     font-family: "Nixie One", system-ui;
-    width: 35%;
+    width: fit-content;
     height: 100%;
     background-color: #47A7A7;
     color: white;

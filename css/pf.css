@@ -4,8 +4,10 @@ body{
     background-color: black;
     color: white;
     /* overflow-y: hidden; */
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     font-family: "Nixie One", system-ui;
+    margin: 0px;
+   width: 100%;
 }
 
 main > svg{
@@ -24,11 +26,11 @@ main > svg{
 
 .hello > h2{
     margin-top: 0;
-    margin-right: 2%;
+    
 }
 
 .hello > svg{
-    margin-right: 5%;
+    
     transform: scale(0.7);
 }
 
@@ -36,8 +38,9 @@ main > svg{
     display: flex;
     width: 100%;
     flex-flow: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
+    margin-top: 5%;
 }
 
 .setting{
@@ -82,3 +85,49 @@ main > svg{
     margin-top: 0;
     font-size: 40px
 }
+
+#language{
+    width: fit-content;
+}
+
+#gt-mordadam-43217984{
+    
+    width: fit-content;
+    color: white;
+}
+
+.gt_switcher-popup.glink.nturl.notranslate > span{
+    color: white;
+    font-size: 25px;
+}
+
+span{
+    color: black;
+}
+
+.accessibility-options{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    align-items: center;
+}
+
+.accessibility-options > h3{
+    font-size: 40px;
+    
+}
+
+.accessibility-options > h4{
+    font-size: 30px;
+    margin-top: 0;
+}
+
+li{
+    list-style-type: none;
+    font-size: 25px;
+}
+
+ul{
+    
+}
+

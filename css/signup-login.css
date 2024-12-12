@@ -80,7 +80,7 @@ body{
 
 .sign-in > button{
     align-self: center;
-    width: 35%;
+    width: fit-content;
     height: 20%;
     background-color: #47A7A7;
     border: none;
@@ -133,7 +133,7 @@ body{
 
 .sign-up > button{
     align-self: center;
-    width: 35%;
+    width: fit-content;
     height: 20%;
     background-color: #47A7A7;
     border: none;
