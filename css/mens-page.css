@@ -34,9 +34,14 @@ h5{
   text-align: center;
   margin-right: 120vh;
   color: white;
-  height: 8vh;
+  height: 5vh;
+  padding: 1%;
   width: 15vw;
   font-size: 3vh;
+ }
+
+ a {
+  text-decoration: none;
  }
 
  .images {

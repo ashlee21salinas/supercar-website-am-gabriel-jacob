@@ -1,0 +1,53 @@
+
+
+img {
+    height: 30vh;
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+
+.images2 {
+    height: 6vh;
+    width: 5vw;
+    margin-left: 20%;
+    background-color: #D7D9D7;
+    border-radius: 50%;
+    padding: 0.5%;
+}
+
+.time {
+    display: flex;
+    flex-direction: row;
+}
+
+#check2 {
+    margin-left: 4%;
+    color: #D7D9D7;
+   
+}
+
+#arrow3 {
+    margin-left: 6%;
+}
+
+
+.second {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 1%;
+    font-size: 2vh;
+}
+
+.second p {
+margin-left: 3%;
+}
+
+
+

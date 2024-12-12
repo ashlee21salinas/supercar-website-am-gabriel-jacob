@@ -1,9 +1,19 @@
+/* MEDIA */
+@media (max-width: 625px) {
+body {
+  
+  font-size: xx-small;
+}
+}
 
 
 
+html {
+  text-rendering: optimizeLegibility;
+  line-height: 1.15;
+}
 
                               /* Performance Section */
-
   
   .performance-section h2 {
     font-size: 2rem;
