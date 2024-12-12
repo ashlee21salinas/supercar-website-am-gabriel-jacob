@@ -6,6 +6,8 @@ body{
     background: #020103;
     z-index: -10000;
     overflow-x: hidden;
+    top:0 !important;
+    position: absolute !important;
 }
 
 .hero{
@@ -149,7 +151,7 @@ body{
 
 .side-scroll-car{
     position: absolute;
-    bottom: -55.7%;
+    top: 15.5%;
     transform: scale(.6);
     right: 5%;
     transition: transform 0.5s, right 1s;
@@ -174,7 +176,7 @@ body{
 
     animation: blah 1s forwards;
 
-    bottom: -38.5%;
+    top: 14.8%;
     right: -75%;
 }
 
