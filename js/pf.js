@@ -229,3 +229,18 @@
 
 
     
+var svg = document.getElementById('pfp-img');
+
+var src;
+
+document.querySelector("input").onchange = function() {
+    var url = URL.createObjectURL(this.files[0]);
+    var img = document.createElement("img");
+    img.setAttribute("pfp-img", "im");
+    img.src = src || url;
+
+    this.parentNode.replaceChild(img, this);
+    document.getElementById("pfp-img").style.backgroundImage = "url(" + url + ")"
+
+//    document.body.style.background = "url(" + url + ") no-repeat";
+}
