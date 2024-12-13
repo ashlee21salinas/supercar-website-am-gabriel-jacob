@@ -37,7 +37,6 @@ img {
 
 
 .second {
-    
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -46,8 +45,52 @@ img {
 }
 
 .second p {
-margin-left: 3%;
+    margin-left: 3%;
+}
+
+.middle {
+    margin-top: 10%;
+    font-size: 3vh;
+    text-align: center;
+    background-color: #D7D9D7;
+    padding: 2%;
+    
+}
+
+.column2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    font-size: 3vh;
+}
+
+.row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 3%;
+    font-size: 3vh;
+}
+
+#nameoncard {
+    width: 50vw;
+    font-size: 3vh;
 }
 
 
+#cardnumb {
+    font-size: 3vh;
+    width: 9.5vw;
+}
+
+#expodate {
+    font-size: 3vh;
+    width: 9.5vw;
+}
+
+#cvv {
+    font-size: 3vh;
+    width: 9.5vw;
+}
 
