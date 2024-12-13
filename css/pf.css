@@ -93,15 +93,19 @@ span{
 input{
     margin-left: 12%;
     align-self: center;
+    font-family: "Nixie One", system-ui;
 }
 
 i.custom-file-upload{
     background-color: aqua;
 }
 
-.pfp-svg-blocker{
+#originalImage{
+    visibility: hidden;
     position: absolute;
-    background-color: white;
-    width: 200px;
-    height: 200px;
+    z-index: -100;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    border-radius: 200px;
 }
+

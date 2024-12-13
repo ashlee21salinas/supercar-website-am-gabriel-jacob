@@ -19,8 +19,9 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" fill="none" id="pfp-img">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M136.364 72.7269C136.364 82.3712 132.533 91.6204 125.713 98.4399C118.894 105.259 109.645 109.091 100 109.091C90.3561 109.091 81.1069 105.259 74.2874 98.4399C67.4679 91.6204 63.6367 82.3712 63.6367 72.7269C63.6367 63.0827 67.4679 53.8334 74.2874 47.0139C81.1069 40.1944 90.3561 36.3633 100 36.3633C109.645 36.3633 118.894 40.1944 125.713 47.0139C132.533 53.8334 136.364 63.0827 136.364 72.7269ZM118.182 72.7269C118.182 77.549 116.267 82.1736 112.857 85.5834C109.447 88.9932 104.822 90.9087 100 90.9087C95.1782 90.9087 90.5536 88.9932 87.1439 85.5834C83.7341 82.1736 81.8185 77.549 81.8185 72.7269C81.8185 67.9048 83.7341 63.2802 87.1439 59.8704C90.5536 56.4607 95.1782 54.5451 100 54.5451C104.822 54.5451 109.447 56.4607 112.857 59.8704C116.267 63.2802 118.182 67.9048 118.182 72.7269Z" fill="white"/>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M100 0C44.7727 0 0 44.7727 0 100C0 155.227 44.7727 200 100 200C155.227 200 200 155.227 200 100C200 44.7727 155.227 0 100 0ZM18.1818 100C18.1818 119 24.6636 136.491 35.5273 150.382C43.1586 140.365 53.0014 132.247 64.2876 126.661C75.5739 121.076 87.9982 118.174 100.591 118.182C113.022 118.167 125.292 120.992 136.465 126.44C147.638 131.888 157.42 139.815 165.064 149.618C172.94 139.287 178.244 127.229 180.535 114.442C182.827 101.654 182.04 88.5049 178.241 76.0817C174.441 63.6585 167.738 52.3186 158.686 43.0003C149.634 33.6821 138.493 26.6533 126.185 22.4955C113.877 18.3378 100.756 17.1707 87.9078 19.0907C75.0593 21.0107 62.8526 25.9627 52.2979 33.5368C41.7432 41.111 33.1437 51.0897 27.2112 62.6472C21.2786 74.2047 18.1835 87.0088 18.1818 100ZM100 181.818C81.2173 181.849 63.0013 175.387 48.4364 163.527C54.2983 155.133 62.1018 148.279 71.1825 143.55C80.2632 138.82 90.3523 136.355 100.591 136.364C110.702 136.355 120.668 138.759 129.663 143.376C138.659 147.992 146.422 154.689 152.309 162.909C137.632 175.155 119.115 181.848 100 181.818Z" fill="white"/>
+                
             </svg>
-            <div id="pfp-svg-blocker"></div>
+            <img id="originalImage"  alt="Original Image" style="max-width: 200px;" />
             <h2>Hello</h2>
         </section>
         <h3>Language Selector:</h3>
@@ -29,14 +30,11 @@
         </section>
 
         <section class="pfp">
+            
             <h3>Change your profile picture:</h3>
-            <form action="file" method="POST" enctype="multipart/form-data" id="file-selector">
-                <div id="pfp-select" style="height: 5vh; width: 10vw;border: 1px dashed #BBB; cursor:pointer; text-align: center; font-size: 24px;" onclick="getFile()">Click to upload!</div>
-                <!-- this is your file input tag, so i hide it!-->
-                <div style='height: 0px;width:0px; overflow:hidden;'><input id="upfile" type="file" value="upload"/></div>
-                
 
-              </form>
+                <input type="file" id="imageInput" accept="image/*" />
+
         </section>
 
         <section class="theme">
@@ -67,28 +65,62 @@
 
 <script src="js/pf.js" data-gt-widget-id="43217984"></script>
 
-
 <script>
-    function getFile() {
-        document.getElementById("upfile").click();
+     var pfp_img = localStorage.getItem("pfp-img");
+    if (!(pfp_img == null)){
+        
+
+        const imgElement = document.getElementById('originalImage');
+
+        imgElement.src = pfp_img
+        imgElement.style.visibility = "visible"
+        document.getElementById("pfp-img").style.opacity = "0"
+        imgElement.style.width = "200px"
+        imgElement.style.height = "200px"
     }
-    
-    // function sub(obj) {
-    //     var file = obj.value;
-    //     var fileName = file.split("\\");
-    //     document.getElementById("pfp-select").innerHTML = fileName[fileName.length - 1];
-    //     event.preventDefault();
-    //     console.log(fileName)
-    // }
+
+
+   document.getElementById('imageInput').addEventListener('change', handleImageUpload);
+
+    function handleImageUpload(event) {
+    const file = event.target.files[0];  // Get the uploaded file
+
+    if (file) {
+        const reader = new FileReader();
+
+        reader.onload = function(e) {
+        const imgElement = document.getElementById('originalImage');
+        imgElement.src = e.target.result;  // Replace the original image with the uploaded one
+
+        file_end = e.target.result
+
+        localStorage.setItem("pfp-img", file_end);
+        imgElement.style.width = "200px"
+        imgElement.style.height = "200px"
+        imgElement.style.visibility = "visible"
+        imgElement.style.zIndex = "1"
+        document.getElementById("pfp-img").visibility = "none"
+        
+        };
+
+        reader.readAsDataURL(file);  // Read the file as a Data URL
+    }
+    }
 </script>
 
 <script>
-    // const fileSelector = document.getElementById('file-selector');
-    // fileSelector.addEventListener('change', (event) => {
-    //   const fileList = event.target.files;
-    //   console.log(fileList);
-    // });
 
-    
-  </script>
+
+
+
+
+
+   
+
+
+
+     
+
+</script>
+
 </html>

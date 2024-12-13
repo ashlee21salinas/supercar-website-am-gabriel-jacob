@@ -229,18 +229,21 @@
 
 
     
-var svg = document.getElementById('pfp-img');
+// var svg = document.getElementById('pfp-img');
 
-var src;
+// var src;
 
-document.querySelector("input").onchange = function() {
-    var url = URL.createObjectURL(this.files[0]);
-    var img = document.createElement("img");
-    img.setAttribute("pfp-img", "im");
-    img.src = src || url;
+// document.querySelector("input").onchange = function() {
 
-    this.parentNode.replaceChild(img, this);
-    document.getElementById("pfp-img").style.backgroundImage = "url(" + url + ")"
+//     var url = URL.createObjectURL(this.files[0]);
 
-//    document.body.style.background = "url(" + url + ") no-repeat";
-}
+//     var img = document.createElement("img");
+
+//     img.setAttribute("pfp-img", "im");
+
+//     img.src = src || url;
+
+//     this.parentNode.replaceChild(img, this);
+    
+// //    document.body.style.background = "url(" + url + ") no-repeat";
+// }
