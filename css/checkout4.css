@@ -199,3 +199,31 @@ a {
     text-align: none;
 }
   
+.start {
+    background-color: #D97B73;
+    font-size: 5vh;
+    width: 40vw;
+    margin-top: 55;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3%;
+}
+
+.smallnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.button {
+    background-color: black;
+    color: white;
+    width: 11vw;
+    height: 7vh;
+    padding: 2%;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
