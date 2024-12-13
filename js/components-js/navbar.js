@@ -38,6 +38,13 @@ function hamburger_click() {
   document.getElementById("hamburger").style.scale= '0';
   document.getElementById("pfp").style.scale= '0';
 
+  
+  
+  
+
+  setTimeout(() =>  document.getElementById("models-submenu").style.opacity = "1", 1700)
+  
+
   document.getElementById("logo").style.transition='width 1s, height 1s'
   document.getElementById("exit_nav").style.transition='width 1s, height 1s'
   
@@ -87,17 +94,21 @@ function hamburger_click() {
       document.getElementById("models-submenu-blackwidow").classList.add('almost-clicked')
       document.getElementById("models-submenu-nemesis").classList.add('almost-clicked')
       document.getElementById("merch-submenu").classList.add('almost-clicked')
-
+      document.getElementById("models-submenu-nemesis").style.opacity = "1"
+      document.getElementById("models-submenu-blackwidow").style.opacity = "1"
+      setTimeout(() => document.getElementById("models-submenu").style.opacity = "1", 0)
 
     }
     else{
 
-    
+      document.getElementById("models-submenu-nemesis").style.opacity = "1"
+      document.getElementById("models-submenu-blackwidow").style.opacity = "1"
       document.getElementById("models-submenu").classList.add('clicked')
       document.getElementById("models-submenu").style.zIndex = "101"
       document.getElementById("models-submenu-blackwidow").classList.add('almost-clicked')
       document.getElementById("models-submenu-nemesis").classList.add('almost-clicked')
       document.getElementById("merch-submenu").classList.add('almost-clicked')
+      setTimeout(() => document.getElementById("models-submenu").style.opacity = "1", 0)
 
     }
   }
@@ -141,18 +152,36 @@ function hamburger_click() {
 
       if(document.getElementById("models-submenu-blackwidow").classList.contains("clicked")){
         document.getElementById("models-submenu-blackwidow").classList.add("models-blackwidow-back")
+
+        setTimeout(() => document.getElementById("models-submenu-blackwidow").style.opacity = "0", 1000)
+        setTimeout(() => document.getElementById("models-submenu-nemesis").style.opacity = "0", 1000)
+        setTimeout(() => document.getElementById("models-submenu").style.opacity = "0", 1000)
+
         document.getElementById("models-submenu").classList.add('back')
+        document.getElementById("models-submenu").classList.add('almost-clicked')
         setTimeout(all_models_close, 1000)
 
       }
       else if (document.getElementById("models-submenu-nemesis").classList.contains("clicked")){
         document.getElementById("models-submenu-nemesis").classList.add("models-nemesis-back")
+
+        setTimeout(() => document.getElementById("models-submenu-blackwidow").style.opacity = "0", 1000)
+        setTimeout(() => document.getElementById("models-submenu-nemesis").style.opacity = "0", 1000)
+        setTimeout(() => document.getElementById("models-submenu").style.opacity = "0", 1000)
+        
         document.getElementById("models-submenu").classList.add('back')
+        document.getElementById("models-submenu").classList.add('almost-clicked')
+        
         setTimeout(all_models_close, 1000)
 
       }
       else{
+        document.getElementById("models-submenu").classList.add('almost-clicked')
         document.getElementById("models-submenu").classList.add('back')
+        document.getElementById("models-submenu").classList.add('almost-clicked')
+
+        
+
         setTimeout(back_model_removed, 1000)
       }
 
@@ -219,7 +248,7 @@ function hamburger_click() {
       
       document.getElementById("models-submenu").classList.remove('back')
       document.getElementById("models-submenu").classList.remove('clicked')
-      document.getElementById("models-submenu").classList.remove('almost-clicked')
+      // document.getElementById("models-submenu").classList.remove('almost-clicked')
       document.getElementById("models-submenu").classList.remove('exit')
 
 
@@ -227,7 +256,7 @@ function hamburger_click() {
 
       document.getElementById("merch-submenu").classList.remove('back')
       document.getElementById("merch-submenu").classList.remove('clicked')
-      document.getElementById("merch-submenu").classList.remove('almost-clicked')
+      // document.getElementById("merch-submenu").classList.remove('almost-clicked')
       document.getElementById("merch-submenu").classList.remove('exit')
     }
   
@@ -351,14 +380,28 @@ document.getElementById("nav").style.marginLeft ="0%"
         document.getElementById("models-submenu").classList.add("exit")
         document.getElementById("menu").style.left = '-15%'
         setTimeout(all_models_close, 1000)
+
+        
+        setTimeout(() => document.getElementById("models-submenu-nemesis").style.opacity = "0", 800)
+        setTimeout(() => document.getElementById("models-submenu-blackwidow").style.opacity = "0", 800)
+        setTimeout(() => document.getElementById("models-submenu").style.opacity = "0", 800)
+
+
         setTimeout(() => document.getElementById("hamburger").classList.remove('clicked'), 1350)
         navbar_close_animation()
       }
       else if (document.getElementById("models-submenu-nemesis").classList.contains("clicked")){
+
+        
         document.getElementById("models-submenu-nemesis").classList.add("exit")
         document.getElementById("models-submenu").classList.add("exit")
         document.getElementById("menu").style.left = '-15%'
         setTimeout(all_models_close, 1000)
+
+        setTimeout(() => document.getElementById("models-submenu-blackwidow").style.opacity = "0", 800)
+        setTimeout(() => document.getElementById("models-submenu-nemesis").style.opacity = "0", 800)
+        setTimeout(() => document.getElementById("models-submenu").style.opacity = "0", 800)
+
         setTimeout(() => document.getElementById("hamburger").classList.remove('clicked'), 1350)
         navbar_close_animation()
         
@@ -367,6 +410,11 @@ document.getElementById("nav").style.marginLeft ="0%"
         document.getElementById("models-submenu").classList.add("exit")
         document.getElementById("menu").style.left = '-15%'
         setTimeout(all_models_close, 1000)
+
+        setTimeout(() => document.getElementById("models-submenu-blackwidow").style.opacity = "0", 800)
+        setTimeout(() => document.getElementById("models-submenu-nemesis").style.opacity = "0", 800)
+        setTimeout(() => document.getElementById("models-submenu").style.opacity = "0", 800)
+
         setTimeout(() => document.getElementById("hamburger").classList.remove('clicked'), 1050)
         navbar_close_animation()
       }
@@ -378,6 +426,11 @@ document.getElementById("nav").style.marginLeft ="0%"
       document.getElementById("merch-submenu").classList.add("exit")
       
       document.getElementById("menu").style.left = '-15%'
+
+      setTimeout(() => document.getElementById("models-submenu-blackwidow").style.opacity = "0", 800)
+      setTimeout(() => document.getElementById("models-submenu-nemesis").style.opacity = "0", 800)
+      setTimeout(() => document.getElementById("models-submenu").style.opacity = "0", 800)
+
       setTimeout(all_models_close, 1000)
       setTimeout(() => document.getElementById("hamburger").classList.remove('clicked'), 1050)
       navbar_close_animation()
@@ -385,6 +438,11 @@ document.getElementById("nav").style.marginLeft ="0%"
     }
     else{
       document.getElementById("menu").style.left = '-15%'
+
+      setTimeout(() => document.getElementById("models-submenu-blackwidow").style.opacity = "0", 800)
+        setTimeout(() => document.getElementById("models-submenu-nemesis").style.opacity = "0", 800)
+        setTimeout(() => document.getElementById("models-submenu").style.opacity = "0", 800)
+
       setTimeout(() => document.getElementById("hamburger").classList.remove('clicked'), 1050)
       navbar_close_animation()
 

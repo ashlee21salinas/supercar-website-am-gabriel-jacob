@@ -85,7 +85,7 @@ function side_feature_open(){
     }
     else{
         document.getElementById("side-scroll-car").style.bottom = "-55.7%"
-        document.getElementById("side-scroll-car").style.right = "47%"
+        document.getElementById("side-scroll-car").style.right = "35%"
         // document.getElementById("side-scroll-feature").style.width = "37.5%"
 
         sideblocker.style.animationName = "sideblocker-in"

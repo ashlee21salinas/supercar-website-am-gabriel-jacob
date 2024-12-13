@@ -310,7 +310,7 @@ nav > .models-submenu-blackwidow.almost-clicked{
     display: flex;
     width: 1%;
     opacity: 0;
-    left:18%;
+    left:16%;
     height: 100%;
     
 }
@@ -322,7 +322,7 @@ nav > .models-submenu-blackwidow.clicked{
     flex-flow: column;
     color: white;
     height: 100%;
-    width: 15%;
+    width: 17%;
     align-items: center;
     opacity: 1;
     background: #252323;
@@ -333,7 +333,7 @@ nav > .models-submenu-blackwidow.clicked{
 
 nav > .models-submenu-blackwidow.back{
     transition: left 1s;
-    left:18%;
+    left:16%;
     
 }
 
@@ -367,7 +367,7 @@ nav > .models-submenu-nemesis.almost-clicked{
     display: flex;
     width: 1%;
     opacity: 0;
-    left:18%;
+    left:16%;
     height: 100%;
     
 }
@@ -379,7 +379,7 @@ nav > .models-submenu-nemesis.clicked{
     flex-flow: column;
     color: white;
     height: 100%;
-    width: 15%;
+    width: 17%;
     align-items: center;
     opacity: 1;
     background: #252323;
@@ -389,7 +389,7 @@ nav > .models-submenu-nemesis.clicked{
 
 nav > .models-submenu-nemesis.back{
     transition: left 1s;
-    left:18%;
+    left:16%;
     
 }
 
@@ -411,14 +411,14 @@ nav > .models-submenu-nemesis.back{
 
 nav > .models-submenu-blackwidow.models-blackwidow-back{
     transition: left 1s;
-    left: 3%;
+    left: 0%;
     
 }
 
 
 nav > .models-submenu-nemesis.models-nemesis-back{
     transition: left 1s;
-    left: 3%;
+    left: 0%;
     
 }
 
@@ -435,14 +435,14 @@ nav > .merch-submenu.exit{
 }
 
 nav > .models-submenu-blackwidow.exit{
-    transition: left 1.3s;
-    left: -15%;
+    transition: left 1.2s;
+    left: -17%;
 }
 
 
 nav > .models-submenu-nemesis.exit{
-    transition: left 1.3s;
-    left: -15%;
+    transition: left 1.2s;
+    left: -17%;
     
 }
 
