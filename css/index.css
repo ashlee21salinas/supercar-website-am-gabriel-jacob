@@ -1076,6 +1076,18 @@ hr{
     }
 }
 
+@media screen and (min-width:100px) and (max-width:551px){
+    .side-blocker{
+        top:20%;
+    }
+    .side-scroll-car{
+        margin-top: -6%;
+        width: 45%;
+        height: 45%;
+    }
+}
+
+
 @media screen and (min-width:100px) and (max-width:540px){
 
     .hero{
