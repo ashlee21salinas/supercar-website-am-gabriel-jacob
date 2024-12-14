@@ -717,13 +717,13 @@ hr{
 }
 
 
-@media screen and (min-width:100px) and (max-width:1441px){
+@media screen and (min-width:1340px) and (max-width:1441px){
     img.side-scroll-car{
-        margin-top: -.5%;
+        margin-top: -1%;
         width: 40%;
-        height: 130%;
+        height: 100%;
         margin-right: 0%;
-        /* margin-left: 40% !important; */
+        
     }
 
     .side-blocker{
@@ -834,8 +834,8 @@ hr{
 
 @media screen and (min-width:100px) and (max-width:1025px){
     .side-scroll-car{
-        margin-top: -3.5%;
-        width: 45%;
+        margin-top: -3%;
+        width: 50%;
         height: 80%;
     }
 
