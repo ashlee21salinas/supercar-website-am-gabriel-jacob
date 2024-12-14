@@ -29,19 +29,11 @@ h5{
  
 
 
- .viewcart {
-  background-color: black;
-  text-align: center;
-  margin-right: 120vh;
-  color: white;
-  height: 5vh;
-  padding: 1%;
-  width: 15vw;
-  font-size: 3vh;
- }
 
- a {
+
+ a.viewcart {
   text-decoration: none;
+  margin-top: 5%;
  }
 
  .images {
@@ -60,7 +52,7 @@ h5{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 5%;
+    margin-top: 20%;
  }
 
  .box1 {
