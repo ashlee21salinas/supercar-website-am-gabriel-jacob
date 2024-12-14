@@ -1216,3 +1216,102 @@ hr{
         height: fit-content;
     }
 }
+
+
+@media screen and (min-width:100px) and (max-width:381px){
+
+    .homepage-mens > h3{
+        font-size: 20px;
+    }
+
+    .homepage-accesories > h3{
+        font-size: 20px;
+    }
+
+    .homepage-womens > h3{
+        font-size: 20px;
+    }
+
+    p.scroll-text{
+        width: 110%;
+        font-size: 7px;
+
+    }
+
+    .side-blocker{
+        height: fit-content;
+        top:22.2%;
+        width: 79%;
+    }
+
+    .vision-mission-readmore{
+        margin-left: 60%;
+    }
+
+    .homepage-mens > h3{
+        font-size: 15px;
+    }
+
+    .homepage-merchcards{
+        height: 20vh;
+    }
+
+    .homepage-accesories > h3{
+        font-size: 15px;
+    }
+
+    .homepage-womens > h3{
+        font-size: 15px;
+    }
+    
+    .rare_column > h3{
+        font-size: 15px;
+    }
+
+    .rare_column > p{
+        width: 80%;
+        font-size: 12px;
+    }
+
+    .rare_row > img{
+        height: 20vh;
+    }
+
+    .rare{
+        margin-top: 25%;
+        height: fit-content;
+    }
+
+    .vision-mission > h2{
+        font-size: 30px;
+    }
+
+    .vision-mission_column > h3{
+        font-size: 20px;
+    }
+
+    .vision-mission_column > p{
+        font-size: 10px;
+    }
+
+    .vision-mission_row > img{
+        height: 40vh;
+    }
+
+
+    .configure > h2{
+        font-size: 30px;
+    }
+
+    .configure_column > h3{
+        font-size: 20px;
+    }
+
+    .configure_column > p{
+        font-size: 10px;
+    }
+
+    .configure_row > img{
+        height: 40vh;
+    }
+}
