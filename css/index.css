@@ -717,11 +717,17 @@ hr{
 }
 
 
-@media screen and (min-width:100px) and (max-width:1440px){
-    .side-scroll-car{
+@media screen and (min-width:100px) and (max-width:1441px){
+    img.side-scroll-car{
         margin-top: -.5%;
-        width: 45%;
-        height: 100%;
+        width: 40%;
+        height: 130%;
+        margin-right: 0%;
+        /* margin-left: 40% !important; */
+    }
+
+    .side-blocker{
+        top:14%;
     }
 
     .hero-text{
