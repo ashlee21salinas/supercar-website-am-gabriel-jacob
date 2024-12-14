@@ -962,7 +962,17 @@ hr{
         margin-left: 70%;
     }
     
+    .homepage-mens > h3{
+        font-size: 30px;
+    }
 
+    .homepage-accesories > h3{
+        font-size: 30px;
+    }
+
+    .homepage-womens > h3{
+        font-size: 30px;
+    }
 
 
     
@@ -1063,5 +1073,146 @@ hr{
 
     .rare_column > p{
         margin-right: 5%;
+    }
+}
+
+@media screen and (min-width:100px) and (max-width:540px){
+
+    .hero{
+        height: 60vh;
+    }
+
+    .hero-text{
+        top:14%;
+    }
+
+    .side-scroll-car{
+        margin-top: 1%;
+        width: 45%;
+        height: 40%;
+    }
+
+    .side-blocker{
+        top:19%;
+    }
+    
+    .side-scroll-feature{
+        height: fit-content;
+    }
+
+    p.scroll-text{
+        font-size: 8px;
+    }
+
+    .vision-mission_column > p{
+        font-size: 12px;
+        width: 60%;
+    }
+
+    .vision-mission-readmore{
+        margin-right: 20%;
+        margin-left: 70%;
+        font-size: 15px;
+    }
+    
+    .configure-discover{
+        font-size: 15px;
+        margin-top: 25%;
+    }
+
+  
+    .homepage-mens > h3{
+        font-size: 25px;
+    }
+
+    .homepage-accesories > h3{
+        font-size: 25px;
+    }
+
+    .homepage-womens > h3{
+        font-size: 25px;
+    }
+    
+    .vision-mission{
+        height: fit-content;
+        margin-top: 5%;
+    }
+
+    .vision-mission > h2{
+        z-index: 1;
+    }
+
+    .homepage-merchcards{
+        height: 30vh;
+        width: 100%;
+        margin-top: 20%;
+        /* justify-content: center; */
+    }
+   
+    .homepage-mens, .homepage-accesories, .homepage-womens{
+        width: calc(90% / 3);
+    }
+
+    .vision-mission_row > img{
+        height: 50vh;
+    }
+
+    .configure_row > img{
+        height: 50vh;
+    }
+
+    .configure{
+        margin-top: 10%;
+        height: fit-content;
+    }
+
+    .configure_column > p{
+        font-size: 12px;
+        width: 60%;
+    }
+
+
+    .rare_column > h3{
+        font-size: 20px;
+    }
+
+    .rare_column > p{
+        width: 60%;
+        font-size: 12px;
+    }
+
+    .rare_row > img{
+        height: 20vh;
+    }
+
+    .rare{
+        margin-top: 25%;
+        height: fit-content;
+    }
+
+}
+
+@media screen and (min-width:100px) and (max-width:460px){
+
+    .homepage-mens > h3{
+        font-size: 20px;
+    }
+
+    .homepage-accesories > h3{
+        font-size: 20px;
+    }
+
+    .homepage-womens > h3{
+        font-size: 20px;
+    }
+
+    p.scroll-text{
+        width: 100%;
+
+
+    }
+
+    .side-blocker{
+        height: fit-content;
     }
 }
