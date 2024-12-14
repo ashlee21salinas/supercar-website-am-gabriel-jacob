@@ -135,11 +135,7 @@ body{
 
 }
 
-.side-scroll-car:hover{
-    transform: scale(.65);
-    cursor: pointer;
 
-}
 
  .side-scroll-feature:has(+ .side-scroll-car:hover){
     transform: scale(1.05);
@@ -150,13 +146,18 @@ body{
 
 
 .side-scroll-car{
-    position: absolute;
-    top: 14%;
-    transform: scale(.6);
-    right: 5%;
-    transition: transform 0.5s, right 1s;
+    position: relative;
+
+    width: 40%;
+    height: 110%;
+    top:5%;
+    margin-top: 2.3%;
+    margin-left: 50%;
+    transition: transform 0.5s, margin-left 1s;
     z-index: 1;
 }
+
+
 
 .side-blocker{
     z-index: 1;
@@ -596,11 +597,12 @@ hr{
 .footer-left{
     margin-right: 30vw;
     margin-left: 5vw;
+    width: 70%;
 }
 .footer-right{
     display:flex;
     flex-flow:row;
-    width: 20%;
+    width: 30%;
 }
 
 .subsection-right-left{
@@ -633,4 +635,426 @@ hr{
 
 .pfp{
     margin-right: 1%;
+}
+
+
+
+
+
+@media screen and (min-width:100px) and (max-width:2560px){
+    
+    .vision-mission-readmore{
+        width: fit-content;
+        
+    }
+
+    .configure-discover{
+        
+        width: fit-content;
+    }
+
+    .configure-discover > svg{
+        width: 30px;
+        height: 30px;
+    }
+
+    .configure-discover > svg{
+        width: 30px;
+        height: 30px;
+        margin-left: 4%;
+    }
+
+
+}
+
+
+@media screen and (min-width:100px) and (max-width:2330px){
+    .hero-text{
+        top:5%
+    }
+}
+
+
+@media screen and (min-width:100px) and (max-width:1975px){
+    .vision-mission{
+        margin-top: 5%;
+    }
+
+    .vision-mission-readmore{
+        height: 6vh;
+    }
+
+    .side-blocker{
+        top:14.5%;
+    }
+}
+
+
+@media screen and (min-width:100px) and (max-width:1700px){
+    .side-scroll-car{
+        margin-top: 1%;
+    }
+
+}
+
+@media screen and (min-width:100px) and (max-width:1555px){
+    .side-scroll-car{
+        margin-top: -1%;
+        width: 43%;
+    }
+
+    .hero-text{
+        top:2%
+    }
+
+    .discover{
+        width: fit-content;
+    }
+}
+
+
+@media screen and (min-width:100px) and (max-width:1440px){
+    .side-scroll-car{
+        margin-top: -.5%;
+        width: 45%;
+        height: 100%;
+    }
+
+    .hero-text{
+        top:2%
+    }
+
+    .discover{
+        width: fit-content;
+    }
+}
+
+
+@media screen and (min-width:100px) and (max-width:1340px){
+    .side-scroll-car{
+        margin-top: -2%;
+        width: 45%;
+        height: 100%;
+    }
+
+    .hero-text{
+        top:4%;
+    }
+
+    .hero-text > h3{
+        font-size: 35px;
+    }
+
+    .hero-text > h2{
+        font-size: 45px;
+    }
+
+    .discover{
+        width: fit-content;
+    }
+
+    h3.scroll-header{
+        font-size: 30px;
+    }
+
+    p.scroll-text{
+        font-size: 15px;
+    }
+
+
+    .vision-mission > h2{
+        font-size: 60px;
+    }
+
+    .vision-mission_column > h3{
+        font-size: 50px;
+    }
+    .vision-mission_column > p{
+        font-size: 20px;
+    }
+
+    .configure > h2{
+        font-size: 60px;
+    }
+
+    .configure_column > h3{
+        font-size: 50px;
+    }
+    .configure_column > p{
+        font-size: 20px;
+    }
+
+    .rare_column{
+        margin-right: 5%;
+    }
+
+    .rare_column > h3{
+        font-size: 50px;
+    }
+
+    .rare_column > p{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width:100px) and (max-width:1240px){
+    .side-scroll-car{
+        margin-top: -1.5%;
+        width: 45%;
+        height: 90%;
+    }
+
+}
+
+
+
+@media screen and (min-width:100px) and (max-width:1140px){
+    .side-scroll-car{
+        margin-top: -1.2%;
+        width: 45%;
+        height: 80%;
+    }
+
+    .hero-text{
+        top:6%;
+    }
+
+}
+
+
+@media screen and (min-width:100px) and (max-width:1025px){
+    .side-scroll-car{
+        margin-top: -3.5%;
+        width: 45%;
+        height: 80%;
+    }
+
+    .rare_column{
+        margin-right: 10%;
+    }
+
+}
+
+
+@media screen and (min-width:100px) and (max-width:940px){
+    .side-scroll-car{
+        margin-top: -0.3%;
+        width: 45%;
+        height: 63%;
+    }
+
+    .rare_column{
+        margin-right: 11%;
+    }
+
+    .side-blocker{
+        height: 25vh;
+        top: 17%
+    }
+
+    h3.scroll-header{
+        font-size: 20px;
+    }
+
+    p.scroll-text{
+        font-size: 13px
+    }
+
+    .hero-text{
+        top:15%;
+    }
+
+    .hero-text > h3{
+        font-size: 25px;
+    }
+
+    .hero-text > h2{
+        font-size: 35px;
+    }
+
+    .discover{
+        width: fit-content;
+        margin-right: 10%;
+    }
+
+    .vision-mission{
+        margin-top: 1%;
+    }
+
+    .vision-mission > h2{
+        font-size: 40px;
+    }
+
+    .vision-mission_column > h3{
+        font-size: 30px;
+    }
+    .vision-mission_column > p{
+        font-size: 15px;
+    }
+
+    .vision-mission-readmore{
+        margin-right: 10%;
+    }
+
+    .vision-mission_row > img{
+        height: 70vh;
+    }
+
+
+
+    .configure > h2{
+        font-size: 40px;
+    }
+
+    .configure_column > h3{
+        font-size: 30px;
+    }
+    .configure_column > p{
+        font-size: 15px;
+    }
+
+    .configure_row > img{
+        height: 70vh;
+    }
+
+
+    .configure{
+        margin-top: 1%;
+    }
+
+
+    .rare_column > h3{
+        font-size: 30px;
+    }
+
+    .rare_column > p{
+        width: 60%;
+    }
+
+    .rare_row > img{
+        height: 40vh;
+    }
+
+    .rare{
+        margin-top: 25%;
+        height: fit-content;
+    }
+
+
+
+}
+
+
+@media screen and (min-width:100px) and (max-width:840px){
+    .side-scroll-car{
+        margin-top: -2%;
+        width: 45%;
+        height: 60%;
+    }
+
+   
+    .vision-mission-readmore{
+        margin-right: 20%;
+        margin-left: 70%;
+    }
+    
+
+
+
+    
+
+    
+
+   
+
+}
+
+
+
+
+@media screen and (min-width:100px) and (max-width:740px){
+    .side-scroll-car{
+        margin-top: -1.5%;
+        width: 45%;
+        height: 50%;
+    }
+
+    .side-blocker{
+        top:20.3%;
+    }
+   
+    .vision-mission-readmore{
+        margin-right: 20%;
+        margin-left: 70%;
+        font-size: 15px;
+    }
+    
+    .configure-discover{
+        font-size: 15px;
+    }
+
+    h3.scroll-header{
+        font-size: 15px;
+    }
+    
+    p.scroll-text{
+        font-size: 10px;
+    }
+    
+    .homepage-mens > h3{
+        font-size: 30px;
+    }
+
+    .homepage-accesories > h3{
+        font-size: 30px;
+    }
+
+    .homepage-womens > h3{
+        font-size: 30px;
+    }
+    
+    .vision-mission{
+        height: fit-content;
+    }
+
+    .homepage-merchcards{
+        height: 30vh;
+        width: 100%;
+        margin-top: 20%;
+        /* justify-content: center; */
+    }
+   
+    .homepage-mens, .homepage-accesories, .homepage-womens{
+        width: calc(90% / 3);
+    }
+
+    .vision-mission_row > img{
+        height: 60vh;
+    }
+
+    .configure_row > img{
+        height: 60vh;
+    }
+
+    .configure{
+        margin-top: 10%;
+        height: fit-content;
+    }
+
+}
+
+@media screen and (max-width:640px){
+    .side-scroll-car{
+        margin-top: -2.4%;
+        width: 45%;
+        height: 45%;
+    }
+
+    .hero-text{
+        top:20%;
+    }
+
+    .rare_column > p{
+        margin-right: 5%;
+    }
 }
