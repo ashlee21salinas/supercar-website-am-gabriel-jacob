@@ -643,6 +643,10 @@ hr{
 
 @media screen and (min-width:100px) and (max-width:2560px){
     
+    html{
+        overflow-x: hidden !important;
+    }
+
     .vision-mission-readmore{
         width: fit-content;
         
@@ -1044,6 +1048,9 @@ hr{
 }
 
 @media screen and (max-width:640px){
+
+    
+
     .side-scroll-car{
         margin-top: -2.4%;
         width: 45%;
