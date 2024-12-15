@@ -68,8 +68,13 @@ body{
 
 
 .hero-carosel-options{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
     align-self: center;
     margin-bottom: 1%;
+    width: 30%;
+    align-items: center;
 }
 
 .hero-discover{
@@ -86,10 +91,12 @@ body{
    border-radius: 58px;
    color: white;
    font-size: 25px;
-   width: 50%;
+   width: fit-content;
    height: 4.5vh;
    cursor: pointer;
 }
+
+
 
 .index_carosel-option1, .index_carosel-option2, .index_carosel-option3, .index_carosel-option4{
     height: 4.5vh;
@@ -737,10 +744,18 @@ hr{
     .discover{
         width: fit-content;
     }
+
+    .hero-blocker{
+        top: 2vh;
+    }
 }
 
 
 @media screen and (min-width:100px) and (max-width:1340px){
+
+    .hero-blocker{
+        top: 2vh;
+    }
     .side-scroll-car{
         margin-top: -2%;
         width: 45%;
@@ -813,7 +828,12 @@ hr{
         width: 45%;
         height: 90%;
     }
-
+    .hero-blocker{
+        top: 3vh;
+    }
+    .subsection-right-right{
+        margin-left: 13%;
+    }
 }
 
 
@@ -829,10 +849,24 @@ hr{
         top:6%;
     }
 
+    .footer-right > .subsection-right-right > h4{
+        /* margin-left: 10%; */
+        font-size: 20px
+    }
+
+    .footer-right > .subsection-right-left > h4{
+        margin-left: 0%;
+        font-size: 20px
+    }
+
+
 }
 
 
 @media screen and (min-width:100px) and (max-width:1025px){
+    .hero-blocker{
+        top: 5vh;
+    }
     .side-scroll-car{
         margin-top: -3%;
         width: 50%;
@@ -951,7 +985,13 @@ hr{
     }
 
 
+    .footer-left > h3{
+        font-size: 30px;
+    }
 
+    .footer-left{
+        width: 50%;
+    }
 }
 
 
@@ -962,6 +1002,9 @@ hr{
         height: 60%;
     }
 
+    .hero-blocker{
+        height: 80vh;
+    }
    
     .vision-mission-readmore{
         margin-right: 20%;
@@ -993,6 +1036,9 @@ hr{
 
 
 @media screen and (min-width:100px) and (max-width:740px){
+    .hero-blocker{
+        top: 6vh;
+    }
     .side-scroll-car{
         margin-top: -1.5%;
         width: 45%;
@@ -1061,11 +1107,37 @@ hr{
         height: fit-content;
     }
 
+    .footer-left{
+        width: 40%;
+    }
+
+    .footer-left > h4{
+        font-size: 25px;
+    }
+
+    .footer-right > .subsection-right-right > h4{
+        /* margin-left: 10%; */
+        font-size: 15px
+    }
+
+    .footer-right > .subsection-right-left > h4{
+        margin-left: 0%;
+        font-size: 15px
+    }
+
+    .footer-left > svg {
+        margin-right: 5%;
+        height: 25px;
+        width: 25px;
+    }
+
 }
 
 @media screen and (max-width:640px){
 
-    
+    .hero-blocker{
+        top: 7vh;
+    }
 
     .side-scroll-car{
         margin-top: -2.4%;
@@ -1095,6 +1167,10 @@ hr{
 
 
 @media screen and (min-width:100px) and (max-width:540px){
+
+    .hero-blocker{
+        height: 55vh;
+    }
 
     .hero{
         height: 60vh;
@@ -1233,10 +1309,39 @@ hr{
     .side-blocker{
         height: fit-content;
     }
+
+    .footer-left{
+        width: 40%;
+    }
+
+    .footer-left > h4{
+        font-size: 20px;
+    }
+
+    .footer-right > .subsection-right-right > h4{
+        /* margin-left: 10%; */
+        font-size: 10px
+    }
+
+    .footer-right > .subsection-right-left > h4{
+        margin-left: 0%;
+        font-size: 10px
+    }
+
+    .footer-left > svg {
+        margin-right: 5%;
+        height: 25px;
+        width: 25px;
+    }
 }
 
 
 @media screen and (min-width:100px) and (max-width:381px){
+
+    .hero-blocker{
+        top: 8vh;
+        height: 53vh;
+    }
 
     .homepage-mens > h3{
         font-size: 20px;
@@ -1331,5 +1436,35 @@ hr{
 
     .configure_row > img{
         height: 40vh;
+    }
+}
+
+@media screen and (max-width:321px) {
+    .footer-left{
+        width: 30%;
+    }
+
+    .footer-left > h3{
+        font-size:20px;
+    }
+
+    .footer-right{
+        width: 40%;
+    }
+
+    .footer-right > .subsection-right-right > h4{
+        /* margin-left: 10%; */
+        font-size: 12px
+    }
+
+    .footer-right > .subsection-right-left > h4{
+        margin-left: 0%;
+        font-size: 12px
+    }
+
+    .footer-left > svg {
+        margin-right: 5%;
+        height: 25px;
+        width: 25px;
     }
 }
