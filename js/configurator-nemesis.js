@@ -59,6 +59,9 @@ function premium_arrow(){
             else if(window.matchMedia("(max-width:568px)").matches){
                 document.getElementById("exterior-colorwheel").style.marginTop = "15%"
             }
+            else{
+                document.getElementById("exterior-colorwheel").style.marginTop = "35%"
+            }
             
             
 
