@@ -197,7 +197,7 @@ justify-content: center;
 }
 
 
-/* Innovation Section - Integrated Code */
+/* Innovation Section - Code */
 
 .container-99 {
   display: flex;
@@ -280,15 +280,15 @@ justify-content: center;
 .image-section-99 img {
   max-width: 100%;
   height: auto;
-  margin-top: -20px; /* Adjusts alignment slightly */
+  margin-top: -20px;
 }
 
-/* Overlay Text Styling */
+
 .big-text-99 {
   font-size: 100px;
   font-weight: bold;
   line-height: 1;
-  color: rgba(255, 255, 255, 0.8); /* Slight transparency */
+  color: rgba(255, 255, 255, 0.8); 
   margin: 0;
   margin-left: 10px;
   margin-bottom: 5%;
