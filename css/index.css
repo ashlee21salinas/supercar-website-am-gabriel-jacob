@@ -68,8 +68,13 @@ body{
 
 
 .hero-carosel-options{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
     align-self: center;
     margin-bottom: 1%;
+    width: 30%;
+    align-items: center;
 }
 
 .hero-discover{
@@ -86,10 +91,12 @@ body{
    border-radius: 58px;
    color: white;
    font-size: 25px;
-   width: 50%;
+   width: fit-content;
    height: 4.5vh;
    cursor: pointer;
 }
+
+
 
 .index_carosel-option1, .index_carosel-option2, .index_carosel-option3, .index_carosel-option4{
     height: 4.5vh;
@@ -135,11 +142,7 @@ body{
 
 }
 
-.side-scroll-car:hover{
-    transform: scale(.65);
-    cursor: pointer;
 
-}
 
  .side-scroll-feature:has(+ .side-scroll-car:hover){
     transform: scale(1.05);
@@ -150,13 +153,18 @@ body{
 
 
 .side-scroll-car{
-    position: absolute;
-    top: 14%;
-    transform: scale(.6);
-    right: 5%;
-    transition: transform 0.5s, right 1s;
+    position: relative;
+
+    width: 40%;
+    height: 110%;
+    top:5%;
+    margin-top: 2.3%;
+    margin-left: 50%;
+    transition: transform 0.5s, margin-left 1s;
     z-index: 1;
 }
+
+
 
 .side-blocker{
     z-index: 1;
@@ -335,7 +343,7 @@ body{
 .configure_column{
     display: flex;
     flex-flow: column;
-    margin-top: 5%;
+    margin-top: 0%;
 }
 
 .configure_column > h3{
@@ -596,11 +604,12 @@ hr{
 .footer-left{
     margin-right: 30vw;
     margin-left: 5vw;
+    width: 70%;
 }
 .footer-right{
     display:flex;
     flex-flow:row;
-    width: 20%;
+    width: 30%;
 }
 
 .subsection-right-left{
@@ -633,4 +642,829 @@ hr{
 
 .pfp{
     margin-right: 1%;
+}
+
+
+
+
+
+@media screen and (min-width:100px) and (max-width:2560px){
+    
+    html{
+        overflow-x: hidden !important;
+    }
+
+    .vision-mission-readmore{
+        width: fit-content;
+        
+    }
+
+    .configure-discover{
+        
+        width: fit-content;
+    }
+
+    .configure-discover > svg{
+        width: 30px;
+        height: 30px;
+    }
+
+    .configure-discover > svg{
+        width: 30px;
+        height: 30px;
+        margin-left: 4%;
+    }
+
+
+}
+
+
+@media screen and (min-width:100px) and (max-width:2330px){
+    .hero-text{
+        top:5%
+    }
+}
+
+
+@media screen and (min-width:100px) and (max-width:1975px){
+    .vision-mission{
+        margin-top: 5%;
+    }
+
+    .vision-mission-readmore{
+        height: 6vh;
+    }
+
+    .side-blocker{
+        top:14.5%;
+    }
+}
+
+
+@media screen and (min-width:100px) and (max-width:1700px){
+    .side-scroll-car{
+        margin-top: 1%;
+    }
+
+}
+
+@media screen and (min-width:100px) and (max-width:1555px){
+    .side-scroll-car{
+        margin-top: -1%;
+        width: 43%;
+    }
+
+    .hero-text{
+        top:2%
+    }
+
+    .discover{
+        width: fit-content;
+    }
+}
+
+
+@media screen and (min-width:1340px) and (max-width:1441px){
+    img.side-scroll-car{
+        margin-top: -1%;
+        width: 40%;
+        height: 100%;
+        margin-right: 0%;
+        
+    }
+
+    .side-blocker{
+        top:14%;
+    }
+
+    .hero-text{
+        top:2%
+    }
+
+    .discover{
+        width: fit-content;
+    }
+
+    .hero-blocker{
+        top: 2vh;
+    }
+}
+
+
+@media screen and (min-width:100px) and (max-width:1340px){
+
+    .hero-blocker{
+        top: 2vh;
+    }
+    .side-scroll-car{
+        margin-top: -2%;
+        width: 45%;
+        height: 100%;
+    }
+
+    .hero-text{
+        top:4%;
+    }
+
+    .hero-text > h3{
+        font-size: 35px;
+    }
+
+    .hero-text > h2{
+        font-size: 45px;
+    }
+
+    .discover{
+        width: fit-content;
+    }
+
+    h3.scroll-header{
+        font-size: 30px;
+    }
+
+    p.scroll-text{
+        font-size: 15px;
+    }
+
+
+    .vision-mission > h2{
+        font-size: 60px;
+    }
+
+    .vision-mission_column > h3{
+        font-size: 50px;
+    }
+    .vision-mission_column > p{
+        font-size: 20px;
+    }
+
+    .configure > h2{
+        font-size: 60px;
+    }
+
+    .configure_column > h3{
+        font-size: 50px;
+    }
+    .configure_column > p{
+        font-size: 20px;
+    }
+
+    .rare_column{
+        margin-right: 5%;
+    }
+
+    .rare_column > h3{
+        font-size: 50px;
+    }
+
+    .rare_column > p{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width:100px) and (max-width:1240px){
+    .side-scroll-car{
+        margin-top: -1.5%;
+        width: 45%;
+        height: 90%;
+    }
+    .hero-blocker{
+        top: 3vh;
+    }
+    .subsection-right-right{
+        margin-left: 13%;
+    }
+}
+
+
+
+@media screen and (min-width:100px) and (max-width:1140px){
+    .side-scroll-car{
+        margin-top: -1.2%;
+        width: 45%;
+        height: 80%;
+    }
+
+    .hero-text{
+        top:6%;
+    }
+
+    .footer-right > .subsection-right-right > h4{
+        /* margin-left: 10%; */
+        font-size: 20px
+    }
+
+    .footer-right > .subsection-right-left > h4{
+        margin-left: 0%;
+        font-size: 20px
+    }
+
+
+}
+
+
+@media screen and (min-width:100px) and (max-width:1025px){
+    .hero-blocker{
+        top: 5vh;
+    }
+    .side-scroll-car{
+        margin-top: -3%;
+        width: 50%;
+        height: 80%;
+    }
+
+    .rare_column{
+        margin-right: 10%;
+    }
+
+}
+
+
+@media screen and (min-width:100px) and (max-width:940px){
+    .side-scroll-car{
+        margin-top: -0.3%;
+        width: 45%;
+        height: 63%;
+    }
+
+    .rare_column{
+        margin-right: 11%;
+    }
+
+    .side-blocker{
+        height: 25vh;
+        top: 17%
+    }
+
+    h3.scroll-header{
+        font-size: 20px;
+    }
+
+    p.scroll-text{
+        font-size: 13px
+    }
+
+    .hero-text{
+        top:15%;
+    }
+
+    .hero-text > h3{
+        font-size: 25px;
+    }
+
+    .hero-text > h2{
+        font-size: 35px;
+    }
+
+    .discover{
+        width: fit-content;
+        margin-right: 10%;
+    }
+
+    .vision-mission{
+        margin-top: 1%;
+    }
+
+    .vision-mission > h2{
+        font-size: 40px;
+    }
+
+    .vision-mission_column > h3{
+        font-size: 30px;
+    }
+    .vision-mission_column > p{
+        font-size: 15px;
+    }
+
+    .vision-mission-readmore{
+        margin-right: 10%;
+    }
+
+    .vision-mission_row > img{
+        height: 70vh;
+    }
+
+
+
+    .configure > h2{
+        font-size: 40px;
+    }
+
+    .configure_column > h3{
+        font-size: 30px;
+    }
+    .configure_column > p{
+        font-size: 15px;
+    }
+
+    .configure_row > img{
+        height: 70vh;
+    }
+
+
+    .configure{
+        margin-top: 1%;
+    }
+
+
+    .rare_column > h3{
+        font-size: 30px;
+    }
+
+    .rare_column > p{
+        width: 60%;
+    }
+
+    .rare_row > img{
+        height: 40vh;
+    }
+
+    .rare{
+        margin-top: 25%;
+        height: fit-content;
+    }
+
+
+    .footer-left > h3{
+        font-size: 30px;
+    }
+
+    .footer-left{
+        width: 50%;
+    }
+}
+
+
+@media screen and (min-width:100px) and (max-width:840px){
+    .side-scroll-car{
+        margin-top: -2%;
+        width: 45%;
+        height: 60%;
+    }
+
+    .hero-blocker{
+        height: 80vh;
+    }
+   
+    .vision-mission-readmore{
+        margin-right: 20%;
+        margin-left: 70%;
+    }
+    
+    .homepage-mens > h3{
+        font-size: 30px;
+    }
+
+    .homepage-accesories > h3{
+        font-size: 30px;
+    }
+
+    .homepage-womens > h3{
+        font-size: 30px;
+    }
+
+
+    
+
+    
+
+   
+
+}
+
+
+
+
+@media screen and (min-width:100px) and (max-width:740px){
+    .hero-blocker{
+        top: 6vh;
+    }
+    .side-scroll-car{
+        margin-top: -1.5%;
+        width: 45%;
+        height: 50%;
+    }
+
+    .side-blocker{
+        top:20.3%;
+    }
+   
+    .vision-mission-readmore{
+        margin-right: 20%;
+        margin-left: 70%;
+        font-size: 15px;
+    }
+    
+    .configure-discover{
+        font-size: 15px;
+    }
+
+    h3.scroll-header{
+        font-size: 15px;
+    }
+    
+    p.scroll-text{
+        font-size: 10px;
+    }
+    
+    .homepage-mens > h3{
+        font-size: 30px;
+    }
+
+    .homepage-accesories > h3{
+        font-size: 30px;
+    }
+
+    .homepage-womens > h3{
+        font-size: 30px;
+    }
+    
+    .vision-mission{
+        height: fit-content;
+    }
+
+    .homepage-merchcards{
+        height: 30vh;
+        width: 100%;
+        margin-top: 20%;
+        /* justify-content: center; */
+    }
+   
+    .homepage-mens, .homepage-accesories, .homepage-womens{
+        width: calc(90% / 3);
+    }
+
+    .vision-mission_row > img{
+        height: 60vh;
+    }
+
+    .configure_row > img{
+        height: 60vh;
+    }
+
+    .configure{
+        margin-top: 10%;
+        height: fit-content;
+    }
+
+    .footer-left{
+        width: 40%;
+    }
+
+    .footer-left > h4{
+        font-size: 25px;
+    }
+
+    .footer-right > .subsection-right-right > h4{
+        /* margin-left: 10%; */
+        font-size: 15px
+    }
+
+    .footer-right > .subsection-right-left > h4{
+        margin-left: 0%;
+        font-size: 15px
+    }
+
+    .footer-left > svg {
+        margin-right: 5%;
+        height: 25px;
+        width: 25px;
+    }
+
+}
+
+@media screen and (max-width:640px){
+
+    .hero-blocker{
+        top: 7vh;
+    }
+
+    .side-scroll-car{
+        margin-top: -2.4%;
+        width: 45%;
+        height: 45%;
+    }
+
+    .hero-text{
+        top:20%;
+    }
+
+    .rare_column > p{
+        margin-right: 5%;
+    }
+}
+
+@media screen and (min-width:100px) and (max-width:551px){
+    .side-blocker{
+        top:20%;
+    }
+    .side-scroll-car{
+        margin-top: -6%;
+        width: 45%;
+        height: 45%;
+    }
+}
+
+
+@media screen and (min-width:100px) and (max-width:540px){
+
+    .hero-blocker{
+        height: 55vh;
+    }
+
+    .hero{
+        height: 60vh;
+    }
+
+    .hero-text{
+        top:14%;
+    }
+
+    .side-scroll-car{
+        margin-top: 1%;
+        width: 45%;
+        height: 40%;
+    }
+
+    .side-blocker{
+        top:19%;
+    }
+    
+    .side-scroll-feature{
+        height: fit-content;
+    }
+
+    p.scroll-text{
+        font-size: 8px;
+    }
+
+    .vision-mission_column > p{
+        font-size: 12px;
+        width: 60%;
+    }
+
+    .vision-mission-readmore{
+        margin-right: 20%;
+        margin-left: 70%;
+        font-size: 15px;
+    }
+    
+    .configure-discover{
+        font-size: 15px;
+        margin-top: 25%;
+    }
+
+  
+    .homepage-mens > h3{
+        font-size: 25px;
+    }
+
+    .homepage-accesories > h3{
+        font-size: 25px;
+    }
+
+    .homepage-womens > h3{
+        font-size: 25px;
+    }
+    
+    .vision-mission{
+        height: fit-content;
+        margin-top: 5%;
+    }
+
+    .vision-mission > h2{
+        z-index: 1;
+    }
+
+    .homepage-merchcards{
+        height: 30vh;
+        width: 100%;
+        margin-top: 20%;
+        /* justify-content: center; */
+    }
+   
+    .homepage-mens, .homepage-accesories, .homepage-womens{
+        width: calc(90% / 3);
+    }
+
+    .vision-mission_row > img{
+        height: 50vh;
+    }
+
+    .configure_row > img{
+        height: 50vh;
+    }
+
+    .configure{
+        margin-top: 10%;
+        height: fit-content;
+    }
+
+    .configure_column > p{
+        font-size: 12px;
+        width: 60%;
+    }
+
+
+    .rare_column > h3{
+        font-size: 20px;
+    }
+
+    .rare_column > p{
+        width: 60%;
+        font-size: 12px;
+    }
+
+    .rare_row > img{
+        height: 20vh;
+    }
+
+    .rare{
+        margin-top: 25%;
+        height: fit-content;
+    }
+
+}
+
+@media screen and (min-width:100px) and (max-width:460px){
+
+    .homepage-mens > h3{
+        font-size: 20px;
+    }
+
+    .homepage-accesories > h3{
+        font-size: 20px;
+    }
+
+    .homepage-womens > h3{
+        font-size: 20px;
+    }
+
+    p.scroll-text{
+        width: 100%;
+
+
+    }
+
+    .side-blocker{
+        height: fit-content;
+    }
+
+    .footer-left{
+        width: 40%;
+    }
+
+    .footer-left > h4{
+        font-size: 20px;
+    }
+
+    .footer-right > .subsection-right-right > h4{
+        /* margin-left: 10%; */
+        font-size: 10px
+    }
+
+    .footer-right > .subsection-right-left > h4{
+        margin-left: 0%;
+        font-size: 10px
+    }
+
+    .footer-left > svg {
+        margin-right: 5%;
+        height: 25px;
+        width: 25px;
+    }
+}
+
+
+@media screen and (min-width:100px) and (max-width:381px){
+
+    .hero-blocker{
+        top: 8vh;
+        height: 53vh;
+    }
+
+    .homepage-mens > h3{
+        font-size: 20px;
+    }
+
+    .homepage-accesories > h3{
+        font-size: 20px;
+    }
+
+    .homepage-womens > h3{
+        font-size: 20px;
+    }
+
+    p.scroll-text{
+        width: 110%;
+        font-size: 7px;
+
+    }
+
+    .side-blocker{
+        height: fit-content;
+        top:22.2%;
+        width: 79%;
+    }
+
+    .vision-mission-readmore{
+        margin-left: 60%;
+    }
+
+    .homepage-mens > h3{
+        font-size: 15px;
+    }
+
+    .homepage-merchcards{
+        height: 20vh;
+    }
+
+    .homepage-accesories > h3{
+        font-size: 15px;
+    }
+
+    .homepage-womens > h3{
+        font-size: 15px;
+    }
+    
+    .rare_column > h3{
+        font-size: 15px;
+    }
+
+    .rare_column > p{
+        width: 80%;
+        font-size: 12px;
+    }
+
+    .rare_row > img{
+        height: 20vh;
+    }
+
+    .rare{
+        margin-top: 25%;
+        height: fit-content;
+    }
+
+    .vision-mission > h2{
+        font-size: 30px;
+    }
+
+    .vision-mission_column > h3{
+        font-size: 20px;
+    }
+
+    .vision-mission_column > p{
+        font-size: 10px;
+    }
+
+    .vision-mission_row > img{
+        height: 40vh;
+    }
+
+
+    .configure > h2{
+        font-size: 30px;
+    }
+
+    .configure_column > h3{
+        font-size: 20px;
+    }
+
+    .configure_column > p{
+        font-size: 10px;
+    }
+
+    .configure_row > img{
+        height: 40vh;
+    }
+}
+
+@media screen and (max-width:321px) {
+    .footer-left{
+        width: 30%;
+    }
+
+    .footer-left > h3{
+        font-size:20px;
+    }
+
+    .footer-right{
+        width: 40%;
+    }
+
+    .footer-right > .subsection-right-right > h4{
+        /* margin-left: 10%; */
+        font-size: 12px
+    }
+
+    .footer-right > .subsection-right-left > h4{
+        margin-left: 0%;
+        font-size: 12px
+    }
+
+    .footer-left > svg {
+        margin-right: 5%;
+        height: 25px;
+        width: 25px;
+    }
 }

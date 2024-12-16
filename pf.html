@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/pf.css">
-    <title>Bought</title>
+    <title>pf</title>
 
 </head>
 <body id="body">
@@ -21,13 +21,12 @@
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M100 0C44.7727 0 0 44.7727 0 100C0 155.227 44.7727 200 100 200C155.227 200 200 155.227 200 100C200 44.7727 155.227 0 100 0ZM18.1818 100C18.1818 119 24.6636 136.491 35.5273 150.382C43.1586 140.365 53.0014 132.247 64.2876 126.661C75.5739 121.076 87.9982 118.174 100.591 118.182C113.022 118.167 125.292 120.992 136.465 126.44C147.638 131.888 157.42 139.815 165.064 149.618C172.94 139.287 178.244 127.229 180.535 114.442C182.827 101.654 182.04 88.5049 178.241 76.0817C174.441 63.6585 167.738 52.3186 158.686 43.0003C149.634 33.6821 138.493 26.6533 126.185 22.4955C113.877 18.3378 100.756 17.1707 87.9078 19.0907C75.0593 21.0107 62.8526 25.9627 52.2979 33.5368C41.7432 41.111 33.1437 51.0897 27.2112 62.6472C21.2786 74.2047 18.1835 87.0088 18.1818 100ZM100 181.818C81.2173 181.849 63.0013 175.387 48.4364 163.527C54.2983 155.133 62.1018 148.279 71.1825 143.55C80.2632 138.82 90.3523 136.355 100.591 136.364C110.702 136.355 120.668 138.759 129.663 143.376C138.659 147.992 146.422 154.689 152.309 162.909C137.632 175.155 119.115 181.848 100 181.818Z" fill="white"/>
                 
             </svg>
-            <img id="originalImage"  alt="Original Image" style="max-width: 200px;" />
+            <img id="originalImage" src="none" alt="Original Image" style="max-width: 200px;" />
             <h2>Hello</h2>
         </section>
         <h3>Language Selector:</h3>
         <div id="gt-mordadam-43217984"></div>
         
-        </section>
 
         <section class="pfp">
             
@@ -46,81 +45,72 @@
 
     
 
-
+    <script>
+        window.gtranslateSettings = window.gtranslateSettings || {};
+        window.gtranslateSettings['43217984'] = {
+            "default_language": "en",
+            "languages": ["af", "sq", "am", "en", "fa", "ar", "ps", "ja", "zh-CN", "hy", "az", "eu", "be", "bn", "bs", "bg", "ca", "ceb", "ny", "zh-TW", "co", "hr", "cs", "da", "nl", "eo", "et", "tl", "fi", "fr", "fy", "gl", "ka", "de", "el", "gu", "ht", "ha", "haw", "iw", "hi", "hmn", "hu", "is", "ig", "id", "ga", "it", "jw", "kn", "kk", "km", "ko", "ku", "ky", "lo", "la", "lv", "lt", "lb", "mk", "mg", "ms", "ml", "mt", "mi", "mr", "mn", "my", "ne", "no", "pl", "pt", "pa", "ro", "ru", "sm", "gd", "sr", "st", "sn", "sd", "si", "sk", "sl", "so", "es", "su", "sw", "sv", "tg", "ta", "te", "th", "tr", "uk", "ur", "uz", "vi", "cy", "xh", "yi", "yo", "zu"],
+            "wrapper_selector": "#gt-mordadam-43217984",
+            "native_language_names": 1,
+            "flag_style": "2d",
+            "flag_size": 24,
+            "horizontal_position": "inline",
+            "flags_location": "img/flags/"
+        };
+    </script>
+    
+    <script src="js/pf.js" data-gt-widget-id="43217984"></script>
+    
+    <script>
+         var pfp_img = localStorage.getItem("pfp-img");
+        if (!(pfp_img == null)){
+            
+    
+            const imgElement = document.getElementById('originalImage');
+    
+            imgElement.src = pfp_img
+            imgElement.style.visibility = "visible"
+            document.getElementById("pfp-img").style.opacity = "0"
+            imgElement.style.width = "200px"
+            imgElement.style.height = "200px"
+        }
+    
+    
+       document.getElementById('imageInput').addEventListener('change', handleImageUpload);
+    
+        function handleImageUpload(event) {
+        const file = event.target.files[0];  // Get the uploaded file
+    
+        if (file) {
+            const reader = new FileReader();
+    
+            reader.onload = function(e) {
+            const imgElement = document.getElementById('originalImage');
+            imgElement.src = e.target.result;  // Replace the original image with the uploaded one
+    
+            file_end = e.target.result
+    
+            localStorage.setItem("pfp-img", file_end);
+            imgElement.style.width = "200px"
+            imgElement.style.height = "200px"
+            imgElement.style.visibility = "visible"
+            imgElement.style.zIndex = "1"
+            document.getElementById("pfp-img").visibility = "none"
+            
+            };
+    
+            reader.readAsDataURL(file);  // Read the file as a Data URL
+        }
+        }
+    </script>
 
 </body>
-<script type="text/javascript">
-    window.gtranslateSettings = window.gtranslateSettings || {};
-    window.gtranslateSettings['43217984'] = {
-        "default_language": "en",
-        "languages": ["af", "sq", "am", "en", "fa", "ar", "ps", "ja", "zh-CN", "hy", "az", "eu", "be", "bn", "bs", "bg", "ca", "ceb", "ny", "zh-TW", "co", "hr", "cs", "da", "nl", "eo", "et", "tl", "fi", "fr", "fy", "gl", "ka", "de", "el", "gu", "ht", "ha", "haw", "iw", "hi", "hmn", "hu", "is", "ig", "id", "ga", "it", "jw", "kn", "kk", "km", "ko", "ku", "ky", "lo", "la", "lv", "lt", "lb", "mk", "mg", "ms", "ml", "mt", "mi", "mr", "mn", "my", "ne", "no", "pl", "pt", "pa", "ro", "ru", "sm", "gd", "sr", "st", "sn", "sd", "si", "sk", "sl", "so", "es", "su", "sw", "sv", "tg", "ta", "te", "th", "tr", "uk", "ur", "uz", "vi", "cy", "xh", "yi", "yo", "zu"],
-        "wrapper_selector": "#gt-mordadam-43217984",
-        "native_language_names": 1,
-        "flag_style": "2d",
-        "flag_size": 24,
-        "horizontal_position": "inline",
-        "flags_location": "img/flags/"
-    };
-</script>
-
-<script src="js/pf.js" data-gt-widget-id="43217984"></script>
-
-<script>
-     var pfp_img = localStorage.getItem("pfp-img");
-    if (!(pfp_img == null)){
-        
-
-        const imgElement = document.getElementById('originalImage');
-
-        imgElement.src = pfp_img
-        imgElement.style.visibility = "visible"
-        document.getElementById("pfp-img").style.opacity = "0"
-        imgElement.style.width = "200px"
-        imgElement.style.height = "200px"
-    }
-
-
-   document.getElementById('imageInput').addEventListener('change', handleImageUpload);
-
-    function handleImageUpload(event) {
-    const file = event.target.files[0];  // Get the uploaded file
-
-    if (file) {
-        const reader = new FileReader();
-
-        reader.onload = function(e) {
-        const imgElement = document.getElementById('originalImage');
-        imgElement.src = e.target.result;  // Replace the original image with the uploaded one
-
-        file_end = e.target.result
-
-        localStorage.setItem("pfp-img", file_end);
-        imgElement.style.width = "200px"
-        imgElement.style.height = "200px"
-        imgElement.style.visibility = "visible"
-        imgElement.style.zIndex = "1"
-        document.getElementById("pfp-img").visibility = "none"
-        
-        };
-
-        reader.readAsDataURL(file);  // Read the file as a Data URL
-    }
-    }
-</script>
-
-<script>
 
 
 
 
 
 
-   
 
-
-
-     
-
-</script>
 
 </html>

@@ -38,6 +38,7 @@ function hamburger_click() {
   document.getElementById("hamburger").style.scale= '0';
   document.getElementById("pfp").style.scale= '0';
 
+  document.getElementById('originalImage').style.scale = '0'
   
   
   
@@ -464,7 +465,7 @@ document.getElementById("nav").style.marginLeft ="0%"
 
       
       
-      
+      setTimeout(() =>  document.getElementById('originalImage').style.scale = '1', 2000)
       
       
       
@@ -499,3 +500,10 @@ document.getElementById("nav").style.marginLeft ="0%"
       
   }
 
+  var pfp_img = localStorage.getItem("pfp-img"); 
+
+  const imgElement = document.getElementById('originalImage');
+
+  imgElement.src = pfp_img
+  imgElement.style.visibility = "visible"
+  document.getElementById("pfp").style.opacity = "0"

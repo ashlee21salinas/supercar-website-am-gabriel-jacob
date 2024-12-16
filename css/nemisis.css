@@ -195,3 +195,268 @@ justify-content: center;
 .vision-mission-readmore > svg{
   margin-left: 10%;
 }
+
+
+/* Innovation Section - Code */
+
+.container-99 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  max-width: 1600px;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+  margin-top: 15%;
+  margin-bottom: 5%;
+}
+
+/* Left Text Section */
+.text-section-99 {
+  flex: 1;
+  max-width: 40%;
+  text-align: left;
+  padding: 20px;
+}
+
+.subheading-99 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ccc;
+  margin-bottom: 20%;
+}
+
+.main-heading-99 {
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+.spaced {
+  margin-bottom: 10%; /* Gap between headings and content */
+}
+
+.description-99 {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #aaa;
+}
+
+.cta-button {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 14px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-button span {
+  margin-left: 10px;
+}
+
+.cta-button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Right Image Section */
+.image-section-99 {
+  flex: 1;
+  position: relative;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+
+.image-section-99 img {
+  max-width: 100%;
+  height: auto;
+  margin-top: -20px;
+}
+
+
+.big-text-99 {
+  font-size: 100px;
+  font-weight: bold;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.8); 
+  margin: 0;
+  margin-left: 10px;
+  margin-bottom: 5%;
+}
+
+.indented {
+  text-indent: 50px; /* Adds indentation to the second heading */
+}
+
+.general-99{
+  color: #fff;
+  font-size: 2rem;
+}
+
+.fliped {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .text-section,
+  .image-section {
+      max-width: 100%;
+  }
+
+  .big-text {
+      font-size: 60px;
+  }
+}
+
+@media (max-width: 625px) {
+  body {
+      font-size: xx-small;
+  }
+
+  .general {
+      font-size: 1.5rem;
+  }
+
+  .big-text {
+      font-size: 40px;
+  }
+}
+
+
+/* pls never have me do this again  */
+
+
+
+ 
+@media (max-width: 1024px) {
+  .performance-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .car-profile img {
+    width: 90%;
+  }
+
+  .stats {
+    font-size: 2rem;
+  }
+
+  .vision-mission-1 > h2 {
+    font-size: 50px;
+  }
+
+  .vision-mission_column > h3 {
+    font-size: 40px;
+  }
+
+  .vision-mission_column > p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .car-profile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stats {
+    font-size: 1.8rem;
+  }
+
+  .performance-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .vision-mission-1 > h2 {
+    font-size: 40px;
+  }
+
+  .vision-mission_column > h3 {
+    font-size: 35px;
+  }
+
+  .vision-mission_column > p {
+    font-size: 18px;
+  }
+
+  .vision-mission-readmore {
+    width: 40%;
+    margin-left: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: small;
+  }
+
+  .performance-section h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .car-profile img {
+    width: 100%;
+  }
+
+  .stats {
+    font-size: 1.5rem;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .vision-mission-1 {
+    height: auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  .vision-mission-1 > h2 {
+    font-size: 30px;
+    margin-right: 0;
+  }
+
+  .vision-mission_column > h3 {
+    font-size: 25px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .vision-mission_column > p {
+    font-size: 16px;
+    margin-left: 0;
+    width: 90%;
+    text-align: center;
+  }
+
+  .vision-mission-readmore {
+    width: 60%;
+    margin: 10% auto;
+  }
+
+  .general-99 {
+    font-size: 1.2rem;
+  }
+
+  .big-text-99 {
+    font-size: 50px;
+  }
+}

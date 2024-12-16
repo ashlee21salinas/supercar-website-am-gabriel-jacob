@@ -55,6 +55,7 @@ margin-left: 3%;
     align-items: center;
     margin-top: 10%;
     font-size: 3vh;
+    
 }
 
 .row2 {
@@ -81,58 +82,112 @@ margin-left: 3%;
     font-size: 3vh;
 }
 
+.b1 {
+    margin-top: 3%;
+}
+
+.b2 {
+    margin-top: 3%;
+}
+
+.b3 {
+    margin-top: 3%;
+    margin-left: 1%;
+}
+
+.b4 {
+    margin-top: 3%;
+    margin-left: 1%;
+}
+
 #firstname {
     width: 50vw;
-    font-size: 3vh;
+    font-size: 5vh;
+    background-color: #D7D9D7;
+    border-radius: 1rem;
 }
 
 #lastname {
     width: 50vw;
     font-size: 3vh;
+    font-size: 5vh;
+    background-color: #D7D9D7;
+    border-radius: 1rem;
 }
 
 #adress1 {
     width: 50vw;
     font-size: 3vh;
+    font-size: 5vh;
+    background-color: #D7D9D7;
+    border-radius: 1rem;
 }
 
 #adress2 {
     width: 50vw;
     font-size: 3vh;
+    font-size: 5vh;
+    background-color: #D7D9D7;
+    border-radius: 1rem;
 }
 
 #city {
-    width: 21.5vw;
-    font-size: 3vh;
+    width: 20vw;
+    font-size: 5vh;
+    background-color: #D7D9D7;
+    border-radius: 1rem;
 }
 
 #state {
-    width: 21.5vw;
-    font-size: 3vh;
+    width: 20vw;
+    font-size: 5vh;
+    background-color: #D7D9D7;
+    border-radius: 1rem;
+}
+
+.b5 {
+    margin-left: 3%;
+}
+
+.b6 {
+    margin-left: 6%;
 }
 
 #country {
-    width: 18.5vw;
-    font-size: 3vh;
+    width: 15.5vw;
+    font-size: 5vh;
+    background-color: #D7D9D7;
+    border-radius: 1rem;
 }
 
 #postalcode {
-    width: 18.5vw;
-    font-size: 3vh;
+    width: 15.5vw;
+    font-size: 5vh;
+    background-color: #D7D9D7;
+    border-radius: 1rem;
+}
+
+.b7 {
+    margin-right: 11%;
 }
 
 #phonenumber {
     width: 19.5vw;
+    height: 3vw;
     margin-right: 6.5%;
     font-size: 3vh;
+    background-color: #D7D9D7;
+    border-radius: 1rem;
 }
 
 .next {
 height: 7vh;
 width: 15vw;
 font-size: 5vh;
-background-color: #A5A6A4;
+background-color: #D7D9D7;
 border: none;
 border-radius: 1rem;
+margin-top: 10%;
+margin-left: 35%;
 }
 
