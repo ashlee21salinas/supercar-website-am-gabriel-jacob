@@ -343,7 +343,7 @@ body{
 .configure_column{
     display: flex;
     flex-flow: column;
-    margin-top: 5%;
+    margin-top: 0%;
 }
 
 .configure_column > h3{
