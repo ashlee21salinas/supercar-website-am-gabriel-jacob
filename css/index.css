@@ -151,7 +151,7 @@ body{
 
 .side-scroll-car{
     position: absolute;
-    top: 14%;
+    top: 15.5%;
     transform: scale(.6);
     right: 5%;
     transition: transform 0.5s, right 1s;
@@ -299,6 +299,8 @@ body{
 
 .vision-mission-readmore > svg{
     margin-left: 10%;
+    width: 30px;
+    height: 30px;
 }
 
 
@@ -380,6 +382,8 @@ body{
 
 .configure-discover > svg{
     margin-left: 12%;
+    width: 30px;
+    height: 30px;
 }
 
 
@@ -619,18 +623,814 @@ hr{
 
 }
 
-#originalImage{
-    visibility: visible;
-    position: absolute;
-    z-index: 1;
-    background-repeat: no-repeat;
-    object-fit: cover;
-    width: 50px;
-    height: 50px;
-    right: 0.9%;
-    border-radius: 200px;
+
+@media screen and (min-width:100px) and (max-width:2677px){
+    body{
+        overflow-x: hidden;
+    }
+    
 }
 
-.pfp{
-    margin-right: 1%;
+@media screen and (min-width:2261px) and (max-width:2677px){
+    .side-scroll-car{
+        top:16.6%;
+        margin-right: 5%;
+    }
+
+
+    .vision-mission-readmore{
+        width: fit-content;
+    }
+
+    .configure-discover{
+        width: fit-content;
+    }
+
+    .vision-mission-readmore > svg{
+        width: 30px;
+        height: 30px;
+        padding-right: 10%;
+        scale: 1;
+    }
+
+    .configure-discover > svg{
+        width: 30px;
+        height: 30px;
+        margin-right: 5%;
+        scale: 3;
+    }
+
+    .footer-right{
+        display: flex;
+        
+    }
+
+    .footer-left{
+        margin-right: 60%
+    }
+
+    .footer-left > svg:last-of-type{
+        margin-left: 700%;
+    }
+}
+
+@media screen and (min-width:2086px) and (max-width:2260px){
+    .side-scroll-car{
+        top:16.3%;
+        margin-right: 5%;
+    }
+
+    .vision-mission-readmore{
+        width: fit-content;
+    }
+
+    .configure-discover{
+        width: fit-content;
+    }
+
+    .vision-mission-readmore > svg{
+        width: 30px;
+        height: 30px;
+        padding-right: 10%;
+        scale: 1;
+    }
+
+    .configure-discover > svg{
+        width: 30px;
+        height: 30px;
+        margin-right: 5%;
+        scale: 3;
+    }
+
+    .footer-right{
+        display: flex;
+        
+    }
+
+    .footer-left{
+        margin-right: 60%
+    }
+
+    .footer-left > svg:last-of-type{
+        margin-left: 700%;
+    }
+
+    .hero-text{
+        top:5%
+    }
+
+}
+
+@media screen and (min-width:2000px) and (max-width:2086px){
+    .side-scroll-car{
+        top:15.9%;
+        margin-right: 5%;
+    }
+
+    .vision-mission-readmore{
+        width: fit-content;
+    }
+
+    .configure-discover{
+        width: fit-content;
+    }
+
+    .vision-mission-readmore > svg{
+        width: 30px;
+        height: 30px;
+        padding-right: 10%;
+        scale: 1;
+    }
+
+    .configure-discover > svg{
+        width: 30px;
+        height: 30px;
+        margin-right: 5%;
+        scale: 3;
+    }
+
+    .footer-right{
+        display: flex;
+        
+    }
+
+    .footer-left{
+        margin-right: 60%
+    }
+
+    .footer-left > svg:last-of-type{
+        margin-left: 700%;
+    }
+
+    .hero-text{
+        top:5%
+    }
+}
+
+@media screen and (min-width:1920px) and (max-width:2001px){
+    .side-scroll-car{
+        top:15.6%;
+        margin-right: 5%;
+    }
+
+    .vision-mission-readmore{
+        width: fit-content;
+        height: 6vh;
+    }
+
+    .configure-discover{
+        width: fit-content;
+    }
+
+    .vision-mission-readmore > svg{
+        width: 30px;
+        height: 30px;
+        padding-right: 10%;
+        scale: 1;
+        
+    }
+
+    .configure-discover > svg{
+        width: 30px;
+        height: 30px;
+        margin-right: 5%;
+        scale: 3;
+    }
+
+    .footer-right{
+        display: flex;
+        
+    }
+
+    .footer-left{
+        margin-right: 60%
+    }
+
+    .footer-left > svg:last-of-type{
+        margin-left: 700%;
+    }
+
+    .hero-text{
+        top:0%
+    }
+
+
+    .vision-mission{
+        margin-top: 7%;
+    }
+
+    .side-blocker{
+        top:15%
+    }
+
+
+}
+
+
+@media screen and (min-width:1816px) and (max-width:1921px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .side-scroll-car{
+        top:95vh;
+        margin-right: 3%;
+    }
+
+    .vision-mission-readmore{
+        width: fit-content;
+        height: 6vh;
+    }
+
+    .configure-discover{
+        width: fit-content;
+    }
+
+    .vision-mission-readmore > svg{
+        width: 30px;
+        height: 30px;
+        padding-right: 10%;
+        scale: 1;
+        
+    }
+
+    .configure-discover > svg{
+        width: 30px;
+        height: 30px;
+        margin-right: 5%;
+        scale: 3;
+    }
+
+    .footer-right{
+        display: flex;
+        
+    }
+
+    .footer-left{
+        margin-right: 60%
+    }
+
+    .footer-left > svg:last-of-type{
+        margin-left: 700%;
+    }
+
+    .hero-text{
+        top:0%
+    }
+
+
+    .vision-mission{
+        margin-top: 7%;
+    }
+
+    .side-blocker{
+        top:14%
+    }
+
+
+}
+
+
+
+@media screen and (min-width:1720px) and (max-width:1816px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .side-scroll-car{
+        top:14.5%;
+        margin-right: 3%;
+    }
+
+    .vision-mission-readmore{
+        width: fit-content;
+        height: 6vh;
+    }
+
+    .configure-discover{
+        width: fit-content;
+    }
+
+    .vision-mission-readmore > svg{
+        width: 30px;
+        height: 30px;
+        padding-right: 10%;
+        scale: 1;
+        
+    }
+
+    .configure-discover > svg{
+        width: 30px;
+        height: 30px;
+        margin-right: 5%;
+        scale: 3;
+    }
+
+    .footer-right{
+        display: flex;
+        
+    }
+
+    .footer-left{
+        margin-right: 60%
+    }
+
+    .footer-left > svg:last-of-type{
+        margin-left: 700%;
+    }
+
+    .hero-text{
+        top:0%
+    }
+
+
+    .vision-mission{
+        margin-top: 7%;
+    }
+
+    .side-blocker{
+        top:14%
+    }
+
+
+}
+
+
+
+
+
+@media screen and (min-width:1620px) and (max-width:1721px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .side-scroll-car{
+        top:14.2%;
+        margin-right: 0%;
+    }
+
+    .vision-mission-readmore{
+        width: fit-content;
+        height: 6vh;
+    }
+
+    .configure-discover{
+        width: fit-content;
+    }
+
+    .vision-mission-readmore > svg{
+        width: 30px;
+        height: 30px;
+        padding-right: 10%;
+        scale: 1;
+        
+    }
+
+    .configure-discover > svg{
+        width: 30px;
+        height: 30px;
+        margin-right: 5%;
+        scale: 3;
+    }
+
+    .footer-right{
+        display: flex;
+        
+    }
+
+    .footer-left{
+        margin-right: 60%
+    }
+
+    .footer-left > svg:last-of-type{
+        margin-left: 700%;
+    }
+
+    .hero-text{
+        top:0%
+    }
+
+
+    .vision-mission{
+        margin-top: 7%;
+    }
+
+    .side-blocker{
+        top:14%
+    }
+
+
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width:1500px) and (max-width:1621px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .side-scroll-car{
+        top:13.9%;
+        margin-right: -5%;
+    }
+
+    .vision-mission-readmore{
+        width: fit-content;
+        height: 6vh;
+    }
+
+    .configure-discover{
+        width: fit-content;
+    }
+
+    .vision-mission-readmore > svg{
+        width: 30px;
+        height: 30px;
+        padding-right: 10%;
+        scale: 1;
+        
+    }
+
+    .configure-discover > svg{
+        width: 30px;
+        height: 30px;
+        margin-right: 5%;
+        scale: 3;
+    }
+
+    .footer-right{
+        display: flex;
+        
+    }
+
+    .footer-left{
+        margin-right: 60%
+    }
+
+    .footer-left > svg:last-of-type{
+        margin-left: 700%;
+    }
+
+    .hero-text{
+        top:0%
+    }
+
+
+    .vision-mission{
+        margin-top: 7%;
+    }
+
+    .side-blocker{
+        top:14%
+    }
+
+
+}
+
+
+
+
+@media screen and (min-width:1411px) and (max-width:1501px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .side-scroll-car{
+        top:13.6%;
+        margin-right: -5%;
+    }
+
+    .vision-mission-readmore{
+        width: fit-content;
+        height: 6vh;
+    }
+
+    .configure-discover{
+        width: fit-content;
+    }
+
+    .vision-mission-readmore > svg{
+        width: 30px;
+        height: 30px;
+        padding-right: 10%;
+        scale: 1;
+        
+    }
+
+    .configure-discover > svg{
+        width: 30px;
+        height: 30px;
+        margin-right: 5%;
+        scale: 3;
+    }
+
+    .footer-right{
+        display: flex;
+        
+    }
+
+    .footer-left{
+        margin-right: 60%
+    }
+
+    .footer-left > svg:last-of-type{
+        margin-left: 700%;
+    }
+
+    .hero-text{
+        top:0%
+    }
+
+
+    .vision-mission{
+        margin-top: 7%;
+    }
+
+    .side-blocker{
+        top:14%
+    }
+
+
+}
+
+
+
+
+
+
+
+@media screen and (min-width:100px) and (max-width:1411px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .side-scroll-car{
+        top:13.8%;
+        margin-right: -10%;
+        scale: 0.7;
+    }
+
+    .vision-mission-readmore{
+        width: fit-content;
+        height: 6vh;
+    }
+
+    .configure-discover{
+        width: fit-content;
+    }
+
+    .vision-mission-readmore > svg{
+        width: 30px;
+        height: 30px;
+        padding-right: 10%;
+        scale: 1;
+        
+    }
+
+    .configure-discover > svg{
+        width: 30px;
+        height: 30px;
+        margin-right: 5%;
+        scale: 3;
+    }
+
+    .footer-right{
+        display: flex;
+        
+    }
+
+    .footer-left{
+        margin-right: 60%
+    }
+
+    .footer-left > svg:last-of-type{
+        margin-left: 700%;
+    }
+
+    .hero-text{
+        top:5%
+    }
+
+    .hero-text > h3{
+        font-size: 35px
+    }
+
+    .hero-text > h2{
+        font-size: 50px
+    }
+
+
+    .vision-mission{
+        margin-top: 7%;
+    }
+
+    .side-blocker{
+        top:14%
+    }
+
+    .discover{
+        width: fit-content;
+
+    }
+
+}
+
+
+@media screen and (min-width:100px) and (max-width:1316px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .side-scroll-car{
+        top:13.6%;
+        margin-right: -10%;
+        scale: 0.7;
+    }
+
+    .vision-mission-readmore{
+        width: fit-content;
+        height: 6vh;
+    }
+
+    .configure-discover{
+        width: fit-content;
+    }
+
+    .vision-mission-readmore > svg{
+        width: 30px;
+        height: 30px;
+        padding-right: 10%;
+        scale: 1;
+        
+    }
+
+    .configure-discover > svg{
+        width: 30px;
+        height: 30px;
+        margin-right: 5%;
+        scale: 3;
+    }
+
+    .footer-right{
+        display: flex;
+        
+    }
+
+    .footer-left{
+        margin-right: 60%
+    }
+
+    .footer-left > svg:last-of-type{
+        margin-left: 700%;
+    }
+
+    .hero-text{
+        top:5%
+    }
+
+    .hero-text > h3{
+        font-size: 35px
+    }
+
+    .hero-text > h2{
+        font-size: 50px
+    }
+
+
+    .vision-mission{
+        margin-top: 7%;
+    }
+
+    .side-blocker{
+        top:14%
+    }
+
+    .discover{
+        width: fit-content;
+
+    }
+
+
+    .scroll-header{
+        margin-left: 5%;
+        font-size: 30px
+    }
+
+    .scroll-text{
+        font-size: 20px
+    }
+}
+
+
+@media screen and (min-width:100px) and (max-width:1231px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .side-scroll-car{
+        top:13.3%;
+        margin-right: -10%;
+        scale: 0.7;
+    }
+
+    .vision-mission-readmore{
+        width: fit-content;
+        height: 6vh;
+    }
+
+    .configure-discover{
+        width: fit-content;
+    }
+
+    .vision-mission-readmore > svg{
+        width: 30px;
+        height: 30px;
+        padding-right: 10%;
+        scale: 1;
+        
+    }
+
+    .configure-discover > svg{
+        width: 30px;
+        height: 30px;
+        margin-right: 5%;
+        scale: 3;
+    }
+
+    .footer-right{
+        display: flex;
+        width: 40%;
+        
+    }
+
+    .footer-right > .subsection-right-left > h4{
+        font-size: 18px;
+    }
+
+    .footer-right > .subsection-right-right > h4{
+        font-size: 18px;
+        
+    }
+
+    .subsection-right-right{
+        margin-left: 6%;
+    }
+
+    .footer-left{
+        margin-right: 60%;
+        width: 60%;
+    }
+
+    .footer-left > svg:last-of-type{
+        margin-left: 700%;
+    }
+
+    .hero-text{
+        top:5%
+    }
+
+    .hero-text > h3{
+        font-size: 35px
+    }
+
+    .hero-text > h2{
+        font-size: 50px
+    }
+
+
+    .vision-mission{
+        margin-top: 7%;
+    }
+
+    .side-blocker{
+        top:14%
+    }
+
+    .discover{
+        width: fit-content;
+
+    }
+
+
+    .scroll-header{
+        margin-left: 5%;
+        font-size: 30px
+    }
+
+    .scroll-text{
+        font-size: 20px
+    }
 }
