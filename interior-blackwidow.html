@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/exterior-nemesis.css">
+    <link rel="stylesheet" href="css/interior-nemesis.css">
     <link rel="stylesheet" href="css/navbar.css">
     <title>Configurator</title>
 
-    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+    <!-- <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
     <script type="importmap">
       {
         "imports": {
@@ -15,7 +15,7 @@
           "three/addons/": "https://unpkg.com/three@v0.163.0/examples/jsm/"
         }
       }
-    </script>
+    </script> -->
 </head>
 <body>
     
@@ -100,9 +100,16 @@
     </nav>
 
     <main class="main-configure">
-        <div class="car-pic-exterior" id="car-pic-exterior"></div>
+        <div class="car-pic-exterior" id="car-pic-exterior">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="177" height="177" viewBox="0 0 177 177" fill="none " class="twod clicked" id="2d">
+                <path d="M95.875 51.625H118C130.243 51.625 140.125 61.5075 140.125 73.75V103.25C140.125 115.493 130.243 125.375 118 125.375H95.875V51.625ZM118 110.625C122.056 110.625 125.375 107.306 125.375 103.25V73.75C125.375 69.6938 122.056 66.375 118 66.375H110.625V110.625H118ZM36.875 51.625H66.375C70.2869 51.625 74.0387 53.179 76.8048 55.9452C79.571 58.7113 81.125 62.4631 81.125 66.375V81.125C81.125 89.3112 74.5612 95.875 66.375 95.875H51.625V110.625H81.125V125.375H36.875V95.875C36.875 87.7625 43.5125 81.125 51.625 81.125H66.375V66.375H36.875V51.625Z" fill="black"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="218" height="218" viewBox="0 0 218 218" fill="none" class="threed " id="3d">
+                <path d="M45.417 63.5835H81.7503C86.5684 63.5835 91.1892 65.4975 94.5961 68.9044C98.003 72.3113 99.917 76.9321 99.917 81.7502V136.25C99.917 141.068 98.003 145.689 94.5961 149.096C91.1892 152.503 86.5684 154.417 81.7503 154.417H45.417V136.25H81.7503V118.083H54.5003V99.9168H81.7503V81.7502H45.417V63.5835ZM118.084 63.5835H145.334C152.561 63.5835 159.492 66.4545 164.602 71.5648C169.713 76.6752 172.584 83.6063 172.584 90.8335V127.167C172.584 134.394 169.713 141.325 164.602 146.436C159.492 151.546 152.561 154.417 145.334 154.417H118.084V63.5835ZM145.334 136.25C147.743 136.25 150.053 135.293 151.757 133.59C153.46 131.886 154.417 129.576 154.417 127.167V90.8335C154.417 88.4244 153.46 86.1141 151.757 84.4106C150.053 82.7072 147.743 81.7502 145.334 81.7502H136.25V136.25H145.334Z" fill="black"/>
+            </svg> -->
+        </div>
         <section class="options-exterior">
-            <h2>Exterior</h2>
+            <h2>Interior</h2>
             <aside class="premium-dropdown opened" id="premium-dropdown">
                 <p>Premium Options</p>
                 <svg id="premium-options-arrow" xmlns="http://www.w3.org/2000/svg" width="125" height="83" viewBox="0 0 125 83" fill="none">
@@ -115,6 +122,9 @@
                 <div class="fancyblue-exterior" id="fancyblue-exterior"></div>
                 <div class="fancyred-exterior" id="fancyred-exterior"></div>
                 <div class="fancyblack-exterior" id="fancyblack-exterior"></div>
+
+
+                
             </div>
             <div class="premium-exterior-blocker" id="premium-exterior-blocker">
                 <hr>
@@ -132,7 +142,7 @@
                 <!-- color wheel
                 <h2>Color Selected</h2> -->
             </aside>
-            <canvas id="colorCanvas" class="color-canvas">
+            <canvas id="colorCanvas" class="color-canvas" >
                 
             </canvas>
             <p id="rgb">RGB: none selected</p>
@@ -140,9 +150,9 @@
                 <hr>
             </div>
             
-            <div class="next-options">
-                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="30" viewBox="0 0 19 30" fill="none">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.54185 17.2084C0.956636 16.6224 0.62793 15.8282 0.62793 15C0.62793 14.1719 0.956636 13.3776 1.54185 12.7917L13.3252 1.0042C13.9114 0.418241 14.7064 0.0891602 15.5353 0.0893556C15.9457 0.0894523 16.3521 0.170385 16.7312 0.327534C17.1104 0.484682 17.4548 0.714968 17.745 1.00524C18.0351 1.29552 18.2652 1.6401 18.4222 2.01931C18.5792 2.39852 18.6599 2.80494 18.6598 3.21536C18.6597 3.62577 18.5788 4.03215 18.4216 4.41129C18.2645 4.79042 18.0342 5.1349 17.7439 5.42504L8.17101 15L17.746 24.575C18.0446 24.8632 18.2828 25.2079 18.4468 25.5891C18.6108 25.9703 18.6972 26.3803 18.701 26.7952C18.7048 27.2101 18.6259 27.6217 18.4689 28.0058C18.312 28.3899 18.0801 28.7389 17.7868 29.0325C17.4936 29.326 17.1448 29.5582 16.7608 29.7156C16.3768 29.8729 15.9653 29.9521 15.5504 29.9487C15.1355 29.9453 14.7254 29.8593 14.344 29.6957C13.9627 29.5321 13.6178 29.2942 13.3293 28.9959L1.53768 17.2084H1.54185Z" fill="#9C9C9C"/>
+            <aside class="next-options">
+                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="30" viewBox="0 0 19 30" fill="none" id="back">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.54185 17.2084C0.956636 16.6224 0.62793 15.8282 0.62793 15C0.62793 14.1719 0.956636 13.3776 1.54185 12.7917L13.3252 1.0042C13.9114 0.418241 14.7064 0.0891602 15.5353 0.0893556C15.9457 0.0894523 16.3521 0.170385 16.7312 0.327534C17.1104 0.484682 17.4548 0.714968 17.745 1.00524C18.0351 1.29552 18.2652 1.6401 18.4222 2.01931C18.5792 2.39852 18.6599 2.80494 18.6598 3.21536C18.6597 3.62577 18.5788 4.03215 18.4216 4.41129C18.2645 4.79042 18.0342 5.1349 17.7439 5.42504L8.17101 15L17.746 24.575C18.0446 24.8632 18.2828 25.2079 18.4468 25.5891C18.6108 25.9703 18.6972 26.3803 18.701 26.7952C18.7048 27.2101 18.6259 27.6217 18.4689 28.0058C18.312 28.3899 18.0801 28.7389 17.7868 29.0325C17.4936 29.326 17.1448 29.5582 16.7608 29.7156C16.3768 29.8729 15.9653 29.9521 15.5504 29.9487C15.1355 29.9453 14.7254 29.8593 14.344 29.6957C13.9627 29.5321 13.6178 29.2942 13.3293 28.9959L1.53768 17.2084H1.54185Z" fill="white"/>
                 </svg>
 
                 <svg xmlns="http://www.w3.org/2000/svg" width="61" height="61" viewBox="0 0 61 61" fill="none">
@@ -152,19 +162,17 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none" id="next">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M33.4582 22.7916C34.0434 23.3776 34.3721 24.1718 34.3721 25C34.3721 25.8281 34.0434 26.6224 33.4582 27.2083L21.6748 38.9958C21.0886 39.5818 20.2936 39.9108 19.4647 39.9106C19.0543 39.9105 18.6479 39.8296 18.2688 39.6725C17.8896 39.5153 17.5452 39.285 17.255 38.9948C16.9649 38.7045 16.7348 38.3599 16.5778 37.9807C16.4208 37.6015 16.3401 37.1951 16.3402 36.7846C16.3403 36.3742 16.4212 35.9678 16.5784 35.5887C16.7355 35.2096 16.9658 34.8651 17.2561 34.575L26.829 25L17.254 15.425C16.9554 15.1368 16.7172 14.7921 16.5532 14.4109C16.3892 14.0297 16.3028 13.6197 16.299 13.2048C16.2952 12.7899 16.3741 12.3783 16.5311 11.9942C16.688 11.6101 16.9199 11.2611 17.2132 10.9675C17.5064 10.674 17.8552 10.4418 18.2392 10.2844C18.6232 10.1271 19.0346 10.0479 19.4496 10.0513C19.8645 10.0547 20.2746 10.1407 20.656 10.3043C21.0373 10.4679 21.3822 10.7058 21.6707 11.0041L33.4623 22.7916H33.4582Z" fill="white"/>
                 </svg>
-            </div>
+            </aside>
         </section>
 
         
     </main>
 
-    <script type="module" src="js/3d-model-nemesis.js"></script>
     <script src="js/components-js/navbar.js"></script>
-    <script src="js/configurator-nemesis.js"></script>
+    <script src="js/interior-nemesis.js"></script>
     <script src="js/pf.js" data-gt-widget-id="43217984"></script>
 
 </body>
-
 
 
 </html>

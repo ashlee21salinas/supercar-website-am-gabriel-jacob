@@ -25,7 +25,15 @@ renderer.outputColorSpace = THREE.SRGBColorSpace;
 
 //adjust height and width
 
-renderer.setSize(window.innerWidth * 0.655, window.innerHeight * 0.9);
+if(window.matchMedia("(max-width:1024px)").matches)
+{
+  renderer.setSize(window.innerWidth, window.innerHeight);
+}
+else{
+  renderer.setSize(window.innerWidth * 0.655, window.innerHeight * 0.9);
+}
+
+
 renderer.setClearColor(0xd6d4d4);
 
 
@@ -47,8 +55,13 @@ document.body.appendChild(renderer.domElement);
 
 
 const scene = new THREE.Scene();
+if(window.matchMedia("(max-width:426px)").matches){
+  var camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 1000);
+}
+else{
+  var camera = new THREE.PerspectiveCamera(20, window.innerWidth / window.innerHeight, 1, 1000);
+}
 
-const camera = new THREE.PerspectiveCamera(20, window.innerWidth / window.innerHeight, 1, 1000);
 // camera.zoom = 8;
 camera.position.set(-7, 3, -11);
 
