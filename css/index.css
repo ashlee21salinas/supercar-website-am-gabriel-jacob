@@ -260,6 +260,7 @@ body{
     width: 80vw;
     height: 88vh;
     background-image: url(../img/homepage-img/-in-the-clurb-we-all-fam.avif);
+    background-repeat: no-repeat;
 }
 
 .vision-mission_column{
@@ -413,6 +414,9 @@ body{
     justify-content: center;
     transition: width 0.7s, opacity 0.7s;
 }
+
+
+
 
 .homepage-mens > h3, .homepage-accesories > h3, .homepage-womens > h3{
     font-size: 45px;
