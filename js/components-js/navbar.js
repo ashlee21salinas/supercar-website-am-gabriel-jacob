@@ -499,3 +499,10 @@ document.getElementById("nav").style.marginLeft ="0%"
       
   }
 
+  var pfp_img = localStorage.getItem("pfp-img");
+
+  const imgElement = document.getElementById('originalImage');
+
+  imgElement.src = pfp_img
+  imgElement.style.visibility = "visible"
+  document.getElementById("pfp").style.opacity = "0"

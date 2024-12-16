@@ -88,3 +88,118 @@ body{
     margin-top: 1%;
     transform: scale(1.3);
 }
+
+
+
+@media screen and (max-width:1440px) {
+    .beginning > h2{
+        margin-top: 11%;
+        font-size: 30px;
+    }
+
+    .beginning > h3{
+        font-size: 25px;
+    }
+
+    .clothes > h3{
+        font-size: 25px;
+    }
+
+    .home > h3{
+        font-size: 25px;
+    }
+
+    .clothes-buttons > button{
+        width: 30%;
+        font-size: 25px;
+    }
+    .home > button{
+        width: 30%;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .beginning > h2{
+        margin-top: 20%;
+        font-size: 25px;
+    }
+
+    .beginning > h3{
+        font-size: 20px;
+    }
+
+    .clothes > h3{
+        font-size: 20px;
+    }
+
+    .home > h3{
+        font-size: 20px;
+    }
+
+    .clothes-buttons > button{
+        width: 30%;
+        font-size: 20px;
+    }
+    .home > button{
+        width: 30%;
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width:620px) {
+    .beginning > h2{
+        margin-top: 30%;
+        font-size: 20px;
+    }
+
+    .beginning > h3{
+        font-size: 15px;
+    }
+
+    .clothes > h3{
+        font-size: 15px;
+    }
+
+    .home > h3{
+        font-size: 15px;
+    }
+
+    .clothes-buttons > button{
+        width: 30%;
+        font-size: 15px;
+    }
+    .home > button{
+        width: 30%;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:465px) {
+    .beginning > h2{
+        margin-top: 30%;
+        font-size: 15px;
+    }
+
+    .beginning > h3{
+        font-size: 10px;
+    }
+
+    .clothes > h3{
+        font-size: 10px;
+    }
+
+    .home > h3{
+        font-size: 10px;
+    }
+
+    .clothes-buttons > button{
+        width: 30%;
+        font-size: 10px;
+    }
+    .home > button{
+        width: 30%;
+        font-size: 10px;
+    }
+}

@@ -44,7 +44,7 @@
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M102.792 27C74.7408 27 52 49.2931 52 76.7917C52 104.29 74.7408 126.583 102.792 126.583C130.843 126.583 153.583 104.29 153.583 76.7917C153.583 49.2931 130.843 27 102.792 27ZM61.2349 76.7917C61.2349 86.2521 64.5271 94.9611 70.0449 101.878C73.921 96.89 78.9203 92.8479 84.6528 90.0667C90.3852 87.2856 96.6957 85.8407 103.092 85.8447C109.406 85.8375 115.638 87.2438 121.313 89.9565C126.988 92.6691 131.956 96.6165 135.839 101.497C139.839 96.3535 142.533 90.3496 143.697 83.9825C144.861 77.6153 144.461 71.0681 142.532 64.8823C140.602 58.6966 137.197 53.0503 132.599 48.4106C128.002 43.7709 122.343 40.2711 116.092 38.2009C109.84 36.1307 103.176 35.5496 96.6499 36.5056C90.1239 37.4616 83.9239 39.9272 78.563 43.6986C73.202 47.4699 68.8343 52.4384 65.821 58.1931C62.8078 63.9478 61.2357 70.3232 61.2349 76.7917ZM102.792 117.53C93.2517 117.545 83.9994 114.328 76.6016 108.423C79.579 104.243 83.5425 100.831 88.1548 98.4758C92.7671 96.1209 97.8915 94.8934 103.092 94.8978C108.227 94.8933 113.29 96.0903 117.858 98.3891C122.427 100.688 126.37 104.022 129.36 108.115C121.905 114.212 112.5 117.545 102.792 117.53Z" fill="white"/>
                     
                 </svg>
-                <img id="originalImage"  alt="Original Image" style="max-width: 200px;" onclick="window.location='pf.html';"/>
+                <img id="originalImage"  alt="Original Image" src="none"  style="max-width: 200px;" onclick="window.location='pf.html';"/>
                 <section class="menu" id="menu">
                     <h2>Menu</h2>
                     <h3 id="models_nav">-Models</h3>
@@ -102,14 +102,15 @@
 
         <div class="hero-carosel-options">
 
-            <button class="index_carosel-option1 selected" id="index_carosel-option1"></button>
-            
-            <button class="index_carosel-option2" id="index_carosel-option2"></button>
-            
-            <button class="index_carosel-option3" id="index_carosel-option3"></button>
-            
-            <button class="index_carosel-option4" id="index_carosel-option4"></button>
-            
+            <div class="buttons-carosel">
+                <button class="index_carosel-option1 selected" id="index_carosel-option1"></button>
+                
+                <button class="index_carosel-option2" id="index_carosel-option2"></button>
+                
+                <button class="index_carosel-option3" id="index_carosel-option3"></button>
+                
+                <button class="index_carosel-option4" id="index_carosel-option4"></button>
+            </div>
 
             <aside class="hero-discover">
                 <button class="discover">Discover</button>
@@ -118,8 +119,9 @@
     </header>
     <div class="hero-blocker" id="hero-blocker"></div>
 
-    <div class="side-scroll-feature" id="side-scroll-feature"></div>
-    <img src="img/homepage-img/side-placeholder.png" alt="car" class="side-scroll-car" id="side-scroll-car">
+    <div class="side-scroll-feature" id="side-scroll-feature">
+        <img src="img/homepage-img/side-placeholder.png" alt="car" class="side-scroll-car" id="scroll-car">
+    </div>
     
     
     <header class="side-blocker" id="side-blocker">
@@ -137,8 +139,7 @@
                 <h3>Our Vision</h3>
                 <h3>and Mission</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo doloribus laborum aliquam quisquam, harum vitae eos deleniti laboriosam modi soluta qui neque provident architecto voluptate labore eum, dignissimos obcaecati porro, perspiciatis molestiae assumenda incidunt unde! Repellendus dolores, quae, soluta sit cum eaque, recusandae voluptate vel cupiditate deleniti minus fuga veniam.</p>
-                <button class="vision-mission-readmore">
-                    Read More
+                <button class="vision-mission-readmore">Read More
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
                         <path d="M12.2423 22.9236C15.2239 22.9236 18.0834 21.7687 20.1917 19.713C22.3001 17.6572 23.4845 14.8691 23.4845 11.9618C23.4845 9.05456 22.3001 6.26638 20.1917 4.21064C18.0834 2.1549 15.2239 1 12.2423 1C9.26063 1 6.40111 2.1549 4.29278 4.21064C2.18445 6.26638 1 9.05456 1 11.9618C1 14.8691 2.18445 17.6572 4.29278 19.713C6.40111 21.7687 9.26063 22.9236 12.2423 22.9236Z" stroke="white" stroke-width="2"/>
                         <path d="M19.5166 20.3423L28.7749 29.4341" stroke="white" stroke-width="2" stroke-linecap="round"/>
@@ -253,8 +254,8 @@
 
     <script src="js/homepage-js/index.js"></script>
     <script src="js/components-js/navbar.js"></script>
-</body>
     <script src="js/pf.js" data-gt-widget-id="43217984"></script>
+
     <script>
         var pfp_img = localStorage.getItem("pfp-img");
 
@@ -264,4 +265,7 @@
         imgElement.style.visibility = "visible"
         document.getElementById("pfp").style.opacity = "0"
     </script>
+</body>
+    
+    
 </html>

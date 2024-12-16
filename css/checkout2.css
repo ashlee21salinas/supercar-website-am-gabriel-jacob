@@ -1,4 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Nixie+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+ 
+
+img {
+    height: 30vh;
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
 
 
+.time {
+    display: flex;
+    flex-direction: row;
+}
 
+.images2 {
+    height: 6vh;
+    width: 5vw;
+    margin-left: 20%;
+    background-color: #D7D9D7;
+    border-radius: 50%;
+    padding: 0.5%;
+}
+
+.second {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 1%;
+    font-size: 2vh;
+}
+
+.second p {
+margin-left: 3%;
+}
+
+#check2 {
+    margin-left: 4%;
+    color: #D7D9D7;
+   
+}
+
+#arrow3 {
+    margin-left: 6%;
+}
+
+.column2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    font-size: 3vh;
+    
+}
+
+.row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 3%;
+    font-size: 3vh;
+}
+
+.row3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2%;
+    font-size: 3vh;
+}
+
+.row4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2%;
+    font-size: 3vh;
+}
+
+.b1 {
+    margin-top: 3%;
+}
+
+.b2 {
+    margin-top: 3%;
+}
+
+.b3 {
+    margin-top: 3%;
+    margin-left: 1%;
+}
+
+.b4 {
+    margin-top: 3%;
+    margin-left: 1%;
+}
+
+#firstname {
+    width: 50vw;
+    font-size: 5vh;
+    background-color: #D7D9D7;
+    border-radius: 1rem;
+}
+
+#lastname {
+    width: 50vw;
+    font-size: 3vh;
+    font-size: 5vh;
+    background-color: #D7D9D7;
+    border-radius: 1rem;
+}
+
+#adress1 {
+    width: 50vw;
+    font-size: 3vh;
+    font-size: 5vh;
+    background-color: #D7D9D7;
+    border-radius: 1rem;
+}
+
+#adress2 {
+    width: 50vw;
+    font-size: 3vh;
+    font-size: 5vh;
+    background-color: #D7D9D7;
+    border-radius: 1rem;
+}
+
+#city {
+    width: 20vw;
+    font-size: 5vh;
+    background-color: #D7D9D7;
+    border-radius: 1rem;
+}
+
+#state {
+    width: 20vw;
+    font-size: 5vh;
+    background-color: #D7D9D7;
+    border-radius: 1rem;
+}
+
+.b5 {
+    margin-left: 3%;
+}
+
+.b6 {
+    margin-left: 6%;
+}
+
+#country {
+    width: 15.5vw;
+    font-size: 5vh;
+    background-color: #D7D9D7;
+    border-radius: 1rem;
+}
+
+#postalcode {
+    width: 15.5vw;
+    font-size: 5vh;
+    background-color: #D7D9D7;
+    border-radius: 1rem;
+}
+
+.b7 {
+    margin-right: 11%;
+}
+
+#phonenumber {
+    width: 19.5vw;
+    height: 3vw;
+    margin-right: 6.5%;
+    font-size: 3vh;
+    background-color: #D7D9D7;
+    border-radius: 1rem;
+}
+
+.next {
+height: 7vh;
+width: 15vw;
+font-size: 5vh;
+background-color: #D7D9D7;
+border: none;
+border-radius: 1rem;
+margin-top: 10%;
+margin-left: 35%;
+}
 
