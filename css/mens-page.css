@@ -37,16 +37,6 @@ h5{
 
 
 
- .viewcart {
-  background-color: black;
-  text-align: center;
-  margin-right: 108vh;
-  color: white;
-  height: 5vh;
-  padding: 1%;
-  width: 15vw;
-  font-size: 4vh;
- }
  .new {
   display: flex;
   flex-direction: row;
