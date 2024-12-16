@@ -452,25 +452,6 @@ nav > .models-submenu.exit{
     
 }
 
-
-#originalImage{
-    visibility: visible;
-    position: absolute;
-    z-index: 1;
-    background-repeat: no-repeat;
-    object-fit: cover;
-    width: 60px;
-    height: 60px;
-    right: 0.9%;
-    border-radius: 200px;
-    transition: scale 0.6s;
-}
-
-.pfp{
-    
-    margin-right: 1%;
-}
-
 #logo{
 
 }
@@ -566,5 +547,3 @@ nav > .models-submenu.exit{
         
     }
 }
-
-

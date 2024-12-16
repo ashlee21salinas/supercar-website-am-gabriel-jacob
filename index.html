@@ -255,5 +255,13 @@
     <script src="js/components-js/navbar.js"></script>
 </body>
     <script src="js/pf.js" data-gt-widget-id="43217984"></script>
-    
+    <script>
+        var pfp_img = localStorage.getItem("pfp-img");
+
+        const imgElement = document.getElementById('originalImage');
+
+        imgElement.src = pfp_img
+        imgElement.style.visibility = "visible"
+        document.getElementById("pfp").style.opacity = "0"
+    </script>
 </html>

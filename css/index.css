@@ -151,7 +151,7 @@ body{
 
 .side-scroll-car{
     position: absolute;
-    top: 15.5%;
+    top: 14%;
     transform: scale(.6);
     right: 5%;
     transition: transform 0.5s, right 1s;
@@ -299,8 +299,6 @@ body{
 
 .vision-mission-readmore > svg{
     margin-left: 10%;
-    width: 30px;
-    height: 30px;
 }
 
 
@@ -382,8 +380,6 @@ body{
 
 .configure-discover > svg{
     margin-left: 12%;
-    width: 30px;
-    height: 30px;
 }
 
 
@@ -623,14 +619,19 @@ hr{
 
 }
 
-
-@media screen and (min-width:100px) and (max-width:2677px){
-    body{
-        overflow-x: hidden;
-    }
-    
+#originalImage{
+    visibility: visible;
+    position: absolute;
+    z-index: 1;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    right: 0.9%;
+    border-radius: 200px;
 }
 
+<<<<<<< HEAD
 @media screen and (min-width:2261px) and (max-width:2677px){
     .side-scroll-car{
         top:16.6%;
@@ -1435,4 +1436,8 @@ hr{
         height: 25px;
         width: 25px;
     }
+=======
+.pfp{
+    margin-right: 1%;
+>>>>>>> parent of 42bfcd1 (done)
 }
