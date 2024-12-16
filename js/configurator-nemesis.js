@@ -22,21 +22,7 @@ function premium_arrow(){
         
                 document.getElementById("exterior-colorwheel").classList.remove("opened")
                 // document.getElementById("premium-exterior-blocker").classList.remove('opened')
-
-                if (window.matchMedia("(max-width: 1960px)").matches && window.matchMedia("(min-width: 1561px)").matches) {
-                    document.getElementById("premium-exterior-colorwheel-blocker").style.top = "38%"
-                }
-                else if(window.matchMedia("(max-width: 1560px)").matches && window.matchMedia("(min-width: 1441px)").matches ){
-                    document.getElementById("premium-exterior-colorwheel-blocker").style.top = "30%"
-                }
-                else if (window.matchMedia("(max-width: 1440px)").matches){
-                    document.getElementById("premium-exterior-colorwheel-blocker").style.top = "36%"
-                }
-                else{
-
-                    document.getElementById("premium-exterior-colorwheel-blocker").style.top = "35%"
-                }
-               
+                document.getElementById("premium-exterior-colorwheel-blocker").style.top = "35%"
         }
         
 
@@ -46,39 +32,9 @@ function premium_arrow(){
             document.getElementById("premium-dropdown").classList.add("opened")
             document.getElementById("premium-exterior-blocker").classList.remove('opened')
             setTimeout(() =>  document.getElementById("premium-dropdown").classList.remove("closed"), 500)
+            document.getElementById("exterior-colorwheel").style.marginTop = "35%"
 
-            if(window.matchMedia("(max-width:1440px)").matches && window.matchMedia("(min-width:1025px)").matches){
-                document.getElementById("exterior-colorwheel").style.marginTop = "5%"
-            }
-            else if(window.matchMedia("(max-width:1024px)").matches && window.matchMedia("(min-width:801px)").matches) {
-                document.getElementById("exterior-colorwheel").style.marginTop = "7%"
-            }
-            else if(window.matchMedia("(max-width:800px)").matches && window.matchMedia("(min-width:568px)").matches){
-                document.getElementById("exterior-colorwheel").style.marginTop = "9%"
-            }
-            else if(window.matchMedia("(max-width:568px)").matches){
-                document.getElementById("exterior-colorwheel").style.marginTop = "15%"
-            }
-            else{
-                document.getElementById("exterior-colorwheel").style.marginTop = "35%"
-            }
-            
-            
-
-
-            if (window.matchMedia("(max-width: 2060px)").matches && window.matchMedia("(min-width:1560px)").matches) {
-                document.getElementById("premium-exterior-colorwheel-blocker").style.top = "53%"
-            }
-            else if(window.matchMedia("(max-width:1560px)").matches && window.matchMedia("(min-width:1441px)").matches){
-                document.getElementById("premium-exterior-colorwheel-blocker").style.top = "42%"
-            }
-            else if(window.matchMedia("(max-width:1440px)").matches){
-                document.getElementById("premium-exterior-colorwheel-blocker").style.top = "50%"
-            }
-            else{
-                document.getElementById("premium-exterior-colorwheel-blocker").style.top = "50%"
-            }
-            
+            document.getElementById("premium-exterior-colorwheel-blocker").style.top = "50%"
 
             document.getElementById("colorCanvas").style.top = "60%"
             
@@ -89,30 +45,9 @@ function premium_arrow(){
             document.getElementById("premium-dropdown").classList.remove('opened')
             document.getElementById("premium-dropdown").classList.add('closed')
 
-            if(window.matchMedia("(max-width: 1440px)").matches && window.matchMedia("(min-width: 569px)").matches)
-            {
-                document.getElementById("exterior-colorwheel").style.marginTop = "-2%"
-            }
-            else if(window.matchMedia("(max-width: 568px)").matches){
-                document.getElementById("exterior-colorwheel").style.marginTop = "-4%"
-            }
-            else{
-                document.getElementById("exterior-colorwheel").style.marginTop = "0%"
-            }
-                
+            document.getElementById("exterior-colorwheel").style.marginTop = "0%"
 
-            if (window.matchMedia("(max-width: 1960px)").matches && window.matchMedia("(min-width: 1561px)").matches) {
-                    document.getElementById("premium-exterior-colorwheel-blocker").style.top = "38%"
-                }
-                else if(window.matchMedia("(max-width: 1560px)").matches && window.matchMedia("(min-width: 1441px)").matches ){
-                    document.getElementById("premium-exterior-colorwheel-blocker").style.top = "30%"
-                }
-                else if (window.matchMedia("(max-width: 1440px)").matches){
-                    document.getElementById("premium-exterior-colorwheel-blocker").style.top = "36%"
-                }
-                else{
-                    document.getElementById("premium-exterior-colorwheel-blocker").style.top = "35%"
-                }
+            document.getElementById("premium-exterior-colorwheel-blocker").style.top = "35%"
 
             document.getElementById("colorCanvas").style.top = "40%"
 
@@ -128,29 +63,9 @@ function color_wheel_arrow(){
         document.getElementById("premium-dropdown").classList.remove('opened')
         document.getElementById("premium-dropdown").classList.add('closed')
 
-        if(window.matchMedia("(max-width: 1440px)").matches && window.matchMedia("(min-width: 569px)").matches)
-        {
-            document.getElementById("exterior-colorwheel").style.marginTop = "-2%"
-        }
-        else if(window.matchMedia("(max-width: 568px)").matches){
-            document.getElementById("exterior-colorwheel").style.marginTop = "-4%"
-        }
-        else{
-            document.getElementById("exterior-colorwheel").style.marginTop = "0%"
-        }
+        document.getElementById("exterior-colorwheel").style.marginTop = "0%"
 
-        if (window.matchMedia("(max-width: 1960px)").matches && window.matchMedia("(min-width:1561px)").matches) {
-                    document.getElementById("premium-exterior-colorwheel-blocker").style.top = "38%"
-                }
-                else if(window.matchMedia("(max-width: 1560px)").matches && window.matchMedia("(min-width: 1441px)").matches  ){
-                    document.getElementById("premium-exterior-colorwheel-blocker").style.top = "30%"
-                }
-                else if (window.matchMedia("(max-width: 1440px)").matches){
-                    document.getElementById("premium-exterior-colorwheel-blocker").style.top = "36%"
-                }
-                else{
-                    document.getElementById("premium-exterior-colorwheel-blocker").style.top = "35%"
-                }
+        document.getElementById("premium-exterior-colorwheel-blocker").style.top = "35%"
 
         document.getElementById("colorCanvas").style.top = "40%"
 
@@ -163,18 +78,7 @@ function color_wheel_arrow(){
 
         document.getElementById("exterior-colorwheel").classList.remove("opened")
         // document.getElementById("premium-exterior-blocker").classList.remove('opened')
-        if (window.matchMedia("(max-width: 1960px)").matches && window.matchMedia("(min-width: 1561px)").matches) {
-            document.getElementById("premium-exterior-colorwheel-blocker").style.top = "38%"
-        }
-        else if(window.matchMedia("(max-width: 1560px)").matches && window.matchMedia("(min-width: 1441px)").matches ){
-            document.getElementById("premium-exterior-colorwheel-blocker").style.top = "30%"
-        }
-        else if (window.matchMedia("(max-width: 1440px)").matches){
-            document.getElementById("premium-exterior-colorwheel-blocker").style.top = "36%"
-        }
-        else{
-            document.getElementById("premium-exterior-colorwheel-blocker").style.top = "35%"
-        }
+        document.getElementById("premium-exterior-colorwheel-blocker").style.top = "35%"
     }
     else{
         document.getElementById("colorwheel-arrow").style.transform = "rotate(0deg)"

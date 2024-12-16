@@ -11,7 +11,7 @@ body{
 .main-configure{
     position: relative;
     display: flex;
-    margin-top: 10vh;
+    margin-top: 5%;
 
     width: 100%;
     height: 89.7vh;
@@ -25,7 +25,7 @@ body{
 .selections{
     display: flex;
     flex-flow: column;
-    height: 100%;
+    height: 101%;
     width: 40%;
     background-color: #1D1D1D;
     
@@ -54,7 +54,7 @@ body{
 
 canvas{
     position: absolute;
-    top:10%;
+    top:10.3%;
     z-index: 2;
 }
 
@@ -105,110 +105,4 @@ hr{
     color: white;
     border: none;
     font-size: 26px;
-}
-
-@media screen and (max-width:1440px) {
-    .selections > h2{
-        font-size: 37px;
-    }
-
-    .exterior > p{
-        font-size: 30px;
-    }
-
-    .interior > p{
-        font-size: 30px;
-    }
-
-    .selections > button{
-        font-size: 18px;
-    }
-
-    .buttons-row > button{
-        font-size: 18px;
-    }
-
-    li{
-        font-size: 18px;
-    }
-}
-
-@media screen and (max-width:1024px) {
-    body{
-        overflow-y: auto;
-
-    }
-
-    
-    
-    .selections{
-        position: absolute;
-        top:111%;
-        width: 100%;
-        display: flex;
-    }
-}
-
-
-@media screen and (max-width:351px) {
-    body{
-        overflow-y: auto;
-
-    }
-
-    
-    
-    .selections{
-        position: absolute;
-        top:101vh;
-        width: 101%;
-        display: flex;
-    }
-
-
-
-    .selections > h2{
-        font-size: 30px;
-    }
-
-    .exterior > p{
-        font-size: 20px;
-    }
-
-    .interior > p{
-        font-size: 20px;
-    }
-
-    .selections > button{
-        font-size: 12px;
-    }
-
-    .buttons-row > button{
-        font-size: 12px;
-    }
-
-    li{
-        font-size: 12px;
-    }
-}
-
-@media screen and (max-width:341px){
-    .selections{
-        top:103vh;
-        width: 103%;
-    }
-}
-
-@media screen and (max-width:331px){
-    .selections{
-        top:105vh;
-        width: 105%;
-    }
-}
-
-@media screen and (max-width:321px){
-    .selections{
-        top:107vh;
-        width: 107%;
-    }
 }

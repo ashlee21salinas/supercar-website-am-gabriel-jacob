@@ -28,17 +28,7 @@ renderer.outputColorSpace = THREE.SRGBColorSpace;
 
 //adjust height and width
 
-if (window.matchMedia("(max-width: 1440px)").matches && window.matchMedia("(min-width:567px)").matches) {
-  renderer.setSize(window.innerWidth, window.innerHeight);
-}
-if (window.matchMedia("(max-width: 568px)").matches){
-  renderer.setSize(window.innerWidth, window.innerHeight * 0.9);
-}
-else{
-  renderer.setSize(window.innerWidth * 0.8, window.innerHeight * 0.9);
-}
-
-
+renderer.setSize(window.innerWidth * 0.8, window.innerHeight * 0.9);
 renderer.setClearColor(0xd6d4d4);
 
 // const texture = new THREE.TextureLoader().load( "../img/configurator-img/sky.jpg" );
@@ -67,19 +57,7 @@ document.body.appendChild(renderer.domElement);
 
 const scene = new THREE.Scene();
 
-if (window.matchMedia("(max-width: 768px)").matches && window.matchMedia("(min-width: 500px)").matches) {
-   var camera = new THREE.PerspectiveCamera(35, window.innerWidth / window.innerHeight, 1, 1000);
-}
-else if (window.matchMedia("(max-width: 500px)").matches  && window.matchMedia("(min-width: 376px)").matches) {
-  var camera = new THREE.PerspectiveCamera(40, window.innerWidth / window.innerHeight, 1, 1000);
-}
-else if (window.matchMedia("(max-width: 376px)").matches  && window.matchMedia("(min-width: 319px)").matches) {
-  var camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 1, 1000);
-}
-else{
-   var camera = new THREE.PerspectiveCamera(20, window.innerWidth / window.innerHeight, 1, 1000);
-}
-
+const camera = new THREE.PerspectiveCamera(20, window.innerWidth / window.innerHeight, 1, 1000);
 // camera.zoom = 8;
 camera.position.set(-7, 3, -11);
 
@@ -95,6 +73,15 @@ controls.maxPolarAngle = 1.5;
 controls.autoRotate = true;
 controls.target = new THREE.Vector3(0, 1, 0);
 controls.update();
+
+// const groundGeometry = new THREE.PlaneGeometry(20, 20, 32, 32);
+// groundGeometry.rotateX(-Math.PI / 2);
+// const groundMaterial = new THREE.MeshStandardMaterial({
+//   color: 0x555555,
+//   side: THREE.DoubleSide
+// });
+// const groundMesh = new THREE.Mesh(groundGeometry, groundMaterial);
+// scene.add(groundMesh);
 
 
 
