@@ -26,14 +26,38 @@ h5{
   color: black;
   margin-top: 8%;
  }
- 
 
+ h6 {
+  color: black;
+  margin-left: auto;
+  margin-right: 43%;
+  font-size: 10vh;
+ }
+ 
+ .new {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  order: 1;
+ }
+
+
+.viewcart {
+  background-color: black;
+  color: white;
+  height: 8.5vh;
+  width: 16vw;
+  font-size: 6vh;
+  text-align: center;
+}
 
 
 
  a.viewcart {
   text-decoration: none;
-  margin-top: 5%;
+  margin-top: 20%;
+  margin-left: 5%;
+  
  }
 
  .images {
@@ -52,7 +76,7 @@ h5{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 20%;
+    margin-top: 5%;
  }
 
  .box1 {
