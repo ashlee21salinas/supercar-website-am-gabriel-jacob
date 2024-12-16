@@ -32,12 +32,12 @@ h5{
  .viewcart {
   background-color: black;
   text-align: center;
-  margin-right: 120vh;
+  margin-right: 108vh;
   color: white;
   height: 5vh;
   padding: 1%;
   width: 15vw;
-  font-size: 3vh;
+  font-size: 4vh;
  }
 
  a {
@@ -395,10 +395,10 @@ h5{
   padding: 5rem;
   position: absolute;
   z-index: 1;
-  bottom: 125%;
+  bottom: 1700%;
   left: 50%;
   margin-left: -80px;
-  margin-bottom: 10px;
+  margin-top: 20%;
   margin-right: 100px;
   font-size: 5vh;
   width: 25vw;
