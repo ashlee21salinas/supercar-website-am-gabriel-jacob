@@ -255,10 +255,11 @@ body{
     display: flex;
 }
 
-.vision-mission_row > img{
+.vision-mission_row > .img{
     margin-left: 5%;
-    width: 22vw;
+    width: 80vw;
     height: 88vh;
+    background-image: url(../img/homepage-img/-in-the-clurb-we-all-fam.avif);
 }
 
 .vision-mission_column{
