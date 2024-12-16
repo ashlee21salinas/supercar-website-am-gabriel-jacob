@@ -407,17 +407,39 @@ body{
     justify-content: space-evenly;
 }
 
-.homepage-mens, .homepage-accesories, .homepage-womens{
+.homepage-mens{
     display: flex;
-    background-image: url(../img/homepage-img/-in-the-clurb-we-all-fam.avif);
+    background-image: url(../img/img-merch/mensnewpolo-black.png);
     width: calc(100%/3.3);
     justify-content: center;
     transition: width 0.7s, opacity 0.7s;
 }
 
 
+<<<<<<< HEAD
 
 
+=======
+.homepage-accesories{
+
+    display: flex;
+    background-image: url(../img/homepage-img/placeholder.webp);
+    width: calc(100%/3.3);
+    justify-content: center;
+    transition: width 0.7s, opacity 0.7s;
+
+
+}
+
+.homepage-womens{
+    display: flex;
+    background-image: url(../img/img-merch/womensshirt-white.png);
+    width: calc(100%/3.3);
+    justify-content: center;
+    transition: width 0.7s, opacity 0.7s;
+
+}
+>>>>>>> 8f43f1782c9cefd01b524c4d79bf11435f441fd5
 .homepage-mens > h3, .homepage-accesories > h3, .homepage-womens > h3{
     font-size: 45px;
     margin-bottom: 1%;
